@@ -1,0 +1,1 @@
+## Snackly est l'agence de production vidéo snack content du groupe Play To Sky. Elle se spécialise dans la création de contenus vidéo courts et percutants, structurés autour de deux offres complémentaires : Acting (mise en scène humaine) et Motion (animation graphique).

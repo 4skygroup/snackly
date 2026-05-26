@@ -47,12 +47,12 @@ module.exports = {
 
         // Texts
         t1: "2rem",
-        t1: "1.75rem",
-        t1: "1.5rem",
-        t1: "1.25rem",
-        t1: "1rem",
-        t1: "0.75rem",
-        t1: "0.625rem",
+        t2: "1.75rem",
+        t3: "1.5rem",
+        t4: "1.25rem",
+        t5: "1rem",
+        t6: "0.75rem",
+        t7: "0.625rem",
 
         // Pour rendre la police Bold, il faut utiliser: font-bold
       },

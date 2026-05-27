@@ -27,7 +27,7 @@ module.exports = {
         "cybersky-red": "#F23333",
 
         // Globals
-        white: "#E5E5E5",
+        "gray-white": "#E5E5E5",
         "placeholder-color": "#E5E5E5",
       },
       fontFamily: {
@@ -55,6 +55,13 @@ module.exports = {
         t7: "0.625rem",
 
         // Pour rendre la police Bold, il faut utiliser: font-bold
+      },
+      borderRadius: {
+        r1: "1.25rem",
+        r2: "0.9375rem",
+        r3: "0.625rem",
+        r4: "0.3125rem",
+        r5: "0.25rem",
       },
     },
   },

@@ -22,6 +22,14 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+  // {
+  //   path: "/action",
+  //   element: <Action />,
+  // },
+  // {
+  //   path: "/Motion",
+  //   element: <Motion />,
+  // },
 ]);
 
 export default function App() {

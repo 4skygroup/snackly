@@ -10,9 +10,12 @@ export default function Footer({
   entities = entityList,
   media = mediaList,
   entityName = "Snackly",
+  color = "bg-snackly-purple",
 }: FooterProp) {
   return (
-    <footer className="flex bg-snackly-purple text-white items-center justify-center py-12.5">
+    <footer
+      className={`flex ${color} text-white items-center justify-center py-12.5`}
+    >
       <div className="flex flex-col gap-4 items-center">
         <Logo />
         <div className="flex md:max-lg:gap-x-5 max-mdp:flex-col max-mdp:gap-y-15 lg:gap-x-25 py-12.5">

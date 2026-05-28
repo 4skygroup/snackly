@@ -7,5 +7,6 @@ export interface FooterProp {
     services: Content,
     entities?: Content,
     media?: Content,
-    entityName?: string
+    entityName?: string,
+    color?: string
 }

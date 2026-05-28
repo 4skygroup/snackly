@@ -63,6 +63,9 @@ module.exports = {
         r4: "0.3125rem",
         r5: "0.25rem",
       },
+      screens: {
+        mdp: "50rem",
+      },
     },
   },
   plugins: [],

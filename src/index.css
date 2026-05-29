@@ -4,6 +4,17 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 @layer theme, base, components, utilities;
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE et Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 @font-face {
   font-family: "Glacial Indifference";
   src:

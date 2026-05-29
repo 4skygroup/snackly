@@ -15,6 +15,7 @@ module.exports = {
         // Snackly
         "snackly-blue": "#3A0CA3",
         "snackly-purple": "#7209B7",
+        "snackly-dark-purple": "#320451",
         "snackly-card-gray": "#989FAC",
 
         // Drox360

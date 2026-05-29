@@ -4,6 +4,17 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        grow: {
+          "100%": {
+            width: "100%",
+          },
+        },
+      },
+
+      animation: {
+        grow: "grow 0.5s ease-in-out forwards",
+      },
       colors: {
         // Pulse X Colors
         "pulse-x-red": "#F23333",

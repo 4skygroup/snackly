@@ -70,35 +70,49 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
-        <div className="bg-white w-162.5 rounded-tr-full rounded-br-full flex flex-col justify-center items-end gap-y-5 h-125 px-17.5">
-          <span className="text-h1 text-snackly-purple font-bold ">ACTING</span>
-          <span className="text-t4 text-snackly-purple/50 font-bold">
+        <div className="group hover:animate-grow bg-white w-162.5 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 h-125 px-17.5">
+          <span className="group-hover:hidden text-h1 text-snackly-purple font-bold ">
+            ACTING
+          </span>
+          <span className="group-hover:hidden text-t4 text-snackly-purple/50 font-bold">
             Survolez-moi
           </span>
-          {/* <p>
+          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
-          <p>
+          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
             Nous concevons et produisons des contenus personnalisés, alignés sur
             vos objectifs de visibilité et de performance. Nos équipes
             organisent des tournages adaptés à votre projet
-          </p> */}
-          <Link to="/action">En savoir plus</Link>
+          </p>
+          <Link to="/action">
+            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
+              En savoir plus{" "}
+              <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
+            </span>
+          </Link>
         </div>
-        <div className="bg-white w-162.5 rounded-tl-full rounded-bl-full flex flex-col justify-center items-start gap-y-5 h-125 px-17.5 self-end">
-          <span className="text-h1 text-snackly-blue font-bold">MOTION</span>
-          <span className="text-t4 text-snackly-blue/50 font-bold">
+        <div className="group hover:animate-grow bg-white w-162.5 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 h-125 px-17.5 self-end">
+          <span className="group-hover:hidden text-h1 text-snackly-blue font-bold">
+            MOTION
+          </span>
+          <span className="group-hover:hidden text-t4 text-snackly-blue/50 font-bold">
             Survolez-moi
           </span>
-          {/* <p>
+          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
-          <p>
+          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
             Nous concevons et produisons des contenus personnalisés, alignés sur
             vos objectifs de visibilité et de performance. Nos équipes
             organisent des tournages adaptés à votre projet
-          </p> */}
-          <Link to="/motion">En savoir plus</Link>
+          </p>
+          <Link to="/motion">
+            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
+              En savoir plus{" "}
+              <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
+            </span>
+          </Link>
         </div>
       </section>
       {/* Icones des partenaires */}

@@ -3,6 +3,7 @@ import Input from "../components/Inputs/Input";
 import Select from "../components/Inputs/Select";
 import Textarea from "../components/Inputs/Textarea";
 import Logo from "../components/Logo/Logo";
+import Navbar from "../components/NavBar/NavBar";
 import { options } from "../utils/constants/options";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
@@ -10,6 +11,7 @@ import { services } from "../utils/constants/services";
 export default function Contact() {
   return (
     <div className="bg-snackly-purple text-white flex flex-col items-center ">
+      <Navbar />
       <div className="flex flex-col items-center gap-y-17.5">
         <span className="text-h6">Contact us</span>
         <div className="flex gap-12.5 justify-between items-center py-12.5 w-fit max-md:lg:gap-x-27.5 lg:gap-x-40">

@@ -1,6 +1,7 @@
 import Expert from "../components/Cards/Expert";
 import Offer from "../components/Cards/Offer";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/NavBar/NavBar";
 import { experts } from "../utils/constants/experts";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
@@ -8,6 +9,7 @@ import { services } from "../utils/constants/services";
 export default function Motion() {
   return (
     <div>
+      <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
         <section className="flex justify-between">
           <div className="flex flex-col">

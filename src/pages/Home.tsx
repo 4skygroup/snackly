@@ -13,9 +13,11 @@ import Tiktok from "/images/Tiktok.png";
 import SnapChat from "/images/SnapChat.png";
 import Youtube from "/images/Youtube.png";
 import Google from "/images/Google.png";
+import Navbar from "../components/NavBar/NavBar";
 export default function Home() {
   return (
     <div className="text-white bg-gray-white">
+      <Navbar />
       <section>
         <div className="bg-linear-to-b from-snackly-purple to-snackly-blue flex justify-center items-center gap-x-20 py-25">
           {/* Left */}

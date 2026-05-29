@@ -4,10 +4,14 @@ import Expert from "../components/Cards/Expert";
 import Footer from "../components/Footer/Footer";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
+import { useState } from "react";
+import Navbar from "../components/NavBar/NavBar";
 
 export default function Acting() {
+  const [focus, setFocus] = useState(2);
   return (
     <div>
+      <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
         <section className="flex justify-between">
           <div className="flex flex-col">
@@ -76,24 +80,30 @@ export default function Acting() {
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
                   className="w-12.5 h-12.5  cursor-pointer"
+                  onClick={() => setFocus(focus - 1)}
                 />
                 <div className="flex items-center mx-5">
                   <img
                     src="/images/Pub1.png"
                     alt="pub 1"
-                    className="h-32.5 w-20"
+                    className={`${focus % 3 === 1 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
                   />
-                  <img src="/images/Pub2.png" alt="pub 2" className="" />
+                  <img
+                    src="/images/Pub2.png"
+                    alt="pub 2"
+                    className={`${focus % 3 === 2 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                  />
                   <img
                     src="/images/Pub3.png"
                     alt="pub 3"
-                    className="h-32.5 w-20"
+                    className={`${focus % 3 === 0 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
                   />
                 </div>
                 <img
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
-                  className="rotate-180 w-12.5 h-12.5  cursor-pointer"
+                  className={`rotate-180 w-12.5 h-12.5  cursor-pointer`}
+                  onClick={() => setFocus(focus + 1)}
                 />
               </div>
               {/* Bottom */}

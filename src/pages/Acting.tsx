@@ -14,23 +14,23 @@ export default function Acting() {
             <p className="text-h5 uppercase">Démarrez votre projet</p>
             <span className="text-h2 font-bold uppercase">Acting</span>
           </div>
-          <div>
+          <div className="w-125 h-98.75 relative flex items-center justify-center">
             <span className="text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
               Acting
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
               Déclinaison
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0">
               Brief
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-0">
               Script
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
               Montage
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
               Tournage
             </span>
           </div>
@@ -69,8 +69,39 @@ export default function Acting() {
               </div>
             </div>
             {/* Right */}
-            <div className="w-125 h-98.75 bg-linear-to-b from-snackly-purple to-snackly-dark-purple">
-              {/* Animation */}
+            <div className="flex flex-col w-125 h-98.75 bg-linear-to-b from-snackly-purple to-snackly-dark-purple justify-center items-center gap-y-8.75 px-5">
+              {/* Top */}
+              <div className="flex justify-between items-center">
+                <img
+                  src="/icons/video-arrow.svg"
+                  alt="video-arrow"
+                  className="w-12.5 h-12.5  cursor-pointer"
+                />
+                <div className="flex items-center mx-5">
+                  <img
+                    src="/images/Pub1.png"
+                    alt="pub 1"
+                    className="h-32.5 w-20"
+                  />
+                  <img src="/images/Pub2.png" alt="pub 2" className="" />
+                  <img
+                    src="/images/Pub3.png"
+                    alt="pub 3"
+                    className="h-32.5 w-20"
+                  />
+                </div>
+                <img
+                  src="/icons/video-arrow.svg"
+                  alt="video-arrow"
+                  className="rotate-180 w-12.5 h-12.5  cursor-pointer"
+                />
+              </div>
+              {/* Bottom */}
+              <div className="flex gap-x-2.5">
+                <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-white/30 rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-white/30 rounded-full"></div>
+              </div>
             </div>
           </div>
         </section>

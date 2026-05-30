@@ -14,7 +14,9 @@ import SnapChat from "/images/SnapChat.png";
 import Youtube from "/images/Youtube.png";
 import Google from "/images/Google.png";
 import Navbar from "../components/NavBar/NavBar";
+import { useState } from "react";
 export default function Home() {
+  const [tagsClicked, setTagsClicked] = useState([true, false, false]);
   return (
     <div className="text-white bg-gray-white">
       <Navbar />
@@ -42,13 +44,25 @@ export default function Home() {
         <div className="flex flex-col gap-7.5">
           {/* Top */}
           <nav className="flex justify-between w-full">
-            <Tag content="Créativité dans l’exécution" />
-            <Tag content="Contenu percutant" isOpaque={true} />
-            <Tag content="Idéal pour l’espace pub" isOpaque={true} />
+            <Tag
+              content="Créativité dans l’exécution"
+              isOpaque={!tagsClicked[0]}
+              onClick={() => setTagsClicked([true, false, false])}
+            />
+            <Tag
+              content="Contenu percutant"
+              isOpaque={!tagsClicked[1]}
+              onClick={() => setTagsClicked([false, true, false])}
+            />
+            <Tag
+              content="Idéal pour l’espace pub"
+              isOpaque={!tagsClicked[2]}
+              onClick={() => setTagsClicked([false, false, true])}
+            />
           </nav>
           {/* Bottom */}
           <div className="max-w-278.75 px-2.5">
-            <p className="text-t3">
+            <p className={`${tagsClicked[0] ? "block" : "hidden"} text-t3`}>
               Nos créations sont pensées pour générer de la performance sur
               l’ensemble du funnel média, de la notoriété à la conversion.
               <br />
@@ -56,18 +70,18 @@ export default function Home() {
               transforment en vidéos impactantes, alignées avec les stratégies
               médias de nos clients.
             </p>
-            {/* <p className="text-t3">
+            <p className={`${tagsClicked[1] ? "block" : "hidden"} text-t3`}>
               Chaque jour, un internaute est exposé à plus de 15 000
               sollicitations commerciales. Pour éviter la lassitude liée à la
               répétition de contenus similaires, les algorithmes de diffusion
               privilégient des contenus renouvelés et régulièrement mis à jour.
             </p>
-            <p className="text-t3">
+            <p className={`${tagsClicked[2] ? "block" : "hidden"} text-t3`}>
               Chaque canal de diffusion répond à ses propres codes : formats
               publicitaires, durées, usages des audiences. Une création
               performante est avant tout une création pensée pour le média qui
               la porte.
-            </p> */}
+            </p>
           </div>
         </div>
       </section>

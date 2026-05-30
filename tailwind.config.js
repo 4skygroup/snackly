@@ -10,10 +10,28 @@ module.exports = {
             width: "100%",
           },
         },
+        rotation: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotationback: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
       },
 
       animation: {
         grow: "grow 0.5s ease-in-out forwards",
+        rotation: "rotation 10s linear infinite",
+        rotationback: "rotationback 10s linear infinite",
       },
       colors: {
         // Pulse X Colors

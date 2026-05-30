@@ -16,24 +16,25 @@ export default function Motion() {
             <p className="text-h5 uppercase">Démarrez votre projet</p>
             <span className="text-h2 font-bold uppercase">Motion</span>
           </div>
-          <div>
-            <span className="text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
+          <div className="animate-rotation w-125 h-98.75 relative flex items-center justify-center">
+            <span className="animate-rotationback text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
               Motion
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
-              Déclinaison
+            {/* <span>bonjour</span> */}
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
+              Storyboard
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0 top-35">
               Brief
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
-              Script
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-0 top-35">
+              Design
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
-              Montage
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
+              Animation
             </span>
-            <span className="bg-white/20 text-t3 px-3.75 py-2 text-white">
-              Tournage
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
+              Livraison
             </span>
           </div>
         </section>

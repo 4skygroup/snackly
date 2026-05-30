@@ -18,23 +18,24 @@ export default function Acting() {
             <p className="text-h5 uppercase">Démarrez votre projet</p>
             <span className="text-h2 font-bold uppercase">Acting</span>
           </div>
-          <div className="w-125 h-98.75 relative flex items-center justify-center">
-            <span className="text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
+          <div className="animate-rotation w-125 h-98.75 relative flex items-center justify-center">
+            <span className="animate-rotationback text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
               Acting
             </span>
-            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
+            {/* <span>bonjour</span> */}
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
               Déclinaison
             </span>
-            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0">
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0 top-35">
               Brief
             </span>
-            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-0">
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-0 top-35">
               Script
             </span>
-            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
               Montage
             </span>
-            <span className="absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
+            <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
               Tournage
             </span>
           </div>
@@ -76,6 +77,7 @@ export default function Acting() {
             <div className="flex flex-col w-125 h-98.75 bg-linear-to-b from-snackly-purple to-snackly-dark-purple justify-center items-center gap-y-8.75 px-5">
               {/* Top */}
               <div className="flex justify-between items-center">
+                {/* {`${console.log(focus)}`} */}
                 <img
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
@@ -86,17 +88,17 @@ export default function Acting() {
                   <img
                     src="/images/Pub1.png"
                     alt="pub 1"
-                    className={`${focus % 3 === 1 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${Math.abs(focus) % 3 === 1 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
                   />
                   <img
                     src="/images/Pub2.png"
                     alt="pub 2"
-                    className={`${focus % 3 === 2 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${Math.abs(focus) % 3 === 2 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
                   />
                   <img
                     src="/images/Pub3.png"
                     alt="pub 3"
-                    className={`${focus % 3 === 0 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${Math.abs(focus) % 3 === 0 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
                   />
                 </div>
                 <img

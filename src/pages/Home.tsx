@@ -93,7 +93,7 @@ export default function Home() {
           <span className="group-hover:hidden text-t4 text-snackly-purple/50 font-bold">
             Survolez-moi
           </span>
-          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
+          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
           <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
@@ -102,7 +102,7 @@ export default function Home() {
             organisent des tournages adaptés à votre projet
           </p>
           <Link to="/action">
-            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
+            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3 font-bold">
               En savoir plus{" "}
               <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
             </span>
@@ -115,7 +115,7 @@ export default function Home() {
           <span className="group-hover:hidden text-t4 text-snackly-blue/50 font-bold">
             Survolez-moi
           </span>
-          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
+          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
           <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
@@ -124,7 +124,7 @@ export default function Home() {
             organisent des tournages adaptés à votre projet
           </p>
           <Link to="/motion">
-            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
+            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3 font-bold">
               En savoir plus{" "}
               <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
             </span>

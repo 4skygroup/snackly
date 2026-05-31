@@ -25,13 +25,32 @@ module.exports = {
           "100%": {
             transform: "rotate(-360deg)",
           },
+          // rotation
         },
+        // toone: {
+        //   to: {
+        //     order: 1,
+        //   },
+        // },
+        // totwo: {
+        //   to: {
+        //     order: 2,
+        //   },
+        // },
+        // tothree: {
+        //   to: {
+        //     order: 3,
+        //   },
+        // },
       },
 
       animation: {
         grow: "grow 0.5s ease-in-out forwards",
         rotation: "rotation 10s linear infinite",
         rotationback: "rotationback 10s linear infinite",
+        // toone: "toone 1s linear forwards",
+        // totwo: "toone 1s linear forwards",
+        // tothree: "toone 1s linear forwards",
       },
       colors: {
         // Pulse X Colors

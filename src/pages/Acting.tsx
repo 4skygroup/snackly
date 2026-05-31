@@ -9,6 +9,31 @@ import Navbar from "../components/NavBar/NavBar";
 
 export default function Acting() {
   const [focus, setFocus] = useState(2);
+  const [imgOrders, setImgOrders] = useState([1, 2, 3]);
+  const imgs = [
+    { src: "/images/Pub1.png", alt: "pub 1" },
+    { src: "/images/Pub2.png", alt: "pub 2" },
+    { src: "/images/Pub3.png", alt: "pub 3" },
+  ];
+  const handleLeftButtonClick = () => {
+    setImgOrders([imgOrders[1], imgOrders[2], imgOrders[0]]);
+  };
+  const handleRightButtonClick = () => {
+    setImgOrders([imgOrders[2], imgOrders[0], imgOrders[1]]);
+    // setFocus(focus + 1);
+  };
+
+  const getOrder = (index: number) => {
+    if (imgOrders.indexOf(index) + 1 === 1) {
+      return "order-1 h-32.5 w-20";
+    }
+    if (imgOrders.indexOf(index) + 1 === 2) {
+      return "order-2 w-42.5 h-75";
+    }
+    if (imgOrders.indexOf(index) + 1 === 3) {
+      return "order-3 h-32.5 w-20";
+    }
+  };
   return (
     <div>
       <Navbar />
@@ -82,30 +107,38 @@ export default function Acting() {
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
                   className="w-12.5 h-12.5  cursor-pointer"
-                  onClick={() => setFocus(focus - 1)}
+                  onClick={() => handleLeftButtonClick()}
                 />
                 <div className="flex items-center mx-5">
+                  {/* {imgOrders.map((io, index) => (
+                    <img
+                      key={index}
+                      src={imgs[io - 1].src}
+                      alt={imgs[io - 1].alt}
+                      className={`${index === 1 ? "w-42.5 h-75" : "h-32.5 w-20"} ${index === 1 ? "animate-toone" : index === 2 ? "animate-totwo" : "animate-tothree"}`}
+                    />
+                  ))} */}
                   <img
                     src="/images/Pub1.png"
                     alt="pub 1"
-                    className={`${Math.abs(focus) % 3 === 1 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${getOrder(1)}`}
                   />
                   <img
                     src="/images/Pub2.png"
                     alt="pub 2"
-                    className={`${Math.abs(focus) % 3 === 2 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${getOrder(2)}`}
                   />
                   <img
                     src="/images/Pub3.png"
                     alt="pub 3"
-                    className={`${Math.abs(focus) % 3 === 0 ? "w-42.5 h-75" : "h-32.5 w-20"}`}
+                    className={`${getOrder(3)}`}
                   />
                 </div>
                 <img
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
                   className={`rotate-180 w-12.5 h-12.5  cursor-pointer`}
-                  onClick={() => setFocus(focus + 1)}
+                  onClick={() => handleRightButtonClick()}
                 />
               </div>
               {/* Bottom */}

@@ -25,13 +25,13 @@ export default function Acting() {
 
   const getOrder = (index: number) => {
     if (imgOrders.indexOf(index) + 1 === 1) {
-      return "order-1 h-32.5 w-20";
+      return "order-1 h-50 w-27.5 blur-b4 rounded-r2 animate saturate-80";
     }
     if (imgOrders.indexOf(index) + 1 === 2) {
-      return "order-2 w-42.5 h-75";
+      return "order-2 h-62.5 w-35 blur-b4 relative -left-12.5 rounded-r2 animate saturate-80";
     }
     if (imgOrders.indexOf(index) + 1 === 3) {
-      return "order-3 h-32.5 w-20";
+      return "order-3 w-42.5 h-75 relative -left-27 rounded-r2 animate";
     }
   };
   return (

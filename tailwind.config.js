@@ -112,6 +112,9 @@ module.exports = {
         r4: "0.3125rem",
         r5: "0.25rem",
       },
+      blur: {
+        b4: "0.1875rem",
+      },
       screens: {
         mdp: "50rem",
       },

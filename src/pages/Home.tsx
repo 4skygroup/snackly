@@ -15,6 +15,7 @@ import Youtube from "/images/Youtube.png";
 import Google from "/images/Google.png";
 import Navbar from "../components/NavBar/NavBar";
 import { useState } from "react";
+import FAQ from "../components/FAQ/FAQ";
 export default function Home() {
   const [tagsClicked, setTagsClicked] = useState([true, false, false]);
   return (
@@ -139,11 +140,7 @@ export default function Home() {
         <Partner src={Youtube} alt="Youtube" label="Youtube" />
         <Partner src={SnapChat} alt="SnapChat" label="SnapChat" />
       </section>
-      <section>
-        <span>Foire aux questions</span>
-        {/* Foire aux questions */}
-        <div></div>
-      </section>
+      <FAQ />
       <Footer policy={policy} services={services} />
     </div>
   );

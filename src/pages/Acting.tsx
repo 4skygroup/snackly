@@ -8,19 +8,12 @@ import { useState } from "react";
 import Navbar from "../components/NavBar/NavBar";
 
 export default function Acting() {
-  const [focus, setFocus] = useState(2);
   const [imgOrders, setImgOrders] = useState([1, 2, 3]);
-  const imgs = [
-    { src: "/images/Pub1.png", alt: "pub 1" },
-    { src: "/images/Pub2.png", alt: "pub 2" },
-    { src: "/images/Pub3.png", alt: "pub 3" },
-  ];
   const handleLeftButtonClick = () => {
     setImgOrders([imgOrders[1], imgOrders[2], imgOrders[0]]);
   };
   const handleRightButtonClick = () => {
     setImgOrders([imgOrders[2], imgOrders[0], imgOrders[1]]);
-    // setFocus(focus + 1);
   };
 
   const getOrder = (index: number) => {

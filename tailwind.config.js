@@ -118,9 +118,10 @@ module.exports = {
       screens: {
         xs: "28.125rem",
         mdp: "50rem",
-        mdpp: "59.375rem",
-        lgp: "72.5rem",
+        mdpp: "59.375rem", // 950px
+        lgp: "72.5rem", //1160px
         xxl: "82.5rem",
+        high: { raw: "(max-aspect-ratio: 1/1)" },
       },
     },
   },

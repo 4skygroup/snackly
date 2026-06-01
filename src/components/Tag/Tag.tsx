@@ -1,6 +1,6 @@
 export default function Tag({
   content,
-  style = "text-white text-t3 px-7.5 py-6.25 rounded-full bg-snackly-purple",
+  style = "text-white max-mdpp:text-t5 mdpp:text-t3 mdpp:px-7.5 mdpp:py-6.25 max-mdpp:px-5 max-mdpp:py-4 rounded-full max-sm:w-fit bg-snackly-purple",
   isOpaque = false,
   onClick,
 }: {

@@ -22,13 +22,13 @@ export default function Home() {
     <div className="text-white">
       <Navbar />
       <section className="">
-        <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex justify-center items-center gap-x-20 py-25">
+        <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 py-25">
           {/* Left */}
-          <div className="max-w-183.75 ">
-            <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22">
+          <div className="max-w-183.75 flex flex-col gap-y-7.5 justify-center items-center">
+            <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22 max-sm:text-center">
               Snack Content Agency
             </p>
-            <p className="text-t1 max-w-177 leading-9.5 pb-7.5">
+            <p className="mdpp:text-t1 max-w-177 leading-9.5 pb-7.5 max-mdpp:text-t3 max-sm:text-center">
               Des créations vidéo pensées pour performer sur tous vos leviers
               digitaux.
             </p>
@@ -41,10 +41,12 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black flex flex-col items-center py-17.5 px-5 gap-y-10">
-        <p className="text-t1">Le Snack Content à votre portée</p>
+        <p className="mdpp:text-t1 max-mdpp:text-t3">
+          Le Snack Content à votre portée
+        </p>
         <div className="flex flex-col gap-7.5">
           {/* Top */}
-          <nav className="flex justify-between w-full">
+          <nav className="flex justify-between w-full max-sm:flex-col max-sm:gap-y-2.5 items-center">
             <Tag
               content="Créativité dans l’exécution"
               isOpaque={!tagsClicked[0]}
@@ -63,7 +65,9 @@ export default function Home() {
           </nav>
           {/* Bottom */}
           <div className="max-w-278.75 px-2.5">
-            <p className={`${tagsClicked[0] ? "block" : "hidden"} text-t3`}>
+            <p
+              className={`${tagsClicked[0] ? "block" : "hidden"} text-t3 max-sm:text-center`}
+            >
               Nos créations sont pensées pour générer de la performance sur
               l’ensemble du funnel média, de la notoriété à la conversion.
               <br />
@@ -71,13 +75,17 @@ export default function Home() {
               transforment en vidéos impactantes, alignées avec les stratégies
               médias de nos clients.
             </p>
-            <p className={`${tagsClicked[1] ? "block" : "hidden"} text-t3`}>
+            <p
+              className={`${tagsClicked[1] ? "block" : "hidden"} text-t3 max-sm:text-center`}
+            >
               Chaque jour, un internaute est exposé à plus de 15 000
               sollicitations commerciales. Pour éviter la lassitude liée à la
               répétition de contenus similaires, les algorithmes de diffusion
               privilégient des contenus renouvelés et régulièrement mis à jour.
             </p>
-            <p className={`${tagsClicked[2] ? "block" : "hidden"} text-t3`}>
+            <p
+              className={`${tagsClicked[2] ? "block" : "hidden"} text-t3 max-sm:text-center`}
+            >
               Chaque canal de diffusion répond à ses propres codes : formats
               publicitaires, durées, usages des audiences. Une création
               performante est avant tout une création pensée pour le média qui
@@ -87,45 +95,45 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
-        <div className="group hover:animate-grow bg-white w-162.5 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 h-125 px-17.5">
-          <span className="group-hover:hidden text-h1 text-snackly-purple font-bold ">
+        <div className="group hover:animate-grow bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5">
+          <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
             ACTING
           </span>
-          <span className="group-hover:hidden text-t4 text-snackly-purple/50 font-bold">
+          <span className="group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
             Survolez-moi
           </span>
-          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3 font-bold">
+          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
-          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3">
+          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3">
             Nous concevons et produisons des contenus personnalisés, alignés sur
             vos objectifs de visibilité et de performance. Nos équipes
             organisent des tournages adaptés à votre projet
           </p>
           <Link to="/action">
-            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 text-t3 font-bold">
+            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
               En savoir plus{" "}
               <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
             </span>
           </Link>
         </div>
-        <div className="group hover:animate-grow bg-white w-162.5 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 h-125 px-17.5 self-end">
-          <span className="group-hover:hidden text-h1 text-snackly-blue font-bold">
+        <div className="group hover:animate-grow bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end">
+          <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
             MOTION
           </span>
-          <span className="group-hover:hidden text-t4 text-snackly-blue/50 font-bold">
+          <span className="group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold">
             Survolez-moi
           </span>
-          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3 font-bold">
+          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
           </p>
-          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3">
+          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3">
             Nous concevons et produisons des contenus personnalisés, alignés sur
             vos objectifs de visibilité et de performance. Nos équipes
             organisent des tournages adaptés à votre projet
           </p>
           <Link to="/motion">
-            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 text-t3 font-bold">
+            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
               En savoir plus{" "}
               <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" />
             </span>
@@ -133,12 +141,15 @@ export default function Home() {
         </div>
       </section>
       {/* Icones des partenaires */}
-      <section className="bg-black flex items-end gap-x-12.5 px-10 py-15 justify-center">
-        <Partner src={Meta} alt="Meta" label="Business Partner" />
-        <Partner src={Tiktok} alt="Tiktok" label="Marketing Partner" />
-        <Partner src={Google} alt="Google" label="Google Partner" />
-        <Partner src={Youtube} alt="Youtube" label="Youtube" />
-        <Partner src={SnapChat} alt="SnapChat" label="SnapChat" />
+      <section className="bg-black flex flex-col px-10 py-15 justify-center items-center gap-y-12">
+        <h2 className="md:text-t2 max-md:text-t3">Nos partenaires</h2>
+        <div className="flex max-sm:flex-col items-center gap-12.5 justify-center">
+          <Partner src={Meta} alt="Meta" label="Business Partner" />
+          <Partner src={Tiktok} alt="Tiktok" label="Marketing Partner" />
+          <Partner src={Google} alt="Google" label="Google Partner" />
+          <Partner src={Youtube} alt="Youtube" label="Youtube" />
+          <Partner src={SnapChat} alt="SnapChat" label="SnapChat" />
+        </div>
       </section>
       <FAQ />
       <Footer policy={policy} services={services} />

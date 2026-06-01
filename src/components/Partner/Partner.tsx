@@ -10,7 +10,7 @@ export default function Partner({
   return (
     <div className="flex flex-col justify-center items-center gap-y-5">
       <img src={src} alt={alt} />
-      <span className="text-t3">{label}</span>
+      <span className="mdpp:text-t3 max-mdpp:text-t4 text-center">{label}</span>
     </div>
   );
 }

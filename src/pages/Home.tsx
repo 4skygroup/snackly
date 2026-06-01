@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
-        <div className="group hover:animate-grow bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5">
+        <div className="group hover:w-full transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5">
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
             ACTING
           </span>
@@ -117,7 +117,7 @@ export default function Home() {
             </span>
           </Link>
         </div>
-        <div className="group hover:animate-grow bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end">
+        <div className="group hover:w-full transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end">
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
             MOTION
           </span>

@@ -38,11 +38,16 @@ export default function Acting() {
     <div>
       <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
-        <section className="flex justify-between">
+        <section className="flex justify-center lgp:gap-10 max-mdpp:flex-col max-mdpp:gap-y-25">
           <div className="flex flex-col">
-            <p className="text-h5 uppercase">Démarrez votre projet</p>
-            <span className="text-h2 font-bold uppercase">Acting</span>
+            <p className="lgp:text-h5 uppercase max-lgp:text-h6">
+              Démarrez votre projet
+            </p>
+            <span className="lgp:text-h2 font-bold uppercase max-lgp:text-h3">
+              Acting
+            </span>
           </div>
+          {/* <div className="relative"> */}
           <div className="animate-rotation w-125 h-98.75 relative flex items-center justify-center">
             <span className="animate-rotationback text-t3 uppercase w-36.25 h-36.25 bg-white/90 border-5 text-snackly-purple flex items-center justify-center rounded-full border-white border-solid">
               Acting
@@ -64,6 +69,7 @@ export default function Acting() {
               Tournage
             </span>
           </div>
+          {/* </div> */}
         </section>
         <section className="max-w-300 bg-white/18 mx-auto p-20">
           <div className="flex gap-x-25">
@@ -150,7 +156,7 @@ export default function Acting() {
             </div>
           </div>
         </section>
-        <section className="flex gap-x-50">
+        <section className="flex max-mdpp:flex-col max-mdpp:gap-y-10 mdpp:max-lgp:gap-x-20 lgp:max-xl:gap-x-35 xl:gap-x-50">
           <Offer imgSrc="/images/Snack-Content-1.jpg" />
           <Offer
             isPopular={true}

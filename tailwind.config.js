@@ -116,7 +116,11 @@ module.exports = {
         b4: "0.1875rem",
       },
       screens: {
+        xs: "28.125rem",
         mdp: "50rem",
+        mdpp: "59.375rem",
+        lgp: "72.5rem",
+        xxl: "82.5rem",
       },
     },
   },

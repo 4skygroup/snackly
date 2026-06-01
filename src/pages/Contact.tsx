@@ -12,49 +12,53 @@ export default function Contact() {
   return (
     <div className="bg-snackly-purple text-white flex flex-col items-center ">
       <Navbar />
-      <div className="flex flex-col items-center gap-y-17.5">
+      <div className="flex flex-col items-center gap-y-17.5 max-mdpp:gap-y-0 max-mdpp:pt-10">
         <span className="text-h6">Contact us</span>
-        <div className="flex gap-12.5 justify-between items-center py-12.5 w-fit max-md:lg:gap-x-27.5 lg:gap-x-40">
-          <Logo format="wide" />
-          <form className="text-white flex flex-col gap-6.25 w-fit py-7.5">
-            <span className="text-t1">Let's start your strategy !</span>
-            <div className="flex flex-wrap gap-5 w-155">
+        <div className="flex justify-between items-center py-12.5 w-fit lgp:max-xxl:gap-12 xxl:gap-x-40">
+          <div className="max-mdpp:hidden">
+            <Logo format="wide" />
+          </div>
+          <form className="text-white flex flex-col gap-6.25 w-fit py-7.5 max-mdpp:py-0">
+            <span className="text-t2 max-mdpp:text-center">
+              Let's start your strategy !
+            </span>
+            <div className="flex flex-wrap gap-5 mdpp:w-155 mdpp:max-lgp:w-105 max-xs:w-75 xs:max-mdpp:w-105">
               <Input
                 label="Nom"
                 placeholder="Dupond"
-                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white"
+                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white xs:w-75 xs:max-lgp:w-50"
                 labelStyle="text-t4"
               />
               <Input
                 label="Prénom"
                 placeholder="Arnold"
-                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white"
+                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white xs:w-75 xs:max-lgp:w-50"
                 labelStyle="text-t4"
               />
               <Input
                 label="Adresse email"
                 placeholder="Arnolddupond@gmail.com"
-                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white"
+                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white xs:w-75 xs:max-lgp:w-50"
                 labelStyle="text-t4"
                 type="email"
               />
               <Input
                 label="Nom de l'entreprise"
                 placeholder="SNCF Connect"
-                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white"
+                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white xs:w-75 xs:max-lgp:w-50"
                 labelStyle="text-t4"
               />
               <Input
                 label="Numéro de téléphone"
                 placeholder="06 12 34 56 78"
-                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white"
+                style="border border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none text-white xs:w-75 xs:max-lgp:w-50"
                 labelStyle="text-t4"
               />
               <Select
                 options={options}
                 label="Sujet"
                 labelStyle="text-t4"
-                style="border text-white border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none"
+                style="border text-white border-white border-solid py-1.5 px-3.25 placeholder:text-placeholder-color rounded-r4 placeholder:text-t4 w-75 outline-none xs:w-75 xs:max-lgp:w-50"
               />
               <Textarea
                 label="Votre message"

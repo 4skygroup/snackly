@@ -19,7 +19,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <nav className="bg-snackly-purple flex items-center justify-between px-8 py-4">
+    <nav className="bg-snackly-purple flex items-center justify-between px-8 py-4 w-full">
       {/* Logo */}
       <NavLink to="/" className="shrink-0">
         <Logo />

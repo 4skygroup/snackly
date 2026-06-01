@@ -19,13 +19,13 @@ import FAQ from "../components/FAQ/FAQ";
 export default function Home() {
   const [tagsClicked, setTagsClicked] = useState([true, false, false]);
   return (
-    <div className="text-white bg-gray-white">
+    <div className="text-white">
       <Navbar />
-      <section>
-        <div className="bg-linear-to-b from-snackly-purple to-snackly-blue flex justify-center items-center gap-x-20 py-25">
+      <section className="">
+        <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex justify-center items-center gap-x-20 py-25">
           {/* Left */}
           <div className="max-w-183.75 ">
-            <p className="uppercase text-h2 flex flex-col leading-28.75 pb-2.5">
+            <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22">
               Snack Content Agency
             </p>
             <p className="text-t1 max-w-177 leading-9.5 pb-7.5">

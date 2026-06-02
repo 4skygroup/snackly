@@ -1,11 +1,12 @@
 import Offer from "../components/Cards/Offer";
 import { experts } from "../utils/constants/experts";
 import Expert from "../components/Cards/Expert";
-import Footer from "../components/Footer/Footer";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
 import { useState } from "react";
+import Chevron from "/icons/chevron.svg";
 import Navbar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 export default function Acting() {
   const [imgOrders, setImgOrders] = useState([1, 2, 3]);
@@ -31,12 +32,12 @@ export default function Acting() {
     <div>
       <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
-        <section className="flex justify-center lgp:gap-10 max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">
-          <div className="flex flex-col">
-            <p className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center">
+        <section className="flex justify-center max-xsp:items-center lgp:gap-10 max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">
+          <div className="flex flex-col max-xsp:w-fit max-xsp:justify-center max-xsp:items-center">
+            <p className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
               Démarrez votre projet
             </p>
-            <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center">
+            <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center w-fit">
               Acting
             </span>
           </div>
@@ -152,9 +153,15 @@ export default function Acting() {
               </div>
               {/* Bottom */}
               <div className="flex gap-x-2.5">
-                <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
-                <div className="w-2.5 h-2.5 bg-white/30 rounded-full"></div>
-                <div className="w-2.5 h-2.5 bg-white/30 rounded-full"></div>
+                <div
+                  className={`w-2.5 h-2.5 bg-white rounded-full ${getOrder(1)?.split(" ")[0]}`}
+                ></div>
+                <div
+                  className={`w-2.5 h-2.5 bg-white/30 rounded-full ${getOrder(2)?.split(" ")[0]}`}
+                ></div>
+                <div
+                  className={`w-2.5 h-2.5 bg-white/30 rounded-full ${getOrder(3)?.split(" ")[0]}`}
+                ></div>
               </div>
             </div>
           </div>
@@ -173,15 +180,27 @@ export default function Acting() {
         <p className="lg:text-h4 text-snackly-blue sm:max-lg:text-h5 max-sm:text-h6">
           Nos experts
         </p>
-        <div className="flex overflow-x-scroll gap-12.5 max-w-310 py-1.25 no-scrollbar max-xl:w-full min-w-75">
-          {experts.map((expert, index) => (
-            <Expert
-              key={index}
-              name={expert.name}
-              description={expert.description}
-              link={expert.link}
+        <div className="relative overflow-x-hidden w-full max-w-310">
+          <div className="flex overflow-x-scroll gap-12.5 max-w-310 py-1.25 no-scrollbar max-xl:w-full min-w-75">
+            {experts.map((expert, index) => (
+              <Expert
+                key={index}
+                name={expert.name}
+                description={expert.description}
+                link={expert.link}
+              />
+            ))}
+            {/* <img
+            src={CircledArrow}
+            alt=""
+            className="w-30 absolute right-7.5 opacity-60"
+          /> */}
+            <img
+              src={Chevron}
+              alt=""
+              className="w-15 absolute right-7.5 opacity-30 -rotate-90 top-1/2 -translate-y-1/2 z-10"
             />
-          ))}
+          </div>
         </div>
       </section>
       <Footer policy={policy} services={services} />

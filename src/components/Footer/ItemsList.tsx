@@ -4,7 +4,7 @@ export default function ItemsList({ items }: { items: LinkContent[] }) {
   return (
     <>
       {items.map((link, index) => (
-        <li key={index} className="text-snackly-gray text-t3">
+        <li key={index} className="text-snackly-gray text-t4">
           <a href={link.link}>{link.name}</a>
         </li>
       ))}

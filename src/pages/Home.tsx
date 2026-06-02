@@ -3,7 +3,6 @@
 // import Offer from "../components/Cards/Offer";
 import { Link } from "react-router";
 import Button from "../components/Button/Button";
-import Footer from "../components/Footer/Footer";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
 import Tag from "../components/Tag/Tag";
@@ -16,6 +15,7 @@ import Google from "/images/Google.png";
 import Navbar from "../components/NavBar/NavBar";
 import { useState } from "react";
 import FAQ from "../components/FAQ/FAQ";
+import Footer from "../components/Footer/Footer";
 export default function Home() {
   const [tagsClicked, setTagsClicked] = useState([true, false, false]);
   return (
@@ -99,8 +99,11 @@ export default function Home() {
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
             ACTING
           </span>
-          <span className="group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+          <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
             Survolez-moi
+          </span>
+          <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+            Cliquez
           </span>
           <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
@@ -121,8 +124,11 @@ export default function Home() {
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
             MOTION
           </span>
-          <span className="group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold">
+          <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold">
             Survolez-moi
+          </span>
+          <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+            Cliquez
           </span>
           <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média

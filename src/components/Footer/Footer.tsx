@@ -20,25 +20,25 @@ export default function Footer({
         <Logo />
         <div className="flex md:max-lg:gap-x-5 max-mdp:flex-col max-mdp:gap-y-15 lg:gap-x-25 py-12.5">
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">
-            <h2 className="text-t3 font-bold">Politique</h2>
+            <h2 className="text-t4 font-bold">Politique</h2>
             <ul className="flex flex-col gap-5">
               <ItemsList items={policy} />
             </ul>
           </div>
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">
-            <h2 className="text-t3 font-bold">Services</h2>
+            <h2 className="text-t4 font-bold">Services</h2>
             <ul className="flex flex-col gap-5">
               <ItemsList items={services} />
             </ul>
           </div>
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">
-            <h2 className="text-t3 font-bold">Nos entites</h2>
+            <h2 className="text-t4 font-bold">Nos entites</h2>
             <ul className="flex flex-col gap-5">
               <ItemsList items={entities} />
             </ul>
           </div>
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">
-            <h2 className="text-t3 font-bold flex flex-col items-center">
+            <h2 className="text-t4 font-bold flex flex-col items-center">
               Nos reseaux
             </h2>
             <ul className="flex gap-7.5">
@@ -46,9 +46,17 @@ export default function Footer({
             </ul>
           </div>
         </div>
-        <p className="text-t3 text-center p-5">
-           © 2026 {entityName} - Une entité Play To Sky Group
-        </p>
+        {/* COPYRIGHT */}
+        <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
+          <span>created by</span>
+          <img src="/images/visuance.png" alt="Visuance logo" className="h-4" />
+          <span>&</span>
+          <img
+            src="/images/play-to-sky.png"
+            alt="Play To Sky logo"
+            className="h-6"
+          />
+        </div>
       </div>
     </footer>
   );

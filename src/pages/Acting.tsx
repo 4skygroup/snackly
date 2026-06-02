@@ -4,7 +4,7 @@ import Expert from "../components/Cards/Expert";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
 import { useState } from "react";
-import Chevron from "/icons/chevron.svg";
+import DoubleArrow from "/icons/double-arrow.svg";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 
@@ -196,9 +196,9 @@ export default function Acting() {
             className="w-30 absolute right-7.5 opacity-60"
           /> */}
             <img
-              src={Chevron}
+              src={DoubleArrow}
               alt=""
-              className="w-15 absolute right-7.5 opacity-30 -rotate-90 top-1/2 -translate-y-1/2 z-10"
+              className="w-10 absolute right-7.5 animate-opacify top-1/2 -translate-y-1/2 z-10"
             />
           </div>
         </div>

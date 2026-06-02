@@ -43,7 +43,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-snackly-purple flex items-center justify-between px-8 py-4">
+    <nav className="w-full bg-snackly-purple flex items-center justify-between px-8 py-4">
       {/* Logo */}
       <NavLink to="/" className="shrink-0">
         <Logo />

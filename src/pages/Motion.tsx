@@ -38,7 +38,7 @@ export default function Motion() {
               Démarrez votre projet
             </p>
             <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center w-fit">
-              Acting
+              Motion
             </span>
           </div>
           {/* <div className="relative"> */}

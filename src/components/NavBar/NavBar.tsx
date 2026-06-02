@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { label: "Home", path: "/" },
   {
     label: "Offers",
-    path: "/",
+    path: "",
     subItems: [
       { label: "Action", path: "/action" },
       { label: "Motion", path: "/motion" },
@@ -53,7 +53,7 @@ export default function Navbar() {
       <ul className="hidden md:flex items-center gap-10">
         {navItems.map(({ label, path, external, subItems }) => (
           <li
-            key={path}
+            key={label}
             className="relative"
             onMouseEnter={subItems ? handleMouseEnter : undefined}
             onMouseLeave={subItems ? handleMouseLeave : undefined}

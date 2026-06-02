@@ -18,6 +18,8 @@ import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
 export default function Home() {
   const [tagsClicked, setTagsClicked] = useState([true, false, false]);
+  const [actionClicked, setActionClicked] = useState(false);
+  const [motionClicked, setMotionClicked] = useState(false);
   return (
     <div className="text-white">
       <Navbar />
@@ -95,7 +97,10 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
-        <div className="group hover:w-full transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5">
+        <div
+          className={`group hover:w-full ${actionClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5`}
+          onClick={() => setActionClicked(!actionClicked)}
+        >
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
             ACTING
           </span>
@@ -103,7 +108,7 @@ export default function Home() {
             Survolez-moi
           </span>
           <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
-            Cliquez
+            Cliquez-moi
           </span>
           <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média
@@ -120,7 +125,10 @@ export default function Home() {
             </span>
           </Link>
         </div>
-        <div className="group hover:w-full transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end">
+        <div
+          className={`group hover:w-full ${actionClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end`}
+          onClick={() => setMotionClicked(!motionClicked)}
+        >
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
             MOTION
           </span>

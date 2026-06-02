@@ -39,7 +39,7 @@ module.exports = {
         grow: "grow 0.5s ease-in-out forwards",
         rotation: "rotation 10s linear infinite",
         rotationback: "rotationback 10s linear infinite",
-        opacify: "opacify 0.5s ease-in-out infinite",
+        opacify: "opacify 0.75s ease-in-out infinite",
       },
       colors: {
         // Pulse X Colors

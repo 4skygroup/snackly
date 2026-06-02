@@ -24,7 +24,7 @@ export default function Home() {
       <section className="">
         <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 py-25">
           {/* Left */}
-          <div className="max-w-183.75 flex flex-col gap-y-7.5 justify-center items-center">
+          <div className="max-w-183.75 flex flex-col gap-y-7.5 justify-center max-sm:items-center">
             <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22 max-sm:text-center">
               Snack Content Agency
             </p>

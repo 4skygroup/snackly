@@ -9,7 +9,7 @@ export default function Footer({
   services,
   entities = entityList,
   media = mediaList,
-  entityName = "Snackly",
+  //   entityName = "Snackly",
   color = "bg-snackly-purple",
 }: FooterProp) {
   return (

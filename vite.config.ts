@@ -9,7 +9,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
     compression({
-      algorithm: 'gzip',
       exclude: [/\.(png|jpe?g|gif|webp|avif|ico|woff2?)$/],
     }),
   ],

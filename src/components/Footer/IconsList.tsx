@@ -13,6 +13,7 @@ export default function IconsList({ icons }: { icons: LinkContent[] }) {
                   ? icon.name.split("/").reverse()[0]
                   : icon.name
               }
+              loading="lazy"
             />
           </a>
         </li>

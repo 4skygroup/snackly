@@ -79,29 +79,29 @@ export default function Acting() {
               {/* Bottom */}
               <div className="flex flex-col gap-y-6">
                 <div className="flex gap-x-10">
-                  <img src="/icons/Script.svg" alt="" width="30px" />
+                  <img src="/icons/Script.svg" alt="" width="30px" loading="lazy" />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Accroches et messages percutants
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Subtitle.svg" alt="" width="30px" />
+                  <img src="/icons/Subtitle.svg" alt="" width="30px" loading="lazy" />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Sous-titrage et audio-description
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Ratio.svg" alt="" width="30px" />
+                  <img src="/icons/Ratio.svg" alt="" width="30px" loading="lazy" />
                   <p className="sm:text-t3 max-sm:text-t5">Formats adaptés</p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Clap.svg" alt="" width="30px" />
+                  <img src="/icons/Clap.svg" alt="" width="30px" loading="lazy" />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Réalisation et montages impactants
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Design.svg" alt="" width="30px" />
+                  <img src="/icons/Design.svg" alt="" width="30px" loading="lazy" />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Direction artistique fidèle
                   </p>
@@ -117,6 +117,7 @@ export default function Acting() {
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
                   className="w-12.5 h-12.5  cursor-pointer"
+                  loading="lazy"
                   onClick={() => handleLeftButtonClick()}
                 />
                 <div className="flex items-center mx-5">
@@ -132,22 +133,26 @@ export default function Acting() {
                     src="/images/Pub1.png"
                     alt="pub 1"
                     className={`${getOrder(1)}`}
+                    loading="lazy"
                   />
                   <img
                     src="/images/Pub2.png"
                     alt="pub 2"
                     className={`${getOrder(2)}`}
+                    loading="lazy"
                   />
                   <img
                     src="/images/Pub3.png"
                     alt="pub 3"
                     className={`${getOrder(3)}`}
+                    loading="lazy"
                   />
                 </div>
                 <img
                   src="/icons/video-arrow.svg"
                   alt="video-arrow"
                   className={`rotate-180 w-12.5 h-12.5  cursor-pointer`}
+                  loading="lazy"
                   onClick={() => handleRightButtonClick()}
                 />
               </div>
@@ -199,6 +204,7 @@ export default function Acting() {
               src={DoubleArrow}
               alt=""
               className="w-10 absolute right-7.5 animate-opacify top-1/2 -translate-y-1/2 z-10"
+              loading="lazy"
             />
           </div>
         </div>

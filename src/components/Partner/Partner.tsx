@@ -9,7 +9,7 @@ export default function Partner({
 }) {
   return (
     <div className="flex flex-col justify-center items-center gap-y-5">
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} loading="lazy" />
       <span className="mdpp:text-t3 max-mdpp:text-t4 text-center">{label}</span>
     </div>
   );

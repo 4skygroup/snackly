@@ -1,10 +1,124 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackly</title>
+
+    <!-- Favicon & touch icon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo/Snackly.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#6B21A8" />
+
+    <!-- Primary SEO -->
+    <title>Snackly — Agence Snack Content | Vidéos Publicitaires Performantes</title>
+    <meta name="description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux : Acting, Motion Design, formats publicitaires adaptés à chaque média." />
+    <meta name="keywords" content="snack content, agence vidéo, motion design, publicité digitale, contenu vidéo, acting, production vidéo, vidéo publicitaire" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Snackly" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://snackly.fr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Snackly" />
+    <meta property="og:title" content="Snackly — Agence Snack Content | Vidéos Publicitaires Performantes" />
+    <meta property="og:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
+    <meta property="og:url" content="https://snackly.fr/" />
+    <meta property="og:image" content="https://snackly.fr/logo/Snackly.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Snackly — Agence Snack Content" />
+    <meta name="twitter:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
+    <meta name="twitter:image" content="https://snackly.fr/logo/Snackly.png" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://snackly.fr/#organization",
+          "name": "Snackly",
+          "url": "https://snackly.fr",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://snackly.fr/logo/Snackly.png"
+          },
+          "description": "Agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux.",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://snackly.fr/#website",
+          "url": "https://snackly.fr",
+          "name": "Snackly",
+          "inLanguage": "fr-FR",
+          "publisher": {
+            "@id": "https://snackly.fr/#organization"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://snackly.fr/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://snackly.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Acting",
+              "item": "https://snackly.fr/action"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Motion",
+              "item": "https://snackly.fr/Motion"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contact",
+              "item": "https://snackly.fr/contact"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://snackly.fr/#acting",
+          "name": "Acting",
+          "url": "https://snackly.fr/action",
+          "description": "Des tournages de qualité pour votre snack content personnalisé. Accroches percutantes, sous-titrage, formats adaptés.",
+          "provider": {
+            "@id": "https://snackly.fr/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://snackly.fr/#motion",
+          "name": "Motion Design",
+          "url": "https://snackly.fr/Motion",
+          "description": "Des créations motion design percutantes pour votre stratégie digitale.",
+          "provider": {
+            "@id": "https://snackly.fr/#organization"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

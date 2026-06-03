@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://snackly.fr/</loc>
+    <image:image>
+      <image:loc>https://snackly.fr/logo/Snackly.png</image:loc>
+      <image:title>Snackly Logo</image:title>
+      <image:caption>Logo de Snackly, agence Snack Content</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snackly%20Video.png</image:loc>
+      <image:title>Snackly — Agence Snack Content</image:title>
+      <image:caption>Des créations vidéo pensées pour performer sur tous vos leviers digitaux</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Meta.png</image:loc>
+      <image:title>Meta Business Partner</image:title>
+      <image:caption>Snackly est partenaire officiel Meta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Tiktok.png</image:loc>
+      <image:title>TikTok Marketing Partner</image:title>
+      <image:caption>Snackly est partenaire marketing TikTok</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Google.png</image:loc>
+      <image:title>Google Partner</image:title>
+      <image:caption>Snackly est Google Partner</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Youtube.png</image:loc>
+      <image:title>YouTube Partner</image:title>
+      <image:caption>Snackly est partenaire YouTube</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/SnapChat.png</image:loc>
+      <image:title>Snapchat Partner</image:title>
+      <image:caption>Snackly est partenaire Snapchat</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://snackly.fr/action</loc>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub1.png</image:loc>
+      <image:title>Création publicitaire Acting — exemple 1</image:title>
+      <image:caption>Exemple de production Acting réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub2.png</image:loc>
+      <image:title>Création publicitaire Acting — exemple 2</image:title>
+      <image:caption>Exemple de production Acting réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub3.png</image:loc>
+      <image:title>Création publicitaire Acting — exemple 3</image:title>
+      <image:caption>Exemple de production Acting réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-1.jpg</image:loc>
+      <image:title>Offre Snack Content Acting</image:title>
+      <image:caption>Offre Snack Content Acting par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-2.jpg</image:loc>
+      <image:title>Offre Gold Snack Content Acting</image:title>
+      <image:caption>Offre Gold Snack Content Acting par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-3.jpg</image:loc>
+      <image:title>Offre Premium Snack Content Acting</image:title>
+      <image:caption>Offre Premium Snack Content Acting par Snackly</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://snackly.fr/Motion</loc>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub1.png</image:loc>
+      <image:title>Création Motion Design — exemple 1</image:title>
+      <image:caption>Exemple de production Motion Design réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub2.png</image:loc>
+      <image:title>Création Motion Design — exemple 2</image:title>
+      <image:caption>Exemple de production Motion Design réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Pub3.png</image:loc>
+      <image:title>Création Motion Design — exemple 3</image:title>
+      <image:caption>Exemple de production Motion Design réalisée par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-1.jpg</image:loc>
+      <image:title>Offre Snack Content Motion</image:title>
+      <image:caption>Offre Snack Content Motion par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-2.jpg</image:loc>
+      <image:title>Offre Gold Snack Content Motion</image:title>
+      <image:caption>Offre Gold Snack Content Motion par Snackly</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://snackly.fr/images/Snack-Content-3.jpg</image:loc>
+      <image:title>Offre Premium Snack Content Motion</image:title>
+      <image:caption>Offre Premium Snack Content Motion par Snackly</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

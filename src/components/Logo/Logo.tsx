@@ -24,6 +24,7 @@ export default function Logo({
           ? "object-center object-cover w-52.5 h-18.75"
           : className
       }
+      loading="lazy"
     />
   );
 }

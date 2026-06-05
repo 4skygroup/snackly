@@ -34,37 +34,37 @@ export default function Motion() {
       <Helmet>
         <title>Motion Design — Animations Digitales Percutantes | Snackly</title>
         <meta name="description" content="Créations motion design sur-mesure chez Snackly : animations percutantes adaptées à tous les formats digitaux pour booster votre stratégie de contenu vidéo." />
-        <link rel="canonical" href="https://snackly.fr/Motion" />
-        <meta property="og:url" content="https://snackly.fr/Motion" />
+        <link rel="canonical" href="https://snacklyagency.com/Motion" />
+        <meta property="og:url" content="https://snacklyagency.com/Motion" />
         <meta property="og:title" content="Motion Design — Animations Digitales Percutantes | Snackly" />
         <meta property="og:description" content="Créations motion design percutantes adaptées à tous les formats digitaux pour booster votre stratégie de contenu vidéo." />
-        <meta property="og:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <meta property="og:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
         <meta name="twitter:title" content="Motion Design — Animations Digitales | Snackly" />
         <meta name="twitter:description" content="Créations motion design percutantes adaptées à tous les formats digitaux." />
-        <meta name="twitter:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <meta name="twitter:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "@id": "https://snackly.fr/Motion#webpage",
-          "url": "https://snackly.fr/Motion",
+          "@id": "https://snacklyagency.com/Motion#webpage",
+          "url": "https://snacklyagency.com/Motion",
           "name": "Motion Design — Animations Digitales Percutantes | Snackly",
           "description": "Créations motion design sur-mesure : animations percutantes adaptées à tous les formats digitaux.",
           "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snackly.fr/#website" },
+          "isPartOf": { "@id": "https://snacklyagency.com/#website" },
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snackly.fr/" },
-              { "@type": "ListItem", "position": 2, "name": "Motion Design", "item": "https://snackly.fr/Motion" }
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snacklyagency.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Motion Design", "item": "https://snacklyagency.com/Motion" }
             ]
           },
           "mainEntity": {
             "@type": "Service",
-            "@id": "https://snackly.fr/#motion",
+            "@id": "https://snacklyagency.com/#motion",
             "name": "Motion Design",
-            "url": "https://snackly.fr/Motion",
+            "url": "https://snacklyagency.com/Motion",
             "description": "Des créations motion design percutantes pour votre stratégie digitale.",
-            "provider": { "@id": "https://snackly.fr/#organization" }
+            "provider": { "@id": "https://snacklyagency.com/#organization" }
           }
         })}</script>
       </Helmet>

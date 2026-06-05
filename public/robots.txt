@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://snackly.fr/sitemap.xml
-Sitemap: https://snackly.fr/sitemap-images.xml
+Sitemap: https://snacklyagency.com/sitemap.xml
+Sitemap: https://snacklyagency.com/sitemap-images.xml

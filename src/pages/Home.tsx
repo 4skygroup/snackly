@@ -26,23 +26,23 @@ export default function Home() {
       <Helmet>
         <title>Snackly — Agence Snack Content | Vidéos Publicitaires Performantes</title>
         <meta name="description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux : Acting, Motion Design, formats publicitaires adaptés à chaque média." />
-        <link rel="canonical" href="https://snackly.fr/" />
-        <meta property="og:url" content="https://snackly.fr/" />
+        <link rel="canonical" href="https://snacklyagency.com/" />
+        <meta property="og:url" content="https://snacklyagency.com/" />
         <meta property="og:title" content="Snackly — Agence Snack Content | Vidéos Publicitaires Performantes" />
         <meta property="og:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
-        <meta property="og:image" content="https://snackly.fr/images/Snackly%20Video.png" />
+        <meta property="og:image" content="https://snacklyagency.com/images/Snackly%20Video.png" />
         <meta name="twitter:title" content="Snackly — Agence Snack Content" />
         <meta name="twitter:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
-        <meta name="twitter:image" content="https://snackly.fr/images/Snackly%20Video.png" />
+        <meta name="twitter:image" content="https://snacklyagency.com/images/Snackly%20Video.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "@id": "https://snackly.fr/#webpage",
-          "url": "https://snackly.fr/",
+          "@id": "https://snacklyagency.com/#webpage",
+          "url": "https://snacklyagency.com/",
           "name": "Snackly — Agence Snack Content",
           "description": "Agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux.",
           "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snackly.fr/#website" }
+          "isPartOf": { "@id": "https://snacklyagency.com/#website" }
         })}</script>
       </Helmet>
       <Navbar />

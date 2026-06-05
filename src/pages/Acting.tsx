@@ -34,37 +34,37 @@ export default function Acting() {
       <Helmet>
         <title>Acting — Production Vidéo Snack Content | Snackly</title>
         <meta name="description" content="Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés. Maximisez votre impact média avec nos experts." />
-        <link rel="canonical" href="https://snackly.fr/action" />
-        <meta property="og:url" content="https://snackly.fr/action" />
+        <link rel="canonical" href="https://snacklyagency.com/action" />
+        <meta property="og:url" content="https://snacklyagency.com/action" />
         <meta property="og:title" content="Acting — Production Vidéo Snack Content | Snackly" />
         <meta property="og:description" content="Tournages de qualité, accroches percutantes, sous-titrage et formats adaptés pour maximiser votre impact média." />
-        <meta property="og:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <meta property="og:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
         <meta name="twitter:title" content="Acting — Production Vidéo | Snackly" />
         <meta name="twitter:description" content="Tournages de qualité, accroches percutantes, formats adaptés pour maximiser votre impact média." />
-        <meta name="twitter:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <meta name="twitter:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "@id": "https://snackly.fr/action#webpage",
-          "url": "https://snackly.fr/action",
+          "@id": "https://snacklyagency.com/action#webpage",
+          "url": "https://snacklyagency.com/action",
           "name": "Acting — Production Vidéo Snack Content | Snackly",
           "description": "Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés.",
           "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snackly.fr/#website" },
+          "isPartOf": { "@id": "https://snacklyagency.com/#website" },
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snackly.fr/" },
-              { "@type": "ListItem", "position": 2, "name": "Acting", "item": "https://snackly.fr/action" }
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snacklyagency.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Acting", "item": "https://snacklyagency.com/action" }
             ]
           },
           "mainEntity": {
             "@type": "Service",
-            "@id": "https://snackly.fr/#acting",
+            "@id": "https://snacklyagency.com/#acting",
             "name": "Acting",
-            "url": "https://snackly.fr/action",
+            "url": "https://snacklyagency.com/action",
             "description": "Des tournages de qualité pour votre snack content personnalisé. Accroches percutantes, sous-titrage, formats adaptés.",
-            "provider": { "@id": "https://snackly.fr/#organization" }
+            "provider": { "@id": "https://snacklyagency.com/#organization" }
           }
         })}</script>
       </Helmet>

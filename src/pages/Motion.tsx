@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Expert from "../components/Cards/Expert";
 import Offer from "../components/Cards/Offer";
 import Footer from "../components/Footer/Footer";
@@ -30,6 +31,43 @@ export default function Motion() {
   };
   return (
     <div>
+      <Helmet>
+        <title>Motion Design — Animations Digitales Percutantes | Snackly</title>
+        <meta name="description" content="Créations motion design sur-mesure chez Snackly : animations percutantes adaptées à tous les formats digitaux pour booster votre stratégie de contenu vidéo." />
+        <link rel="canonical" href="https://snackly.fr/Motion" />
+        <meta property="og:url" content="https://snackly.fr/Motion" />
+        <meta property="og:title" content="Motion Design — Animations Digitales Percutantes | Snackly" />
+        <meta property="og:description" content="Créations motion design percutantes adaptées à tous les formats digitaux pour booster votre stratégie de contenu vidéo." />
+        <meta property="og:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <meta name="twitter:title" content="Motion Design — Animations Digitales | Snackly" />
+        <meta name="twitter:description" content="Créations motion design percutantes adaptées à tous les formats digitaux." />
+        <meta name="twitter:image" content="https://snackly.fr/images/Snack-Content-2.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://snackly.fr/Motion#webpage",
+          "url": "https://snackly.fr/Motion",
+          "name": "Motion Design — Animations Digitales Percutantes | Snackly",
+          "description": "Créations motion design sur-mesure : animations percutantes adaptées à tous les formats digitaux.",
+          "inLanguage": "fr-FR",
+          "isPartOf": { "@id": "https://snackly.fr/#website" },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snackly.fr/" },
+              { "@type": "ListItem", "position": 2, "name": "Motion Design", "item": "https://snackly.fr/Motion" }
+            ]
+          },
+          "mainEntity": {
+            "@type": "Service",
+            "@id": "https://snackly.fr/#motion",
+            "name": "Motion Design",
+            "url": "https://snackly.fr/Motion",
+            "description": "Des créations motion design percutantes pour votre stratégie digitale.",
+            "provider": { "@id": "https://snackly.fr/#organization" }
+          }
+        })}</script>
+      </Helmet>
       <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
         <section className="flex justify-center lgp:gap-10 max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">

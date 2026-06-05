@@ -1,6 +1,7 @@
 // import Button from "../components/Button/Button";
 // import Expert from "../components/Cards/Expert";
 // import Offer from "../components/Cards/Offer";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import Button from "../components/Button/Button";
 import { policy } from "../utils/constants/policy";
@@ -22,6 +23,28 @@ export default function Home() {
   const [motionClicked, setMotionClicked] = useState(false);
   return (
     <div className="text-white">
+      <Helmet>
+        <title>Snackly — Agence Snack Content | Vidéos Publicitaires Performantes</title>
+        <meta name="description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux : Acting, Motion Design, formats publicitaires adaptés à chaque média." />
+        <link rel="canonical" href="https://snackly.fr/" />
+        <meta property="og:url" content="https://snackly.fr/" />
+        <meta property="og:title" content="Snackly — Agence Snack Content | Vidéos Publicitaires Performantes" />
+        <meta property="og:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
+        <meta property="og:image" content="https://snackly.fr/images/Snackly%20Video.png" />
+        <meta name="twitter:title" content="Snackly — Agence Snack Content" />
+        <meta name="twitter:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
+        <meta name="twitter:image" content="https://snackly.fr/images/Snackly%20Video.png" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://snackly.fr/#webpage",
+          "url": "https://snackly.fr/",
+          "name": "Snackly — Agence Snack Content",
+          "description": "Agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux.",
+          "inLanguage": "fr-FR",
+          "isPartOf": { "@id": "https://snackly.fr/#website" }
+        })}</script>
+      </Helmet>
       <Navbar />
       <section className="">
         <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 py-25">

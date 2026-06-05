@@ -20,7 +20,7 @@
       <image:caption>Snackly est partenaire officiel Meta</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://snackly.fr/images/Tiktok.png</image:loc>
+      <image:loc>https://snackly.fr/images/TikTok.png</image:loc>
       <image:title>TikTok Marketing Partner</image:title>
       <image:caption>Snackly est partenaire marketing TikTok</image:caption>
     </image:image>
@@ -106,6 +106,16 @@
       <image:loc>https://snackly.fr/images/Snack-Content-3.jpg</image:loc>
       <image:title>Offre Premium Snack Content Motion</image:title>
       <image:caption>Offre Premium Snack Content Motion par Snackly</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://snackly.fr/contact</loc>
+    <image:image>
+      <image:loc>https://snackly.fr/logo/Snackly.png</image:loc>
+      <image:title>Logo Snackly — Contact agence snack content</image:title>
+      <image:caption>Contactez Snackly, agence spécialisée en snack content vidéo</image:caption>
     </image:image>
   </url>
 

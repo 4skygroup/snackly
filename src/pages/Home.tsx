@@ -47,7 +47,7 @@ export default function Home() {
       </Helmet>
       <Navbar />
       <section className="">
-        <div className="px-7.5 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 py-25">
+        <div className="sm:px-7.5 max-sm:px-2 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 sm:py-25 max-sm:py-5">
           {/* Left */}
           <div className="max-w-183.75 flex flex-col gap-y-7.5 justify-center max-sm:items-center">
             <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22 max-sm:text-center">
@@ -159,7 +159,7 @@ export default function Home() {
             Survolez-moi
           </span>
           <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
-            Cliquez
+            Cliquez-moi
           </span>
           <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
             Des contenus stratégiques pensés pour maximiser votre impact média

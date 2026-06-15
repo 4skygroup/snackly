@@ -24,26 +24,49 @@ export default function Home() {
   return (
     <div className="text-white">
       <Helmet>
-        <title>Snackly — Agence Snack Content | Vidéos Publicitaires Performantes</title>
-        <meta name="description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux : Acting, Motion Design, formats publicitaires adaptés à chaque média." />
+        <title>
+          Snackly — Agence Snack Content | Vidéos Publicitaires Performantes
+        </title>
+        <meta
+          name="description"
+          content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux : Acting, Motion Design, formats publicitaires adaptés à chaque média."
+        />
         <link rel="canonical" href="https://snacklyagency.com/" />
         <meta property="og:url" content="https://snacklyagency.com/" />
-        <meta property="og:title" content="Snackly — Agence Snack Content | Vidéos Publicitaires Performantes" />
-        <meta property="og:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
-        <meta property="og:image" content="https://snacklyagency.com/images/Snackly%20Video.png" />
+        <meta
+          property="og:title"
+          content="Snackly — Agence Snack Content | Vidéos Publicitaires Performantes"
+        />
+        <meta
+          property="og:description"
+          content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux."
+        />
+        <meta
+          property="og:image"
+          content="https://snacklyagency.com/images/Snackly%20Video.png"
+        />
         <meta name="twitter:title" content="Snackly — Agence Snack Content" />
-        <meta name="twitter:description" content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux." />
-        <meta name="twitter:image" content="https://snacklyagency.com/images/Snackly%20Video.png" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "@id": "https://snacklyagency.com/#webpage",
-          "url": "https://snacklyagency.com/",
-          "name": "Snackly — Agence Snack Content",
-          "description": "Agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux.",
-          "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snacklyagency.com/#website" }
-        })}</script>
+        <meta
+          name="twitter:description"
+          content="Snackly, agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux."
+        />
+        <meta
+          name="twitter:image"
+          content="https://snacklyagency.com/images/Snackly%20Video.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://snacklyagency.com/#webpage",
+            url: "https://snacklyagency.com/",
+            name: "Snackly — Agence Snack Content",
+            description:
+              "Agence spécialisée en Snack Content. Créations vidéo pensées pour performer sur tous vos leviers digitaux.",
+            inLanguage: "fr-FR",
+            isPartOf: { "@id": "https://snacklyagency.com/#website" },
+          })}
+        </script>
       </Helmet>
       <Navbar />
       <section className="">
@@ -61,7 +84,15 @@ export default function Home() {
           </div>
           {/* Right */}
           <div>
-            <img src="/images/Snackly Video.png" alt="Snackly Snack Content Agency" loading="lazy" />
+            <video
+              autoPlay
+              muted
+              playsInline
+              loop
+              className="w-87.5 rounded-r01 border-2 border-black"
+            >
+              <source src="/videos/Snackly-motion.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
@@ -144,7 +175,12 @@ export default function Home() {
           <Link to="/action">
             <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
               En savoir plus{" "}
-              <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" loading="lazy" />
+              <img
+                src="/icons/arrow-right.svg"
+                alt=""
+                className="pl-2.5"
+                loading="lazy"
+              />
             </span>
           </Link>
         </div>
@@ -172,7 +208,12 @@ export default function Home() {
           <Link to="/motion">
             <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
               En savoir plus{" "}
-              <img src="/icons/arrow-right.svg" alt="" className="pl-2.5" loading="lazy" />
+              <img
+                src="/icons/arrow-right.svg"
+                alt=""
+                className="pl-2.5"
+                loading="lazy"
+              />
             </span>
           </Link>
         </div>

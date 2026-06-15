@@ -8,6 +8,7 @@ import { useState } from "react";
 import DoubleArrow from "/icons/double-arrow.svg";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
+import Carousel from "../components/Carrousel/Carrousel";
 
 export default function Acting() {
   const [imgOrders, setImgOrders] = useState([1, 2, 3]);
@@ -33,40 +34,75 @@ export default function Acting() {
     <div>
       <Helmet>
         <title>Acting — Production Vidéo Snack Content | Snackly</title>
-        <meta name="description" content="Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés. Maximisez votre impact média avec nos experts." />
+        <meta
+          name="description"
+          content="Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés. Maximisez votre impact média avec nos experts."
+        />
         <link rel="canonical" href="https://snacklyagency.com/action" />
         <meta property="og:url" content="https://snacklyagency.com/action" />
-        <meta property="og:title" content="Acting — Production Vidéo Snack Content | Snackly" />
-        <meta property="og:description" content="Tournages de qualité, accroches percutantes, sous-titrage et formats adaptés pour maximiser votre impact média." />
-        <meta property="og:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
-        <meta name="twitter:title" content="Acting — Production Vidéo | Snackly" />
-        <meta name="twitter:description" content="Tournages de qualité, accroches percutantes, formats adaptés pour maximiser votre impact média." />
-        <meta name="twitter:image" content="https://snacklyagency.com/images/Snack-Content-2.jpg" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "@id": "https://snacklyagency.com/action#webpage",
-          "url": "https://snacklyagency.com/action",
-          "name": "Acting — Production Vidéo Snack Content | Snackly",
-          "description": "Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés.",
-          "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snacklyagency.com/#website" },
-          "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snacklyagency.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Acting", "item": "https://snacklyagency.com/action" }
-            ]
-          },
-          "mainEntity": {
-            "@type": "Service",
-            "@id": "https://snacklyagency.com/#acting",
-            "name": "Acting",
-            "url": "https://snacklyagency.com/action",
-            "description": "Des tournages de qualité pour votre snack content personnalisé. Accroches percutantes, sous-titrage, formats adaptés.",
-            "provider": { "@id": "https://snacklyagency.com/#organization" }
-          }
-        })}</script>
+        <meta
+          property="og:title"
+          content="Acting — Production Vidéo Snack Content | Snackly"
+        />
+        <meta
+          property="og:description"
+          content="Tournages de qualité, accroches percutantes, sous-titrage et formats adaptés pour maximiser votre impact média."
+        />
+        <meta
+          property="og:image"
+          content="https://snacklyagency.com/images/Snack-Content-2.jpg"
+        />
+        <meta
+          name="twitter:title"
+          content="Acting — Production Vidéo | Snackly"
+        />
+        <meta
+          name="twitter:description"
+          content="Tournages de qualité, accroches percutantes, formats adaptés pour maximiser votre impact média."
+        />
+        <meta
+          name="twitter:image"
+          content="https://snacklyagency.com/images/Snack-Content-2.jpg"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://snacklyagency.com/action#webpage",
+            url: "https://snacklyagency.com/action",
+            name: "Acting — Production Vidéo Snack Content | Snackly",
+            description:
+              "Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés.",
+            inLanguage: "fr-FR",
+            isPartOf: { "@id": "https://snacklyagency.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Accueil",
+                  item: "https://snacklyagency.com/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Acting",
+                  item: "https://snacklyagency.com/action",
+                },
+              ],
+            },
+            mainEntity: {
+              "@type": "Service",
+              "@id": "https://snacklyagency.com/#acting",
+              name: "Acting",
+              url: "https://snacklyagency.com/action",
+              description:
+                "Des tournages de qualité pour votre snack content personnalisé. Accroches percutantes, sous-titrage, formats adaptés.",
+              provider: { "@id": "https://snacklyagency.com/#organization" },
+            },
+          })}
+        </script>
       </Helmet>
       <Navbar />
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
@@ -117,29 +153,54 @@ export default function Acting() {
               {/* Bottom */}
               <div className="flex flex-col gap-y-6">
                 <div className="flex gap-x-10">
-                  <img src="/icons/Script.svg" alt="" width="30px" loading="lazy" />
+                  <img
+                    src="/icons/Script.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Accroches et messages percutants
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Subtitle.svg" alt="" width="30px" loading="lazy" />
+                  <img
+                    src="/icons/Subtitle.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Sous-titrage et audio-description
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Ratio.svg" alt="" width="30px" loading="lazy" />
+                  <img
+                    src="/icons/Ratio.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
                   <p className="sm:text-t3 max-sm:text-t5">Formats adaptés</p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Clap.svg" alt="" width="30px" loading="lazy" />
+                  <img
+                    src="/icons/Clap.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Réalisation et montages impactants
                   </p>
                 </div>
                 <div className="flex gap-x-10">
-                  <img src="/icons/Design.svg" alt="" width="30px" loading="lazy" />
+                  <img
+                    src="/icons/Design.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
                   <p className="sm:text-t3 max-sm:text-t5">
                     Direction artistique fidèle
                   </p>
@@ -225,25 +286,7 @@ export default function Acting() {
         </p>
         <div className="relative overflow-x-hidden w-full max-w-310">
           <div className="flex overflow-x-scroll gap-12.5 max-w-310 py-1.25 no-scrollbar max-xl:w-full min-w-75">
-            {experts.map((expert, index) => (
-              <Expert
-                key={index}
-                name={expert.name}
-                description={expert.description}
-                link={expert.link}
-              />
-            ))}
-            {/* <img
-            src={CircledArrow}
-            alt=""
-            className="w-30 absolute right-7.5 opacity-60"
-          /> */}
-            <img
-              src={DoubleArrow}
-              alt=""
-              className="w-10 absolute right-7.5 animate-opacify top-1/2 -translate-y-1/2 z-10"
-              loading="lazy"
-            />
+            <Carousel />
           </div>
         </div>
       </section>

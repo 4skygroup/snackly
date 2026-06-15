@@ -3,34 +3,34 @@ import type { LinkContent } from "../../types/LinkContent";
 export const entityList: LinkContent[] = [
     {
         name: "Visuance",
-        link: "https://visuance.vercel.app",
+        link: "https://www.visuanceagency.com/",
     },
     {
         name: "Snackly",
-        link: "/",
+        link: "https://snacklyagency.com/",
     },
     {
         name: "Seofy",
-        link: "/",
+        link: "https://www.seofyagency.com/",
     },
     {
         name: "Pulse X Agency",
-        link: "/",
+        link: "https://www.pulsexmanagement.com/",
     },
     {
         name: "Pulse X",
-        link: "/",
+        link: "https://www.pulsexagency.com/",
     },
     {
         name: "Drox 360",
-        link: "/",
+        link: "https://www.drox360.com/",
     },
     {
         name: "Sky To Be Media",
-        link: "/",
+        link: "https://www.skytobemedia.com/",
     },
     {
         name: "Play To Sky production",
-        link: "/",
+        link: " https://www.playtoskyproductions.com/",
     },
 ];

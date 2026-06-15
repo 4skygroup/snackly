@@ -15,10 +15,15 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-    { label: "Home", path: "/" },
-  { label: "The Group", path: "https://www.playtosky.com/", external: true },
+  { label: "Accueil", path: "/" },
+  { label: "Le Groupe", path: "https://www.playtosky.com/", external: true },
   {
-    label: "Offers",
+    label: "Nos localisations",
+    path: "https://www.playtosky.com/offices-by-region",
+    external: true,
+  },
+  {
+    label: "Offres",
     path: "",
     subItems: [
       { label: "Action", path: "/action" },
@@ -33,6 +38,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [lang, setLang] = useState("fr");
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);

@@ -83,7 +83,7 @@ export default function Contact() {
             {/* ── Left column ── */}
             <div className="flex flex-col gap-10">
               <div>
-                <h2 className="text-t3 font-bold leading-tight tracking-tight text-white md:text-h6">
+                <h2 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
                   Construisons votre croissance ensemble
                 </h2>
                 <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
@@ -99,9 +99,7 @@ export default function Contact() {
             {/* ── Right column ── */}
             <div>
               {/* Titre de la page */}
-              <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
-                Entamons votre stratégie !
-              </p>
+              <p className="text-t4 md:text-h7 font-bold md:text-3xl md:text-right mb-2 tracking-wide text-white drop-shadow-sm"></p>
               <ContactForm />
             </div>
           </div>

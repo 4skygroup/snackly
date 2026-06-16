@@ -69,6 +69,7 @@ function CallbackForm() {
   const [prenom, setPrenom] = useState("");
   const [tel, setTel] = useState("");
   const [sujet, setSujet] = useState("");
+  const [date, setDate] = useState("");
   const [horaire, setHoraire] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
@@ -122,6 +123,13 @@ function CallbackForm() {
         options={subjects}
         value={sujet}
         onChange={setSujet}
+      />
+      <Field
+        label="Jour de l'appel"
+        placeholder=""
+        type="date"
+        value={date}
+        onChange={setDate}
       />
       <SelectField
         label="Horaire de l'appel"

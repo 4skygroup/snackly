@@ -5,7 +5,7 @@ import { services } from "../utils/constants/services";
 import { useState } from "react";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
-import Carousel from "../components/Carrousel/Carrousel";
+import Carrousel from "../components/Carrousel/Carrousel";
 
 export default function Acting() {
   const [imgOrders, setImgOrders] = useState([1, 2, 3]);
@@ -283,7 +283,7 @@ export default function Acting() {
         </p>
         <div className="relative overflow-x-hidden w-full max-w-310">
           <div className="flex overflow-x-scroll gap-12.5 max-w-310 py-1.25 no-scrollbar max-xl:w-full min-w-75">
-            <Carousel />
+            <Carrousel />
           </div>
         </div>
       </section>

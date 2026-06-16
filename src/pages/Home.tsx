@@ -70,7 +70,7 @@ export default function Home() {
       </Helmet>
       <Navbar />
       <section className="">
-        <div className="sm:px-7.5 max-sm:px-2 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 sm:py-25 max-sm:py-5">
+        <div className="sm:px-7.5 max-sm:px-2 bg-linear-to-b from-snackly-purple to-snackly-blue flex max-sm:flex-col justify-center items-center gap-20 sm:pt-10 sm:pb-20 max-sm:py-5">
           {/* Left */}
           <div className="max-w-183.75 flex flex-col gap-y-7.5 justify-center max-sm:items-center">
             <p className="uppercase mdpp:text-h2 flex flex-col mdpp:leading-28.75 pb-2.5 max-mdpp:text-h4 max-mdpp:leading-22 max-sm:text-center">

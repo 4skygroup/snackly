@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, type TouchEventHandler } from "react";
+import { useState, useRef, useEffect } from "react";
 import { experts } from "../../utils/constants/experts";
 import Expert from "../Cards/Expert";
 

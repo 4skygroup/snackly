@@ -57,7 +57,7 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             placeholder="06 12 34 56 78"
-            className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-white/30 focus:outline-none focus:border-white text-sm"
+            className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-white text-sm"
           />
         </div>
         <div className="flex flex-col gap-1.5">
@@ -130,7 +130,7 @@ export default function ContactForm() {
           id="message"
           rows={4}
           placeholder="Message"
-          className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-white/30 focus:outline-none focus:border-white text-sm resize-none"
+          className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-white text-sm resize-none"
         ></textarea>
       </div>
 

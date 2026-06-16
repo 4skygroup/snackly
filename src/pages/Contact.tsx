@@ -1,69 +1,109 @@
 import { Helmet } from "react-helmet-async";
 import ContactForm from "../components/ContactForm.tsx/ContactForm";
 import Footer from "../components/Footer/Footer";
-import Logo from "../components/Logo/Logo";
 import Navbar from "../components/NavBar/NavBar";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
+import ContactInfoCards from "../components/ContactForm.tsx/ContactInfoCards";
 
 export default function Contact() {
   return (
     <div className="bg-snackly-purple text-white flex flex-col items-center ">
       <Helmet>
         <title>Contact — Démarrez votre projet Snack Content | Snackly</title>
-        <meta name="description" content="Contactez l'agence Snackly pour lancer votre projet snack content. Discutons de votre stratégie vidéo et de vos objectifs de performance digitale." />
+        <meta
+          name="description"
+          content="Contactez l'agence Snackly pour lancer votre projet snack content. Discutons de votre stratégie vidéo et de vos objectifs de performance digitale."
+        />
         <link rel="canonical" href="https://snacklyagency.com/contact" />
         <meta property="og:url" content="https://snacklyagency.com/contact" />
-        <meta property="og:title" content="Contact — Démarrez votre projet Snack Content | Snackly" />
-        <meta property="og:description" content="Contactez l'agence Snackly pour lancer votre projet snack content et booster votre performance digitale." />
-        <meta property="og:image" content="https://snacklyagency.com/logo/Snackly.png" />
-        <meta name="twitter:title" content="Contact Snackly — Lancez votre projet" />
-        <meta name="twitter:description" content="Contactez l'agence Snackly pour lancer votre projet snack content." />
-        <meta name="twitter:image" content="https://snacklyagency.com/logo/Snackly.png" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "@id": "https://snacklyagency.com/contact#webpage",
-          "url": "https://snacklyagency.com/contact",
-          "name": "Contact — Snackly",
-          "description": "Contactez l'agence Snackly pour lancer votre projet snack content.",
-          "inLanguage": "fr-FR",
-          "isPartOf": { "@id": "https://snacklyagency.com/#website" },
-          "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://snacklyagency.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://snacklyagency.com/contact" }
-            ]
-          }
-        })}</script>
+        <meta
+          property="og:title"
+          content="Contact — Démarrez votre projet Snack Content | Snackly"
+        />
+        <meta
+          property="og:description"
+          content="Contactez l'agence Snackly pour lancer votre projet snack content et booster votre performance digitale."
+        />
+        <meta
+          property="og:image"
+          content="https://snacklyagency.com/logo/Snackly.png"
+        />
+        <meta
+          name="twitter:title"
+          content="Contact Snackly — Lancez votre projet"
+        />
+        <meta
+          name="twitter:description"
+          content="Contactez l'agence Snackly pour lancer votre projet snack content."
+        />
+        <meta
+          name="twitter:image"
+          content="https://snacklyagency.com/logo/Snackly.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "@id": "https://snacklyagency.com/contact#webpage",
+            url: "https://snacklyagency.com/contact",
+            name: "Contact — Snackly",
+            description:
+              "Contactez l'agence Snackly pour lancer votre projet snack content.",
+            inLanguage: "fr-FR",
+            isPartOf: { "@id": "https://snacklyagency.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Accueil",
+                  item: "https://snacklyagency.com/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Contact",
+                  item: "https://snacklyagency.com/contact",
+                },
+              ],
+            },
+          })}
+        </script>
       </Helmet>
       <Navbar />
       <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
         {/* Cadre principal arrondi de la maquette */}
         <div className="max-w-6xl w-full mx-auto bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm border border-white mt-6 relative">
-          {/* Titre de la page */}
-          {/* <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
-                    Contact us
-                </h1> */}
+          {/* CÔTÉ DROIT : Le Formulaire complet */}
+          {/* <ContactForm /> */}
+          {/* </div> */}
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
+            {/* ── Left column ── */}
+            <div className="flex flex-col gap-10">
+              <div>
+                <h2 className="text-t3 font-bold leading-tight tracking-tight text-white md:text-h6">
+                  Construisons votre croissance ensemble
+                </h2>
+                <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
+                  Nos experts vous accompagnent dans la définition d'une
+                  stratégie digitale alignée sur vos objectifs. Contactez-nous
+                  selon le mode d'échange qui vous convient le mieux.
+                </p>
+              </div>
 
-          <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
-            Let&apos;s start your strategy !
-          </p>
-
-          {/* Grille : Logo à gauche / Formulaire à droite */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
-            <div className="md:col-span-5 flex justify-center items-center p-4">
-              <Logo
-                src="/logo/Snackly.png"
-                alt="Logo Snackly"
-                className="w-full max-w-70 md:max-w-full h-auto object-contain drop-shadow-sm"
-              />
+              <ContactInfoCards />
             </div>
 
-            {/* CÔTÉ DROIT : Le Formulaire complet */}
-            <ContactForm />
+            {/* ── Right column ── */}
+            <div>
+              {/* Titre de la page */}
+              <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
+                Entamons votre stratégie !
+              </p>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>

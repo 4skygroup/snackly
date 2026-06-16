@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type TouchEventHandler } from "react";
 import { experts } from "../../utils/constants/experts";
 import Expert from "../Cards/Expert";
 
@@ -31,11 +31,11 @@ export default function Carrousel() {
   const offset = current * (CARD_WIDTH + GAP);
 
   // Touch support
-  const touchStartX = useRef(null);
-  const onTouchStart = (e: any) => {
+  const touchStartX = useRef<null | number>(null);
+  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX;
   };
-  const onTouchEnd = (e: any) => {
+  const onTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     if (touchStartX.current === null) return;
     const dx = e.changedTouches[0].clientX - touchStartX.current;
     if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
@@ -67,8 +67,8 @@ export default function Carrousel() {
       <div
         ref={wrapRef}
         className="overflow-hidden"
-        onTouchStart={(e) => onTouchStart(e)}
-        onTouchEnd={(e) => onTouchEnd(e)}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         <div
           className="flex relative"

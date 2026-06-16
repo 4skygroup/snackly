@@ -43,16 +43,35 @@ export default function Carrousel() {
   };
 
   return (
-    <div className="w-full py-10 px-4">
+    <div className="w-full py-10 px-17 relative">
       {/* Track */}
+      <button
+        onClick={() => goTo(current - 1)}
+        disabled={current === 0}
+        aria-label="Précédent"
+        className="absolute left-0 w-13 h-13 top-1/2 -translate-y-1/2 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-700 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
       <div
         ref={wrapRef}
         className="overflow-hidden"
-        onTouchStart={onTouchStart}
-        onTouchEnd={onTouchEnd}
+        onTouchStart={(e) => onTouchStart(e)}
+        onTouchEnd={(e) => onTouchEnd(e)}
       >
         <div
-          className="flex"
+          className="flex relative"
           style={{
             gap: `${GAP}px`,
             transform: `translateX(-${offset}px)`,
@@ -92,47 +111,27 @@ export default function Carrousel() {
         </div>
 
         {/* Arrows */}
-        <div className="flex gap-2">
-          <button
-            onClick={() => goTo(current - 1)}
-            disabled={current === 0}
-            aria-label="Précédent"
-            className="w-9 h-9 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-700 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-          <button
-            onClick={() => goTo(current + 1)}
-            disabled={current >= maxIndex}
-            aria-label="Suivant"
-            className="w-9 h-9 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-700 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </div>
+        <div className="flex gap-2"></div>
       </div>
+      <button
+        onClick={() => goTo(current + 1)}
+        disabled={current >= maxIndex}
+        aria-label="Suivant"
+        className="absolute right-0 w-13 h-13 top-1/2 -translate-y-1/2 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-700 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
     </div>
   );
 }

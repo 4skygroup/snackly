@@ -1,11 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Offer from "../components/Cards/Offer";
-import { experts } from "../utils/constants/experts";
-import Expert from "../components/Cards/Expert";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
 import { useState } from "react";
-import DoubleArrow from "/icons/double-arrow.svg";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 import Carousel from "../components/Carrousel/Carrousel";

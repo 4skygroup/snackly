@@ -48,8 +48,13 @@ export default function Footer({
         </div>
         {/* COPYRIGHT */}
         <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
-          <span>created by</span>
-          <img src="/images/visuance.png" alt="Visuance logo" className="h-4" loading="lazy" />
+          <span>créé par</span>
+          <img
+            src="/images/visuance.png"
+            alt="Visuance logo"
+            className="h-4"
+            loading="lazy"
+          />
           <span>&</span>
           <img
             src="/images/play-to-sky.png"

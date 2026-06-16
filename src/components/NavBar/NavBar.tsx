@@ -38,7 +38,6 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [lang, setLang] = useState("fr");
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);

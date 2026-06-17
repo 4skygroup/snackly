@@ -44,7 +44,7 @@ export default function ContactInfoCards() {
         <img
           src="/logo/Snackly.webp"
           alt="Snackly Logo"
-          className="h-8 w-auto object-contain"
+          className="h-8 w-22.5 object-cover"
           style={{ filter: "brightness(0) invert(1)" }}
           loading="lazy"
         />

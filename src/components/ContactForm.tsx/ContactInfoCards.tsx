@@ -42,7 +42,7 @@ export default function ContactInfoCards() {
 
       <div className="mt-2 flex items-center gap-3">
         <img
-          src="/Snackly.webp"
+          src="/logo/Snackly.webp"
           alt="Snackly Logo"
           className="h-8 w-auto object-contain"
           style={{ filter: "brightness(0) invert(1)" }}

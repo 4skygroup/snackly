@@ -121,7 +121,7 @@ export default function Motion() {
             </span>
             {/* <span>bonjour</span> */}
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
-              Déclinaison
+              Storyboard
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0 top-35">
               Brief
@@ -130,10 +130,10 @@ export default function Motion() {
               Script
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
-              Montage
+              Animation
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
-              Tournage
+              Livraison
             </span>
           </div>
           {/* </div> */}
@@ -145,7 +145,7 @@ export default function Motion() {
               {/* Top */}
               <div className="flex flex-col gap-y-1.5">
                 <p className="sm:text-t1 max-sm:text-t3">
-                  Des tournages de qualité
+                  Des effets de qualité
                 </p>
                 <p className="text-t5">Un snack content personnalisé</p>
               </div>
@@ -153,44 +153,13 @@ export default function Motion() {
               <div className="flex flex-col gap-y-6">
                 <div className="flex gap-x-10">
                   <img
-                    src="/icons/Script.svg"
+                    src="/icons/animate.svg"
                     alt=""
                     width="30px"
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Accroches et messages percutants
-                  </p>
-                </div>
-                <div className="flex gap-x-10">
-                  <img
-                    src="/icons/Subtitle.svg"
-                    alt=""
-                    width="30px"
-                    loading="lazy"
-                  />
-                  <p className="sm:text-t3 max-sm:text-t5">
-                    Sous-titrage et audio-description
-                  </p>
-                </div>
-                <div className="flex gap-x-10">
-                  <img
-                    src="/icons/Ratio.svg"
-                    alt=""
-                    width="30px"
-                    loading="lazy"
-                  />
-                  <p className="sm:text-t3 max-sm:text-t5">Formats adaptés</p>
-                </div>
-                <div className="flex gap-x-10">
-                  <img
-                    src="/icons/Clap.svg"
-                    alt=""
-                    width="30px"
-                    loading="lazy"
-                  />
-                  <p className="sm:text-t3 max-sm:text-t5">
-                    Réalisation et montages impactants
+                    Animations fluides en 2D (ou 3D)
                   </p>
                 </div>
                 <div className="flex gap-x-10">
@@ -201,9 +170,31 @@ export default function Motion() {
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Direction artistique fidèle
+                    Conceptions et Storyboarding fidèles
                   </p>
                 </div>
+                <div className="flex gap-x-10">
+                  <img
+                    src="/icons/Ratio.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
+                  <p className="sm:text-t3 max-sm:text-t5">
+                    Formats adaptés (Ratios divers)
+                  </p>
+                </div>
+                {/* <div className="flex gap-x-10">
+                  <img
+                    src="/icons/Subtitle.svg"
+                    alt=""
+                    width="30px"
+                    loading="lazy"
+                  />
+                  <p className="sm:text-t3 max-sm:text-t5">
+                    Sous-titrage et audio-description
+                  </p>
+                </div> */}
               </div>
             </div>
             {/* Right */}
@@ -228,21 +219,21 @@ export default function Motion() {
                     />
                   ))} */}
                   <img
-                    src="/images/Pub1.png"
-                    alt="pub 1"
+                    src="/images/Motion1.webp"
+                    alt="motion 1"
                     className={`${getOrder(1)}`}
                     loading="lazy"
                   />
                   <img
-                    src="/images/Pub2.png"
-                    alt="pub 2"
+                    src="/images/Motion2.webp"
+                    alt="motion 2"
                     className={`${getOrder(2)}`}
                     loading="lazy"
                   />
                   <img
-                    src="/images/Pub3.png"
-                    alt="pub 3"
-                    className={`${getOrder(3)}`}
+                    src="/images/Motion3.webp"
+                    alt="motion 3"
+                    className={`${getOrder(3)} object-cover`}
                     loading="lazy"
                   />
                 </div>
@@ -270,13 +261,9 @@ export default function Motion() {
           </div>
         </section>
         <section className="flex max-mdpp:flex-col max-mdpp:gap-y-10 mdpp:max-lgp:gap-x-20 lgp:max-xl:gap-x-35 xl:gap-x-50">
-          <Offer imgSrc="/images/Snack-Content-1.jpg" />
-          <Offer
-            isPopular={true}
-            imgSrc="/images/Snack-Content-2.jpg"
-            offer="gold"
-          />
-          <Offer imgSrc="/images/Snack-Content-3.jpg" offer="premium" />
+          <Offer imgSrc="/images/Motion4.webp" />
+          <Offer isPopular={true} imgSrc="/images/Motion5.webp" offer="gold" />
+          <Offer imgSrc="/images/Motion6.webp" offer="premium" />
         </section>
       </section>
       <section className="flex flex-col max-sm:px-5 max-sm:py-15 sm:p-25 gap-y-17.5 items-center">

@@ -227,13 +227,13 @@ export default function Motion() {
                   <img
                     src="/images/Motion2.webp"
                     alt="motion 2"
-                    className={`${getOrder(2)}`}
+                    className={`${getOrder(2)} object-cover`}
                     loading="lazy"
                   />
                   <img
                     src="/images/Motion3.webp"
                     alt="motion 3"
-                    className={`${getOrder(3)}`}
+                    className={`${getOrder(3)} object-cover`}
                     loading="lazy"
                   />
                 </div>

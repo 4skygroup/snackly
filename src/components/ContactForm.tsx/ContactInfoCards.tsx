@@ -42,10 +42,11 @@ export default function ContactInfoCards() {
 
       <div className="mt-2 flex items-center gap-3">
         <img
-          src="/logoSeofy.png"
-          alt=""
+          src="/Snackly.webp"
+          alt="Snackly Logo"
           className="h-8 w-auto object-contain"
           style={{ filter: "brightness(0) invert(1)" }}
+          loading="lazy"
         />
         <p className="text-t6 md:text-t5 leading-relaxed text-white/40">
           9 expertises complémentaires, un seul objectif : faire grandir votre

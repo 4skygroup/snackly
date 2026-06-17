@@ -226,19 +226,19 @@ export default function Acting() {
                     />
                   ))} */}
                   <img
-                    src="/images/Pub1.png"
+                    src="/images/Pub1.webp"
                     alt="pub 1"
                     className={`${getOrder(1)}`}
                     loading="lazy"
                   />
                   <img
-                    src="/images/Pub2.png"
+                    src="/images/Pub2.webp"
                     alt="pub 2"
                     className={`${getOrder(2)}`}
                     loading="lazy"
                   />
                   <img
-                    src="/images/Pub3.png"
+                    src="/images/Pub3.webp"
                     alt="pub 3"
                     className={`${getOrder(3)}`}
                     loading="lazy"
@@ -268,13 +268,13 @@ export default function Acting() {
           </div>
         </section>
         <section className="flex max-mdpp:flex-col max-mdpp:gap-y-10 mdpp:max-lgp:gap-x-20 lgp:max-xl:gap-x-35 xl:gap-x-50">
-          <Offer imgSrc="/images/Snack-Content-1.jpg" />
+          <Offer imgSrc="/images/Snack-Content-1.webp" />
           <Offer
             isPopular={true}
-            imgSrc="/images/Snack-Content-2.jpg"
+            imgSrc="/images/Snack-Content-2.webp"
             offer="gold"
           />
-          <Offer imgSrc="/images/Snack-Content-3.jpg" offer="premium" />
+          <Offer imgSrc="/images/Snack-Content-3.webp" offer="premium" />
         </section>
       </section>
       <section className="flex flex-col max-sm:px-5 max-sm:py-15 sm:p-25 gap-y-17.5 items-center">

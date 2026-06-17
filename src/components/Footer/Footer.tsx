@@ -50,14 +50,14 @@ export default function Footer({
         <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
           <span>créé par</span>
           <img
-            src="/images/visuance.png"
+            src="/images/visuance.webp"
             alt="Visuance logo"
             className="h-4"
             loading="lazy"
           />
           <span>&</span>
           <img
-            src="/images/play-to-sky.png"
+            src="/images/play-to-sky.webp"
             alt="Play To Sky logo"
             className="h-6"
             loading="lazy"

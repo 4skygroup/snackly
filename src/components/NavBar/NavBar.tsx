@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
     label: "Offres",
     path: "",
     subItems: [
-      { label: "Action", path: "/action" },
+      { label: "Acting", path: "/acting" },
       { label: "Motion", path: "/motion" },
     ],
   },

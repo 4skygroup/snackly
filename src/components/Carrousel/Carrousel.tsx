@@ -10,7 +10,7 @@ export default function Carrousel() {
   const wrapRef = useRef(null);
   const [perView, setPerView] = useState(3);
 
-  useEffect(() => {
+  useEffect() => {
     function updatePerView() {
       if (!wrapRef.current) return;
       const w = (wrapRef.current as HTMLDivElement).offsetWidth;

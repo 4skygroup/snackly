@@ -1,6 +1,7 @@
 // FAQRow.tsx
 
 import type { FAQItem } from "../../utils/constants/FAQData";
+import { useTranslation } from "react-i18next";
 
 const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
   <svg
@@ -29,6 +30,7 @@ interface FAQRowProps {
 }
 
 const FAQRow = ({ item, isOpen, onToggle }: FAQRowProps) => {
+  const { t } = useTranslation();
   return (
     <div className="border-b border-[#2A2A2A]">
       <button
@@ -39,7 +41,7 @@ const FAQRow = ({ item, isOpen, onToggle }: FAQRowProps) => {
         <span
           className={`font-glacial text-t4 transition-colors duration-200 group-hover:text-snackly-purple pr-4 ${isOpen ? "text-snackly-purple" : "text-black"}`}
         >
-          {item.question}
+          {t("home.faq.questions." + item.id)}
         </span>
 
         <ChevronIcon isOpen={isOpen} />
@@ -53,7 +55,7 @@ const FAQRow = ({ item, isOpen, onToggle }: FAQRowProps) => {
         }}
       >
         <p className="font-glacial text-t5 text-black px-2.5 pb-5 leading-relaxed">
-          {item.answer}
+          {t("home.faq.answers." + item.id)}
         </p>
       </div>
     </div>

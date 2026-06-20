@@ -5,8 +5,10 @@ import Navbar from "../components/NavBar/NavBar";
 import { policy } from "../utils/constants/policy";
 import { services } from "../utils/constants/services";
 import ContactInfoCards from "../components/ContactForm.tsx/ContactInfoCards";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <div className="bg-snackly-purple text-white flex flex-col items-center ">
       <Helmet>
@@ -84,12 +86,10 @@ export default function Contact() {
             <div className="flex flex-col gap-10">
               <div>
                 <h2 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
-                  Construisons votre croissance ensemble
+                  {t("contact.catchPhrase")}
                 </h2>
                 <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
-                  Nos experts vous accompagnent dans la définition d'une
-                  stratégie digitale alignée sur vos objectifs. Contactez-nous
-                  selon le mode d'échange qui vous convient le mieux.
+                  {t("contact.detailedPhrase")}
                 </p>
               </div>
 

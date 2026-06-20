@@ -2,15 +2,15 @@ import type { LinkContent } from "../../types/LinkContent";
 
 export const policy: LinkContent[] = [
     {
-        name: 'Mentions légales',
+        name: 'footer.policy.legacy',
         link: '/'
     },
     {
-        name: 'Confidentialité',
+        name: 'footer.policy.confidentiality',
         link: '/'
     },
     {
-        name: 'CGU',
+        name: 'footer.policy.cgu',
         link: '/'
     },
 ]

@@ -5,10 +5,11 @@ import { services } from "../utils/constants/services";
 import { useState } from "react";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
-import Carrousel from "../components/Carrousel/Carrousel";
+import { useTranslation } from "react-i18next";
 
 export default function Acting() {
   const [imgOrders, setImgOrders] = useState([1, 2, 3]);
+  const { t } = useTranslation();
   const handleLeftButtonClick = () => {
     setImgOrders([imgOrders[1], imgOrders[2], imgOrders[0]]);
   };
@@ -35,8 +36,8 @@ export default function Acting() {
           name="description"
           content="Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés. Maximisez votre impact média avec nos experts."
         />
-        <link rel="canonical" href="https://snacklyagency.com/action" />
-        <meta property="og:url" content="https://snacklyagency.com/action" />
+        <link rel="canonical" href="https://snacklyagency.com/acting" />
+        <meta property="og:url" content="https://snacklyagency.com/acting" />
         <meta
           property="og:title"
           content="Acting — Production Vidéo Snack Content | Snackly"
@@ -65,8 +66,8 @@ export default function Acting() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://snacklyagency.com/action#webpage",
-            url: "https://snacklyagency.com/action",
+            "@id": "https://snacklyagency.com/acting#webpage",
+            url: "https://snacklyagency.com/acting",
             name: "Acting — Production Vidéo Snack Content | Snackly",
             description:
               "Services de production vidéo Acting chez Snackly : tournages de qualité, accroches percutantes, sous-titrage, formats adaptés.",
@@ -85,7 +86,7 @@ export default function Acting() {
                   "@type": "ListItem",
                   position: 2,
                   name: "Acting",
-                  item: "https://snacklyagency.com/action",
+                  item: "https://snacklyagency.com/acting",
                 },
               ],
             },
@@ -93,7 +94,7 @@ export default function Acting() {
               "@type": "Service",
               "@id": "https://snacklyagency.com/#acting",
               name: "Acting",
-              url: "https://snacklyagency.com/action",
+              url: "https://snacklyagency.com/acting",
               description:
                 "Des tournages de qualité pour votre snack content personnalisé. Accroches percutantes, sous-titrage, formats adaptés.",
               provider: { "@id": "https://snacklyagency.com/#organization" },
@@ -106,7 +107,7 @@ export default function Acting() {
         <section className="flex justify-center max-xsp:items-center lgp:gap-10 max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">
           <div className="flex flex-col max-xsp:w-fit max-xsp:justify-center max-xsp:items-center">
             <p className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
-              Démarrez votre projet
+              {t("acting.catchPhrase")}
             </p>
             <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center w-fit">
               Acting
@@ -119,19 +120,19 @@ export default function Acting() {
             </span>
             {/* <span>bonjour</span> */}
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white top-0">
-              Déclinaison
+              {t("acting.rotatingAnimation.labels.declination")}
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-0 top-35">
-              Brief
+              {t("acting.rotatingAnimation.labels.brief")}
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-0 top-35">
-              Script
+              {t("acting.rotatingAnimation.labels.script")}
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white left-17.5 bottom-0">
-              Montage
+              {t("acting.rotatingAnimation.labels.editing")}
             </span>
             <span className="animate-rotationback absolute bg-white/20 text-t3 px-3.75 py-0.5 text-white right-17.5 bottom-0">
-              Tournage
+              {t("acting.rotatingAnimation.labels.filming")}
             </span>
           </div>
           {/* </div> */}
@@ -143,9 +144,11 @@ export default function Acting() {
               {/* Top */}
               <div className="flex flex-col gap-y-1.5">
                 <p className="sm:text-t1 max-sm:text-t3">
-                  Des tournages de qualité
+                  {t("acting.sections.presentation.title")}
                 </p>
-                <p className="text-t5">Un snack content personnalisé</p>
+                <p className="text-t5">
+                  {t("acting.sections.presentation.subtitle")}
+                </p>
               </div>
               {/* Bottom */}
               <div className="flex flex-col gap-y-6">
@@ -157,7 +160,7 @@ export default function Acting() {
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Accroches et messages percutants
+                    {t("acting.sections.presentation.services.messages")}
                   </p>
                 </div>
                 <div className="flex gap-x-10">
@@ -168,7 +171,7 @@ export default function Acting() {
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Sous-titrage et audio-description
+                    {t("acting.sections.presentation.services.subtitle")}
                   </p>
                 </div>
                 <div className="flex gap-x-10">
@@ -178,7 +181,9 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">Formats adaptés</p>
+                  <p className="sm:text-t3 max-sm:text-t5">
+                    {t("acting.sections.presentation.services.format")}
+                  </p>
                 </div>
                 <div className="flex gap-x-10">
                   <img
@@ -188,7 +193,7 @@ export default function Acting() {
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Réalisation et montages impactants
+                    {t("acting.sections.presentation.services.editing")}
                   </p>
                 </div>
                 <div className="flex gap-x-10">
@@ -199,7 +204,7 @@ export default function Acting() {
                     loading="lazy"
                   />
                   <p className="sm:text-t3 max-sm:text-t5">
-                    Direction artistique fidèle
+                    {t("acting.sections.presentation.services.artistic")}
                   </p>
                 </div>
               </div>
@@ -277,16 +282,16 @@ export default function Acting() {
           <Offer imgSrc="/images/Snack-Content-3.webp" offer="premium" />
         </section>
       </section>
-      <section className="flex flex-col max-sm:px-5 max-sm:py-15 sm:p-25 gap-y-17.5 items-center">
+      {/* <section className="flex flex-col max-sm:px-5 max-sm:py-15 sm:p-25 gap-y-17.5 items-center">
         <p className="lg:text-h4 text-snackly-blue sm:max-lg:text-h5 max-sm:text-h6">
-          Nos experts
+          {t("acting.sections.experts.label")}
         </p>
         <div className="relative overflow-x-hidden w-full max-w-310">
           <div className="flex overflow-x-scroll gap-12.5 max-w-310 py-1.25 no-scrollbar max-xl:w-full min-w-75">
             <Carrousel />
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer policy={policy} services={services} />
     </div>
   );

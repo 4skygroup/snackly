@@ -1,30 +1,30 @@
 export const options = [
     {
-        option: "start-action",
-        name: "5 vidéos et plus (Action)",
+        option: "start-acting",
+        name: "contact.inputs.services.startActing",
     },
     {
-        option: "gold-action",
-        name: "10 vidéos et plus (Action)",
+        option: "gold-acting",
+        name: "contact.inputs.services.goldActing",
     },
     {
-        option: "premium-action",
-        name: "20 vidéos et plus (Action)",
+        option: "premium-acting",
+        name: "contact.inputs.services.premiumActing",
     },
     {
         option: "start-motion",
-        name: "5 vidéos et plus (Motion)",
+        name: "contact.inputs.services.startMotion",
     },
     {
         option: "gold-motion",
-        name: "10 vidéos et plus (Motion)",
+        name: "contact.inputs.services.goldMotion",
     },
     {
         option: "premium-motion",
-        name: "20 vidéos et plus (Motion)",
+        name: "contact.inputs.services.premiumMotion",
     },
     {
         option: "other",
-        name: "Autres",
+        name: "contact.inputs.services.other",
     },
 ];

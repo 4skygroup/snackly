@@ -17,10 +17,13 @@ import Navbar from "../components/NavBar/NavBar";
 import { useState } from "react";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 export default function Home() {
   const [tagsClicked, setTagsClicked] = useState([true, false, false]);
-  const [actionClicked, setActionClicked] = useState(false);
+  const [actingClicked, setActingClicked] = useState(false);
   const [motionClicked, setMotionClicked] = useState(false);
+
+  const { t } = useTranslation();
   return (
     <div className="text-white">
       <Helmet>
@@ -77,8 +80,7 @@ export default function Home() {
               Snack Content Agency
             </p>
             <p className="mdpp:text-t1 max-w-177 leading-9.5 pb-7.5 max-mdpp:text-t3 max-sm:text-center">
-              Des créations vidéo pensées pour performer sur tous vos leviers
-              digitaux.
+              {t("home.catchPhrase")}
             </p>
             <Button />
           </div>
@@ -98,23 +100,23 @@ export default function Home() {
       </section>
       <section className="bg-black flex flex-col items-center py-17.5 px-5 gap-y-10">
         <p className="mdpp:text-t1 max-mdpp:text-t3">
-          Le Snack Content à votre portée
+          {t("home.titles.snackContent")}
         </p>
         <div className="flex flex-col gap-7.5">
           {/* Top */}
           <nav className="flex justify-between w-full max-sm:flex-col max-sm:gap-y-2.5 items-center">
             <Tag
-              content="Créativité dans l’exécution"
+              content={t("home.tags.creativity.label")}
               isOpaque={!tagsClicked[0]}
               onClick={() => setTagsClicked([true, false, false])}
             />
             <Tag
-              content="Contenu percutant"
+              content={t("home.tags.content.label")}
               isOpaque={!tagsClicked[1]}
               onClick={() => setTagsClicked([false, true, false])}
             />
             <Tag
-              content="Idéal pour l’espace pub"
+              content={t("home.tags.pub.label")}
               isOpaque={!tagsClicked[2]}
               onClick={() => setTagsClicked([false, false, true])}
             />
@@ -124,57 +126,45 @@ export default function Home() {
             <p
               className={`${tagsClicked[0] ? "block" : "hidden"} text-t3 max-sm:text-center`}
             >
-              Nos créations sont pensées pour générer de la performance sur
-              l’ensemble du funnel média, de la notoriété à la conversion.
-              <br />
-              Nos experts repèrent les meilleures idées du web et les
-              transforment en vidéos impactantes, alignées avec les stratégies
-              médias de nos clients.
+              {t("home.tags.creativity.text")}
+              {/* <br /> */}
             </p>
             <p
               className={`${tagsClicked[1] ? "block" : "hidden"} text-t3 max-sm:text-center`}
             >
-              Chaque jour, un internaute est exposé à plus de 15 000
-              sollicitations commerciales. Pour éviter la lassitude liée à la
-              répétition de contenus similaires, les algorithmes de diffusion
-              privilégient des contenus renouvelés et régulièrement mis à jour.
+              {t("home.tags.content.text")}
             </p>
             <p
               className={`${tagsClicked[2] ? "block" : "hidden"} text-t3 max-sm:text-center`}
             >
-              Chaque canal de diffusion répond à ses propres codes : formats
-              publicitaires, durées, usages des audiences. Une création
-              performante est avant tout une création pensée pour le média qui
-              la porte.
+              {t("home.tags.pub.text")}
             </p>
           </div>
         </div>
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
         <div
-          className={`group hover:w-full ${actionClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5`}
-          onClick={() => setActionClicked(!actionClicked)}
+          className={`group hover:w-full ${actingClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5`}
+          onClick={() => setActingClicked(!actingClicked)}
         >
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
             ACTING
           </span>
           <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
-            Survolez-moi
+            {t("home.acting.hover")}
           </span>
           <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
-            Cliquez-moi
+            {t("home.acting.click")}
           </span>
           <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
-            Des contenus stratégiques pensés pour maximiser votre impact média
+            {t("home.acting.title")}
           </p>
           <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3">
-            Nous concevons et produisons des contenus personnalisés, alignés sur
-            vos objectifs de visibilité et de performance. Nos équipes
-            organisent des tournages adaptés à votre projet
+            {t("home.acting.text")}
           </p>
-          <Link to="/action">
+          <Link to="/acting">
             <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
-              En savoir plus{" "}
+              {t("home.acting.cta")}{" "}
               <img
                 src="/icons/arrow-right.svg"
                 alt=""
@@ -185,29 +175,27 @@ export default function Home() {
           </Link>
         </div>
         <div
-          className={`group hover:w-full ${actionClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end`}
+          className={`group hover:w-full ${actingClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end`}
           onClick={() => setMotionClicked(!motionClicked)}
         >
           <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
             MOTION
           </span>
           <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold">
-            Survolez-moi
+            {t("home.motion.hover")}
           </span>
           <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
-            Cliquez-moi
+            {t("home.motion.click")}
           </span>
           <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
-            Des contenus stratégiques pensés pour maximiser votre impact média
+            {t("home.motion.title")}
           </p>
           <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3">
-            Nous concevons et produisons des contenus personnalisés, alignés sur
-            vos objectifs de visibilité et de performance. Nos équipes
-            organisent des tournages adaptés à votre projet
+            {t("home.motion.text")}
           </p>
           <Link to="/motion">
             <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
-              En savoir plus{" "}
+              {t("home.motion.cta")}{" "}
               <img
                 src="/icons/arrow-right.svg"
                 alt=""
@@ -220,7 +208,9 @@ export default function Home() {
       </section>
       {/* Icones des partenaires */}
       <section className="bg-black flex flex-col px-10 py-15 justify-center items-center gap-y-12">
-        <h2 className="md:text-t2 max-md:text-t3">Nos partenaires</h2>
+        <h2 className="md:text-t2 max-md:text-t3">
+          {t("home.titles.partners")}
+        </h2>
         <div className="flex max-sm:flex-col items-center gap-12.5 justify-center">
           <Partner src={Meta} alt="Meta" label="Business Partner" />
           <Partner src={Tiktok} alt="Tiktok" label="Marketing Partner" />

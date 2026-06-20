@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
+import { useTranslation } from "react-i18next";
 
 interface SubItem {
   label: string;
@@ -15,29 +16,46 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "Accueil", path: "/" },
-  { label: "Le Groupe", path: "https://www.playtosky.com/", external: true },
+  { label: "header.home", path: "/" },
+  { label: "header.group", path: "https://www.playtosky.com/", external: true },
   {
-    label: "Nos localisations",
+    label: "header.locations",
     path: "https://www.playtosky.com/offices-by-region",
     external: true,
   },
   {
-    label: "Offres",
+    label: "header.offers",
     path: "",
     subItems: [
       { label: "Acting", path: "/acting" },
       { label: "Motion", path: "/motion" },
     ],
   },
-  { label: "Contact", path: "/contact" },
+  { label: "header.contact", path: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
+  const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
+  // const [mobileLanguagesOpen, setMobileLanguagesOpen] =
+  //   useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const timeout2Ref = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { t, i18n } = useTranslation();
+  const [languages, setLanguages] = useState([
+    {
+      language: "English",
+      label: "en",
+      active: false,
+    },
+    {
+      language: "Français",
+      label: "fr",
+      active: true,
+    },
+  ]);
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -45,6 +63,14 @@ export default function Navbar() {
   };
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => setServicesOpen(false), 150);
+  };
+
+  const handleMouseEnterLanguage = () => {
+    if (timeout2Ref.current) clearTimeout(timeout2Ref.current);
+    setLanguagesOpen(true);
+  };
+  const handleMouseLeaveLanguage = () => {
+    timeout2Ref.current = setTimeout(() => setLanguagesOpen(false), 150);
   };
 
   return (
@@ -70,7 +96,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="font-glacial text-t5 text-white hover:text-gray-white transition-colors duration-200"
               >
-                {label}
+                {t(`${label}`)}
               </a>
             ) : (
               <NavLink
@@ -83,7 +109,7 @@ export default function Navbar() {
                   }`
                 }
               >
-                {label}
+                {t(`${label}`)}
                 {subItems && (
                   <svg
                     className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
@@ -104,7 +130,7 @@ export default function Navbar() {
 
             {/* Dropdown desktop */}
             {subItems && servicesOpen && (
-              <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg">
+              <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg z-10">
                 {subItems.map((sub) => (
                   <li key={sub.path}>
                     <NavLink
@@ -126,6 +152,51 @@ export default function Navbar() {
             )}
           </li>
         ))}
+        <div
+          className="relative text-white"
+          onMouseEnter={handleMouseEnterLanguage}
+          onMouseLeave={handleMouseLeaveLanguage}
+        >
+          <span className="uppercase flex items-center justify-center gap-1">
+            {languages.filter((lang) => lang.active)[0].label}
+            <svg
+              className={`w-3 h-3 transition-transform duration-200 ${languagesOpen ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </span>
+          {languagesOpen && (
+            <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg z-10">
+              {languages.map((lang) => (
+                <li
+                  key={lang.language}
+                  className={`block px-4 py-2 font-glacial text-t6 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5`}
+                  onClick={() => {
+                    i18n.changeLanguage(lang.label);
+                    setLanguages(
+                      languages.map((language) => {
+                        if (language.label === lang.label) {
+                          return { ...language, active: true };
+                        }
+                        return { ...language, active: false };
+                      }),
+                    );
+                  }}
+                >
+                  {lang.language}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </ul>
 
       {/* Hamburger */}
@@ -182,7 +253,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="font-glacial text-t3 text-white"
                 >
-                  {label}
+                  {t(`${label}`)}
                 </a>
               ) : subItems ? (
                 <div>
@@ -190,7 +261,7 @@ export default function Navbar() {
                     onClick={() => setMobileServicesOpen((prev) => !prev)}
                     className="font-glacial text-t3 text-white flex items-center gap-2 mx-auto"
                   >
-                    {label}
+                    {t(`${label}`)}
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
                       fill="none"
@@ -231,7 +302,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="font-glacial text-t3 text-white"
                 >
-                  {label}
+                  {t(`${label}`)}
                 </NavLink>
               )}
             </li>

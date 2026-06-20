@@ -1,0 +1,200 @@
+{
+  "header": {
+    "home": "Home",
+    "group": "The Group",
+    "locations": "Our locations",
+    "offers": "Offers",
+    "contact": "Contact"
+  },
+  "cta": "Contact us",
+  "home": {
+    "catchPhrase": "Video content designed to perform across all your digital channels.",
+    "tags": {
+      "creativity": {
+        "label": "Creativity in execution",
+        "text": "Our creations are designed to drive performance across the entire media funnel, from awareness to conversion. Our experts spot the best ideas on the web and turn them into impactful videos, aligned with our clients' media strategies."
+      },
+      "content": {
+        "label": "Impactful content",
+        "text": "Every day, an internet user is exposed to over 15,000 commercial solicitations. To avoid fatigue from repeated similar content, distribution algorithms favor content that is fresh and regularly updated."
+      },
+      "pub": {
+        "label": "Perfect for the ad space",
+        "text": "Each broadcast channel has its own rules: ad formats, durations, audience habits. A high-performing creation is above all a creation designed for the medium that carries it."
+      }
+    },
+    "acting": {
+      "click": "Click on me",
+      "hover": "Hover me",
+      "title": "Strategic content designed to maximize your media impact",
+      "text": "We design and produce custom content, aligned with your visibility and performance goals. Our teams organize shoots tailored to your project.",
+      "cta": "Learn more"
+    },
+    "motion": {
+      "click": "Click on me",
+      "hover": "Hover me",
+      "title": "Strategic content designed to maximize your media impact",
+      "text": "We design and produce custom content, aligned with your visibility and performance goals. Our teams organize shoots tailored to your project.",
+      "cta": "Learn more"
+    },
+    "titles": {
+      "snackContent": "Snack Content within your Reach",
+      "partners": "Our partners",
+      "faq": "Frequently asked questions"
+    },
+    "faq": {
+      "questions": {
+        "1": "Why sign with Snackly for my videos?",
+        "2": "Should I choose Acting or Motion?",
+        "3": "How long does it usually take to receive my videos?",
+        "4": "Why do I need videos in my campaigns?",
+        "5": "How much does a Snackly video cost?"
+      },
+      "answers": {
+        "1": "At Snackly, we design and produce videos optimized for your media campaigns. Our videos are tailored to each social network and each placement (Feed, Story, TrueView, Display), taking into account their specific constraints and opportunities. Simply put, you would never communicate the same way on an Instagram Feed as you would in a TikTok Ad. That’s what makes us different and what drives us every day: at Snackly, media drives creativity.",
+        "2": "Both of our solutions are relevant. Acting: This is a highly effective option because it often features real people. Acting videos naturally fit into the social media video ecosystem. However, because filming is involved, production is more complex to organize and therefore more expensive. Motion: This option is far more scalable and easier to launch. Do you already have graphic assets such as photos, illustrations, or videos? We adapt them to create videos perfectly optimized for your media campaigns in record time. However, the final result depends on the quality of your assets. The richer and more visually appealing they are, the greater the impact of the video.",
+        "3": "It all depends on the package you choose. If you select the Acting package, the project will typically take 5 to 6 weeks, and you will receive all your videos ready to launch in your media campaigns. If you choose our Motion package, we can move faster and deliver your videos within 3 to 4 weeks on average. Snackly’s tip: The longer we work together, the better our teams understand your brand voice, which helps reduce production timelines. That’s why Snackly also offers annual packages.",
+        "4": "Today, video accounts for 80% of global web bandwidth consumption. It is the content format most consumed by your audience. In addition, according to TikTok, 80% of a campaign’s ROAS (Return on Ad Spend) depends on the creative itself. So, can you really afford not to use video if you want your online campaigns to perform?",
+        "5": "A video produced by Snackly costs between €1,500 and €2,500. The final price depends on the package you choose (Acting or Motion) and the number of videos you order. Our goal is to disrupt the video content creation market. Video production should not be overly expensive, because the largest share of your budget should be invested in media distribution to maximize traffic and conversions."
+      }
+    }
+  },
+  "acting": {
+    "catchPhrase": "Start your project on",
+    "rotatingAnimation": {
+      "labels": {
+        "brief": "Brief",
+        "declination": "Declination",
+        "filming": "Filming",
+        "script": "Script",
+        "editing": "Editing"
+      }
+    },
+    "sections": {
+      "presentation": {
+        "title": "High-quality productions",
+        "subtitle": "Personalized snack content",
+        "services": {
+          "messages": "Catchy hooks and impactful messaging",
+          "subtitle": "Subtitles and audio descriptions",
+          "format": "Adapted formats",
+          "editing": "High-impact production and editing",
+          "artistic": "Consistent artistic direction"
+        }
+      },
+      "offers": {
+        "product": "videos",
+        "mostPopular": "Most popular"
+      },
+      "experts": {
+        "label": "Our experts"
+      }
+    }
+  },
+  "motion": {
+    "catchPhrase": "Start your project",
+    "rotatingAnimation": {
+      "labels": {
+        "brief": "Brief",
+        "animation": "Animation",
+        "delivery": "Delivery",
+        "script": "Script",
+        "storyboard": "Storyboard"
+      }
+    },
+    "sections": {
+      "presentation": {
+        "title": "High-quality visual effects",
+        "subtitle": "Personalized snack content",
+        "services": {
+          "animation": "Smooth 2D (or 3D) animations",
+          "conception": "Faithful concept development and storyboarding",
+          "format": "Adapted formats (various aspect ratios)"
+        }
+      },
+      "offers": {
+        "product": "videos",
+        "mostPopular": "Most popular"
+      },
+      "experts": {
+        "label": "Our experts"
+      }
+    }
+  },
+  "contact": {
+    "catchPhrase": "Let’s build your growth together",
+    "detailedPhrase": "Our experts help you define a digital strategy aligned with your goals. Contact us using the communication method that suits you best.",
+    "mail": {
+      "label": "Email",
+      "value": "contact@snacklyagency.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+33 1 23 45 67 89"
+    },
+    "schedules": {
+      "label": "Business Hours",
+      "value": "Mon–Fri · 9:30 AM–7:00 PM"
+    },
+    "presentation": "9 complementary areas of expertise, one single goal: helping your business grow.",
+    "getCalledBack": {
+      "label": "Get called back",
+      "pending": "Sending",
+      "cta": "Request a callback"
+    },
+    "sendMessage": {
+      "label": "Send a message",
+      "pending": "Sending",
+      "cta": "Send"
+    },
+    "inputs": {
+      "firstname": {
+        "label": "First Name",
+        "placeholder": "John"
+      },
+      "lastname": {
+        "label": "Last Name",
+        "placeholder": "Smith"
+      },
+      "phoneNumber": {
+        "label": "Phone Number",
+        "placeholder": "+33 6 12 34 56 78"
+      },
+      "mail": {
+        "label": "Email",
+        "placeholder": "johnsmith@gmail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us how we can help you"
+      },
+      "subject": "Subject",
+      "dayOfCall": "Call date",
+      "hourOfCall": "Call time",
+      "selectPlaceholder": "Select",
+      "services": {
+        "startActing": "5 videos and more (Acting)",
+        "goldActing": "10 videos and more (Acting)",
+        "premiumActing": "20 videos and more (Acting)",
+        "startMotion": "5 videos and more (Motion)",
+        "goldMotion": "10 videos and more (Motion)",
+        "premiumMotion": "20 videos and more (Motion)",
+        "other": "Other Inquiry"
+      }
+    }
+  },
+  "footer": {
+    "titles": {
+      "policy": "Policy",
+      "services": "Services",
+      "entities": "Our entities",
+      "media": "Follow us"
+    },
+    "policy": {
+      "legacy": "Legal Notice",
+      "confidentiality": "Privacy Policy",
+      "cgu": "Terms of Use"
+    },
+    "creators": "created by"
+  }
+}

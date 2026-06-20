@@ -1,32 +1,24 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
+import { options as opts } from "../../utils/constants/options";
 const FORMSPREE = "";
 
 type Tab = "callback" | "message";
 
 const timeSlots = [
-  "9h30 – 10h30",
-  "10h30 – 11h30",
-  "11h30 – 12h30",
-  "14h00 – 15h00",
-  "15h00 – 16h00",
-  "16h00 – 17h00",
-  "17h00 – 18h00",
-];
-
-const subjects = [
-  "5 vidéos et plus (Action)",
-  "10 vidéos et plus (Action)",
-  "20 vidéos et plus (Action)",
-  "5 vidéos et plus (Motion)",
-  "10 vidéos et plus (Motion)",
-  "20 vidéos et plus (Motion)",
-  "Other Inquiry",
+  { name: "9h30 – 10h30", option: "9h30 – 10h30" },
+  { name: "10h30 – 11h30", option: "10h30 – 11h30" },
+  { name: "11h30 – 12h30", option: "11h30 – 12h30" },
+  { name: "14h00 – 15h00", option: "14h00 – 15h00" },
+  { name: "15h00 – 16h00", option: "15h00 – 16h00" },
+  { name: "16h00 – 17h00", option: "16h00 – 17h00" },
+  { name: "17h00 – 18h00", option: "17h00 – 18h00" },
 ];
 
 export default function ContactForm() {
   const [activeTab, setActiveTab] = useState<Tab>("callback");
+  const { t } = useTranslation();
 
   return (
     <div className="rounded-2xl border border-white/10 bg-snackly-purple p-1">
@@ -41,7 +33,7 @@ export default function ContactForm() {
           }`}
         >
           <Phone className="w-4 h-4" />
-          Se faire rappeler
+          {t("contact.getCalledBack.label")}
         </button>
         <button
           onClick={() => setActiveTab("message")}
@@ -52,7 +44,7 @@ export default function ContactForm() {
           }`}
         >
           <Mail className="w-4 h-4" />
-          Envoyer un message
+          {t("contact.sendMessage.label")}
         </button>
       </div>
 
@@ -74,6 +66,7 @@ function CallbackForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -103,36 +96,41 @@ function CallbackForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Field label="Nom" placeholder="Dupont" value={nom} onChange={setNom} />
         <Field
-          label="Prénom"
-          placeholder="Jean"
+          label={t("contact.inputs.firstname.label")}
+          placeholder={t("contact.inputs.firstname.placeholder")}
           value={prenom}
           onChange={setPrenom}
         />
+        <Field
+          label={t("contact.inputs.lastname.label")}
+          placeholder={t("contact.inputs.firstname.placeholder")}
+          value={nom}
+          onChange={setNom}
+        />
       </div>
       <Field
-        label="Numéro de téléphone"
-        placeholder="+33 6 12 34 56 78"
+        label={t("contact.inputs.phoneNumber.label")}
+        placeholder={t("contact.inputs.firstname.placeholder")}
         type="tel"
         value={tel}
         onChange={setTel}
       />
       <SelectField
-        label="Sujet"
-        options={subjects}
+        label={t("contact.inputs.subject")}
+        options={opts}
         value={sujet}
         onChange={setSujet}
       />
       <Field
-        label="Jour de l'appel"
+        label={t("contact.inputs.dayOfCall")}
         placeholder=""
         type="date"
         value={date}
         onChange={setDate}
       />
       <SelectField
-        label="Horaire de l'appel"
+        label={t("contact.inputs.hourOfCall")}
         options={timeSlots}
         value={horaire}
         onChange={setHoraire}
@@ -155,7 +153,9 @@ function CallbackForm() {
         className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-sm font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
       >
         <Phone className="w-4 h-4" />
-        {status === "sending" ? "Envoi…" : "Demander un rappel"}
+        {status === "sending"
+          ? `${t("contact.getCalledBack.pending")}...`
+          : `${t("contact.getCalledBack.cta")}`}
       </button>
     </form>
   );
@@ -170,6 +170,7 @@ function MessageForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -195,39 +196,43 @@ function MessageForm() {
       setStatus("error");
     }
   };
-
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Field label="Nom" placeholder="Nom" value={nom} onChange={setNom} />
         <Field
-          label="Prénom"
-          placeholder="Prénom"
+          label={t("contact.inputs.firstname.label")}
+          placeholder={t("contact.inputs.firstname.placeholder")}
+          value={nom}
+          onChange={setNom}
+        />
+        <Field
+          label={t("contact.inputs.lastname.label")}
+          placeholder={t("contact.inputs.lastname.placeholder")}
           value={prenom}
           onChange={setPrenom}
         />
       </div>
       <Field
-        label="Email"
-        placeholder="jean@exemple.com"
+        label={t("contact.inputs.mail.label")}
+        placeholder={t("contact.inputs.mail.placeholder")}
         type="email"
         value={email}
         onChange={setEmail}
       />
       <SelectField
-        label="Sujet"
-        options={subjects}
+        label={t("contact.inputs.subject")}
+        options={opts}
         value={sujet}
         onChange={setSujet}
       />
 
       <div className="flex flex-col gap-1.5">
         <label className="text-t6 font-medium uppercase tracking-widest text-white/50">
-          Message
+          {t("contact.inputs.message.label")}
         </label>
         <textarea
           rows={4}
-          placeholder="Dites-nous en quoi nous pouvons vous aider…"
+          placeholder={t("contact.inputs.message.placeholder")}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
@@ -251,7 +256,9 @@ function MessageForm() {
         className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-t5 font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
       >
         <Mail className="w-4 h-4" />
-        {status === "sending" ? "Envoi…" : "Envoyer le message"}
+        {status === "sending"
+          ? `${t("contact.sendMessage.pending")}...`
+          : `${t("contact.sendMessage.cta")}`}
       </button>
     </form>
   );
@@ -280,7 +287,7 @@ function Field({
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
+        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8 [&::-webkit-calendar-picker-indicator]:brightness-0 [&::-webkit-calendar-picker-indicator]:invert"
       />
     </div>
   );
@@ -293,10 +300,12 @@ function SelectField({
   onChange,
 }: {
   label: string;
-  options: string[];
+  options: typeof opts;
   value: string;
   onChange: (v: string) => void;
 }) {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-1.5">
       <label className="text-t6 font-medium uppercase tracking-widest text-white/50">
@@ -308,11 +317,15 @@ function SelectField({
         className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white outline-none transition focus:border-white/30 focus:bg-white/8"
       >
         <option value="" disabled className="bg-[#111] text-white/50">
-          Sélectionner…
+          {t("contact.inputs.selectPlaceholder")}...
         </option>
         {options.map((o) => (
-          <option key={o} value={o} className="bg-[#111] text-white">
-            {o}
+          <option
+            key={o.option}
+            value={o.option}
+            className="bg-[#111] text-white"
+          >
+            {t(o.name)}
           </option>
         ))}
       </select>

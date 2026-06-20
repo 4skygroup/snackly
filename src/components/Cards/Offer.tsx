@@ -1,5 +1,6 @@
 import { offers } from "../../utils/constants/offers";
 import Button from "../Button/Button";
+import { useTranslation } from "react-i18next";
 
 export default function Offer({
   isPopular = false,
@@ -10,6 +11,7 @@ export default function Offer({
   imgSrc?: string;
   offer?: "start" | "gold" | "premium";
 }) {
+  const { t } = useTranslation();
   return (
     <article
       className={`w-65.75 h-73.75 ${isPopular ? "bg-snackly-purple/50" : "bg-snackly-card-gray/18"} rounded-r1 flex flex-col`}
@@ -25,13 +27,15 @@ export default function Offer({
         >
           <span className="font-bold text-t3">{offers[offer].name}</span>
           <span className="font-bold text-h5">{offers[offer].offer}+</span>
-          <span className="font-bold text-t3">videos</span>
+          <span className="font-bold text-t3">
+            {t("acting.sections.offers.product")}
+          </span>
           <Button />
         </div>
       </div>
       {isPopular ? (
         <span className="m-auto text-t5 px-5 py-1.5 bg-snackly-purple rounded-r3">
-          le plus populaire
+          {t("acting.sections.offers.mostPopular")}
         </span>
       ) : (
         <></>

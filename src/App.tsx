@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Acting from "./pages/Acting";
 import Motion from "./pages/Motion";
+import "./i18n";
 
 const router = createBrowserRouter([
   {

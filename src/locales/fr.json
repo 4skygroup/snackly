@@ -1,0 +1,200 @@
+{
+  "header": {
+    "home": "Accueil",
+    "group": "Le Groupe",
+    "locations": "Nos localisations",
+    "offers": "Offres",
+    "contact": "Contact"
+  },
+  "cta": "Contactez-nous",
+  "home": {
+    "catchPhrase": "Des créations vidéo pensées pour performer sur tous vos leviers digitaux.",
+    "tags": {
+      "creativity": {
+        "label": "Créativité dans l’exécution",
+        "text": "Nos créations sont pensées pour générer de la performance sur l’ensemble du funnel média, de la notoriété à la conversion.\nNos experts repèrent les meilleures idées du web et les transforment en vidéos impactantes, alignées avec les stratégies médias de nos clients."
+      },
+      "content": {
+        "label": "Contenu percutant",
+        "text": "Chaque jour, un internaute est exposé à plus de 15 000 sollicitations commerciales. Pour éviter la lassitude liée à la répétition de contenus similaires, les algorithmes de diffusion privilégient des contenus renouvelés et régulièrement mis à jour."
+      },
+      "pub": {
+        "label": "Idéal pour l’espace pub",
+        "text": "Chaque canal de diffusion répond à ses propres codes : formats publicitaires, durées, usages des audiences. Une création performante est avant tout une création pensée pour le média qui la porte."
+      }
+    },
+    "acting": {
+      "click": "Cliquez-moi",
+      "hover": "Survolez-moi",
+      "title": "Des contenus stratégiques pensés pour maximiser votre impact média",
+      "text": "Nous concevons et produisons des contenus personnalisés, alignés sur vos objectifs de visibilité et de performance. Nos équipes organisent des tournages adaptés à votre projet",
+      "cta": "En savoir plus"
+    },
+    "motion": {
+      "click": "Cliquez-moi",
+      "hover": "Survolez-moi",
+      "title": "Des contenus stratégiques pensés pour maximiser votre impact média",
+      "text": "Nous concevons et produisons des contenus personnalisés, alignés sur vos objectifs de visibilité et de performance. Nos équipes organisent des tournages adaptés à votre projet",
+      "cta": "En savoir plus"
+    },
+    "titles": {
+      "snackContent": "Le Snack Content à votre portée",
+      "partners": "Nos partenaires",
+      "faq": "Foire aux questions"
+    },
+    "faq": {
+      "questions": {
+        "1": "Pourquoi signer avec Snackly pour mes vidéos ?",
+        "2": "Dois-je prendre de l’Acting ou du Motion ?",
+        "3": "Combien de temps en moyenne avant de recevoir mes vidéos ?",
+        "4": "Pourquoi j’ai besoin de vidéos dans mes campagnes ?",
+        "5": "Combien de temps en moyenne avant de recevoir mes vidéos ?"
+      },
+      "answers": {
+        "1": "Chez Snackly, nous imaginons et réalisons des vidéos optimisées pour vos campagnes médias. Les vidéos sont adaptées à chaque réseau social et à chaque espace de diffusion (Feed, Story, Trueview, Display) en prenant en compte leurs limites et leurs opportunités. Tout simplement, parce qu'on ne communiquera jamais de la même manière sur Instagram Feed que sur une TikTok Ads. C'est ce qui fait notre différence, c'est notre leitmotiv au quotidien :chez Snackly, c’est le média qui dicte la créa !",
+        "2": "Nos deux offres sont pertinentes : L’Acting : C'est une solution très performante car elle met souvent en scène des humains. Les vidéos acting s'intègrent donc parfaitement dans l'écosystème vidéo des réseaux sociaux. Cependant, avec l'organisation d'un tournage, la production est plus complexe à mettre en place et donc plus coûteuse. Le Motion : Il est quant à lui beaucoup plus \"scalable\" et simple à activer. Vous avez des assets graphiques (photos, illustrations, vidéos) ? On les adapte pour créer des vidéos parfaitement optimisées à vos campagnes médias en un temps record. Néanmoins, ce format dépend de la qualité inhérente de vos assets. Plus ils sont fournis et beaux, plus la vidéo finale aura d’impact.",
+        "3": "Tout dépend du pack activé : Si vous choisissez l’Acting, le projet durera en moyenne 5 à 6 semaines et vous recevrez toutes vos vidéos clé en main, prêtes à être diffusées dans vos campagnes médias. Si vous passez par notre pack Motion, nous pourrons aller plus rapidement et vous livrer vos vidéos en 3 à 4 semaines en moyenne. Le conseil Snackly : Plus nous vous accompagnons sur la durée, plus nos équipes maîtrisent le ton de votre marque, ce qui permet de réduire ces délais. C'est pour cela que Snackly propose aussi des packs annuels.",
+        "4": "Aujourd’hui, la vidéo concentre 80% de la bande passante du web. C'est le format le plus consommé par vos cibles. De plus, selon TikTok, 80% du ROAS (Retour sur Investissement Publicitaire) de votre campagne média dépend de la créa. Alors, pensez-vous vraiment pouvoir vous passer de ce format pour performer dans vos campagnes en ligne ?",
+        "5": "Une vidéo chez Snackly coûte entre 1500€ et 2500€. Tout dépend du pack que vous choisissez (acting ou motion) et de la quantité de vidéos que vous commandez. Notre but est de disrupter le marché de la création de contenus vidéo. La vidéo ne doit pas vous coûter cher, car la plus grosse part de votre budget doit aller dans sa médiatisation afin de maximiser votre trafic et votre conversion."
+      }
+    }
+  },
+  "acting": {
+    "catchPhrase": "Démarrez votre projet",
+    "rotatingAnimation": {
+      "labels": {
+        "brief": "Brief",
+        "declination": "Déclinaison",
+        "filming": "Tournage",
+        "script": "Script",
+        "editing": "Montage"
+      }
+    },
+    "sections": {
+      "presentation": {
+        "title": "Des tournages de qualité",
+        "subtitle": "Un snack content personnalisé",
+        "services": {
+          "messages": "Accroches et messages percutants",
+          "subtitle": "Sous-titrage et audio-description",
+          "format": "Formats adaptés",
+          "editing": "Réalisation et montages impactants",
+          "artistic": "Direction artistique fidèle"
+        }
+      },
+      "offers": {
+        "product": "videos",
+        "mostPopular": "Le plus polulaire"
+      },
+      "experts": {
+        "label": "Nos experts"
+      }
+    }
+  },
+  "motion": {
+    "catchPhrase": "Démarrez votre projet",
+    "rotatingAnimation": {
+      "labels": {
+        "brief": "Brief",
+        "animation": "Animation",
+        "delivery": "Livraison",
+        "script": "Script",
+        "storyboard": "Storyboard"
+      }
+    },
+    "sections": {
+      "presentation": {
+        "title": "Des effets de qualité",
+        "subtitle": "Un snack content personnalisé",
+        "services": {
+          "animation": "Animations fluides en 2D (ou 3D)",
+          "conception": "Conceptions et Storyboarding fidèles",
+          "format": "Formats adaptés (Ratios divers)"
+        }
+      },
+      "offers": {
+        "product": "videos",
+        "mostPopular": "Le plus polulaire"
+      },
+      "experts": {
+        "label": "Nos experts"
+      }
+    }
+  },
+  "contact": {
+    "catchPhrase": "Construisons votre croissance ensemble",
+    "detailedPhrase": "Nos experts vous accompagnent dans la définition d'une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d'échange qui vous convient le mieux.",
+    "mail": {
+      "label": "Email",
+      "value": "contact@snacklyagency.com"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "value": "+33 1 23 45 67 89"
+    },
+    "schedules": {
+      "label": "Horaires",
+      "value": "Lun–Ven · 9h30–19h00"
+    },
+    "presentation": "9 expertises complémentaires, un seul objectif : faire grandir votre entreprise.",
+    "getCalledBack": {
+      "label": "Se faire rappeler",
+      "pending": "Envoi",
+      "cta": "Programmer l'appel"
+    },
+    "sendMessage": {
+      "label": "Envoyer un message",
+      "pending": "Envoi",
+      "cta": "Envoyer le message"
+    },
+    "inputs": {
+      "firstname": {
+        "label": "Prénom",
+        "placeholder": "Jean"
+      },
+      "lastname": {
+        "label": "Nom",
+        "placeholder": "Dupond"
+      },
+      "phoneNumber": {
+        "label": "Numéro de téléphone",
+        "placeholder": "+33 6 12 34 56 78"
+      },
+      "mail": {
+        "label": "Email",
+        "placeholder": "jeandupond@gmail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Dites-nous en quoi nous pouvosn vous aider"
+      },
+      "subject": "Sujet",
+      "dayOfCall": "Jour de l'appel",
+      "hourOfCall": "Horaire de l'appel",
+      "selectPlaceholder": "Selectionner",
+      "services": {
+        "startActing": "5 vidéos et plus (Acting)",
+        "goldActing": "10 vidéos et plus (Acting)",
+        "premiumActing": "20 vidéos et plus (Acting)",
+        "startMotion": "5 vidéos et plus (Motion)",
+        "goldMotion": "10 vidéos et plus (Motion)",
+        "premiumMotion": "20 vidéos et plus (Motion)",
+        "other": "Autre"
+      }
+    }
+  },
+  "footer": {
+    "titles": {
+      "policy": "Politique",
+      "services": "Services",
+      "entities": "Nos entités",
+      "media": "Nos réseaux"
+    },
+    "policy": {
+      "legacy": "Mentions légales",
+      "confidentiality": "Confidentialité",
+      "cgu": "CGU"
+    },
+    "creators": "créé par"
+  }
+}

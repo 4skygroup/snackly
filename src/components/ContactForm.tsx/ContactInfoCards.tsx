@@ -1,24 +1,26 @@
 import { Mail, Phone, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const cards = [
   {
     icon: <Mail className="w-5 h-5 text-white" />,
-    label: "Email",
-    value: "contact@snacklyagency.com",
+    label: "contact.mail.label",
+    value: "contact.mail.value",
   },
   {
     icon: <Phone className="w-5 h-5 text-white" />,
-    label: "Téléphone",
-    value: "+33 1 23 45 67 89",
+    label: "contact.phone.label",
+    value: "contact.phone.value",
   },
   {
     icon: <Clock className="w-5 h-5 text-white" />,
-    label: "Horaires",
-    value: "Lun–Ven · 9h30–19h00",
+    label: "contact.schedules.label",
+    value: "contact.schedules.value",
   },
 ];
 
 export default function ContactInfoCards() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4">
       {cards.map((card) => (
@@ -31,10 +33,10 @@ export default function ContactInfoCards() {
           </div>
           <div>
             <p className="text-t6 font-medium uppercase tracking-widest text-white/40">
-              {card.label}
+              {t(`${card.label}`)}
             </p>
             <p className="mt-0.5 text-t5 font-medium text-white">
-              {card.value}
+              {t(`${card.value}`)}
             </p>
           </div>
         </div>
@@ -49,8 +51,7 @@ export default function ContactInfoCards() {
           loading="lazy"
         />
         <p className="text-t6 md:text-t5 leading-relaxed text-white/40">
-          9 expertises complémentaires, un seul objectif : faire grandir votre
-          entreprise.
+          {t("contact.presentation")}
         </p>
       </div>
     </div>

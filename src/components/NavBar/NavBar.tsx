@@ -39,8 +39,8 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
   const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
-  // const [mobileLanguagesOpen, setMobileLanguagesOpen] =
-  //   useState<boolean>(false);
+  const [mobileLanguagesOpen, setMobileLanguagesOpen] =
+    useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const timeout2Ref = useRef<ReturnType<typeof setTimeout> | null>(null);
   const { t, i18n } = useTranslation();
@@ -307,6 +307,51 @@ export default function Navbar() {
               )}
             </li>
           ))}
+          <li>
+            <button
+              onClick={() => setMobileLanguagesOpen((prev) => !prev)}
+              className="font-glacial text-t3 text-white flex items-center gap-2 mx-auto uppercase"
+            >
+              {languages.filter((lang) => lang.active)[0].label}
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${mobileLanguagesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <ul
+              className={`overflow-hidden transition-all duration-300 flex flex-col items-center gap-3 ${mobileLanguagesOpen ? "max-h-40 mt-4" : "max-h-0"}`}
+            >
+              {languages.map((lang) => (
+                <li
+                  key={lang.language}
+                  className={`block px-4 py-2 font-glacial text-t4 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5`}
+                  onClick={() => {
+                    i18n.changeLanguage(lang.label);
+                    setLanguages(
+                      languages.map((language) => {
+                        if (language.label === lang.label) {
+                          return { ...language, active: true };
+                        }
+                        return { ...language, active: false };
+                      }),
+                    );
+                  }}
+                >
+                  {lang.language}
+                </li>
+              ))}
+            </ul>
+          </li>
         </ul>
 
         {/* Mention en bas */}

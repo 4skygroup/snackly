@@ -140,12 +140,16 @@
     "getCalledBack": {
       "label": "Get called back",
       "pending": "Sending",
-      "cta": "Request a callback"
+      "cta": "Request a callback",
+      "success": "Demande envoyée avec succès !",
+      "failure": "Une erreur est survenue. Veuillez réessayer."
     },
     "sendMessage": {
       "label": "Send a message",
       "pending": "Sending",
-      "cta": "Send"
+      "cta": "Send",
+      "success": "Message envoyé avec succès !",
+      "failure": "Une erreur est survenue. Veuillez réessayer."
     },
     "inputs": {
       "firstname": {

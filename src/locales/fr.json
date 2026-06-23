@@ -140,12 +140,16 @@
     "getCalledBack": {
       "label": "Se faire rappeler",
       "pending": "Envoi",
-      "cta": "Programmer l'appel"
+      "cta": "Programmer l'appel",
+      "success": "Demande envoyée avec succès !",
+      "failure": "Une erreur est survenue. Veuillez réessayer."
     },
     "sendMessage": {
       "label": "Envoyer un message",
       "pending": "Envoi",
-      "cta": "Envoyer le message"
+      "cta": "Envoyer",
+      "success": "Message envoyé avec succès !",
+      "failure": "Une erreur est survenue. Veuillez réessayer."
     },
     "inputs": {
       "firstname": {

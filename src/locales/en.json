@@ -141,15 +141,15 @@
       "label": "Get called back",
       "pending": "Sending",
       "cta": "Request a callback",
-      "success": "Demande envoyée avec succès !",
-      "failure": "Une erreur est survenue. Veuillez réessayer."
+      "success": "Demand successfully submitted !",
+      "failure": "An error occured. Please try again"
     },
     "sendMessage": {
       "label": "Send a message",
       "pending": "Sending",
       "cta": "Send",
-      "success": "Message envoyé avec succès !",
-      "failure": "Une erreur est survenue. Veuillez réessayer."
+      "success": "Message successfully submitted !",
+      "failure": "An error occured. Please try again"
     },
     "inputs": {
       "firstname": {

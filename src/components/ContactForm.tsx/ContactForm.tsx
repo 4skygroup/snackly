@@ -104,14 +104,14 @@ function CallbackForm() {
         />
         <Field
           label={t("contact.inputs.lastname.label")}
-          placeholder={t("contact.inputs.firstname.placeholder")}
+          placeholder={t("contact.inputs.lastname.placeholder")}
           value={nom}
           onChange={setNom}
         />
       </div>
       <Field
         label={t("contact.inputs.phoneNumber.label")}
-        placeholder={t("contact.inputs.firstname.placeholder")}
+        placeholder={t("contact.inputs.phoneNumber.placeholder")}
         type="tel"
         value={tel}
         onChange={setTel}

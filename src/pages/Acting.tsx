@@ -159,7 +159,7 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("acting.sections.presentation.services.messages")}
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("acting.sections.presentation.services.subtitle")}
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("acting.sections.presentation.services.format")}
                   </p>
                 </div>
@@ -192,7 +192,7 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("acting.sections.presentation.services.editing")}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function Acting() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("acting.sections.presentation.services.artistic")}
                   </p>
                 </div>

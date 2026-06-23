@@ -161,7 +161,7 @@ export default function Motion() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("motion.sections.presentation.services.animation")}
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function Motion() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("motion.sections.presentation.services.conception")}
                   </p>
                 </div>
@@ -183,7 +183,7 @@ export default function Motion() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5">
+                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
                     {t("motion.sections.presentation.services.format")}
                   </p>
                 </div>

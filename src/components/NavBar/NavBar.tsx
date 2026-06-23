@@ -16,7 +16,6 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "header.home", path: "/" },
   { label: "header.group", path: "https://www.playtosky.com/", external: true },
   {
     label: "header.locations",

@@ -82,7 +82,7 @@ export default function Home() {
             <p className="mdpp:text-t1 max-w-177 leading-9.5 pb-7.5 max-mdpp:text-t3 max-sm:text-center">
               {t("home.catchPhrase")}
             </p>
-            <Button />
+            <Button isHome={true} />
           </div>
           {/* Right */}
           <div>

@@ -7,14 +7,10 @@ export const mediaList: LinkContent[] = [
     },
     {
         name: "/icons/Instagram.svg",
-        link: "/",
+        link: "https://www.instagram.com/snacklyagency",
     },
     {
         name: "/icons/Tiktok.svg",
-        link: "/",
-    },
-    {
-        name: "/icons/Behance.svg",
         link: "/",
     },
 ];

@@ -51,19 +51,23 @@ export default function Footer({
         {/* COPYRIGHT */}
         <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
           <span>{t("footer.creators")}</span>
-          <img
-            src="/images/visuance.webp"
-            alt="Visuance logo"
-            className="h-4"
-            loading="lazy"
-          />
+          <a href=" https://www.visuanceagency.com/" target="_blank">
+            <img
+              src="/images/visuance.webp"
+              alt="Visuance logo"
+              className="h-4"
+              loading="lazy"
+            />
+          </a>
           <span>&</span>
-          <img
-            src="/images/play-to-sky.webp"
-            alt="Play To Sky logo"
-            className="h-6"
-            loading="lazy"
-          />
+          <a href=" https://www.playtosky.com/" target="_blank">
+            <img
+              src="/images/play-to-sky.webp"
+              alt="Play To Sky logo"
+              className="h-6"
+              loading="lazy"
+            />
+          </a>
         </div>
       </div>
     </footer>

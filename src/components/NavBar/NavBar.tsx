@@ -29,6 +29,24 @@ const navItems: NavItem[] = [
   { label: "header.contact", path: "/contact" },
 ];
 
+const navItemsMobile: NavItem[] = [
+  { label: "header.group", path: "https://www.playtosky.com/", external: true },
+  {
+    label: "header.locations",
+    path: "https://www.playtosky.com/offers-by-region",
+    external: true,
+  },
+  {
+    label: "header.offers",
+    path: "",
+    subItems: [
+      { label: "Acting", path: "/acting" },
+      { label: "Motion", path: "/motion" },
+    ],
+  },
+  { label: "header.contact", path: "/contact" },
+];
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
@@ -69,7 +87,7 @@ export default function Navbar() {
   // };
 
   return (
-    <nav className="relative w-full bg-snackly-purple flex items-center justify-between px-8 pt-8 pb-8">
+    <nav className="relative w-full bg-snackly-purple flex items-center justify-between px-8 pt-8 pb-8 max-sm:justify-end">
       {/* Logo */}
 
       <ul className="hidden md:flex items-center gap-10">
@@ -151,7 +169,7 @@ export default function Navbar() {
       </NavLink>
 
       {/* ── Desktop nav ── */}
-      <ul className="hidden md:flex items-center gap-10">
+      <ul className="hidden md:flex items-center gap-8">
         {navItems.map(({ label, path, external, subItems }) => (
           <li
             key={label}
@@ -268,7 +286,7 @@ export default function Navbar() {
 
         {/* Items centrés */}
         <ul className="flex flex-col items-center gap-8 flex-1">
-          {navItems.map(({ label, path, external, subItems }) => (
+          {navItemsMobile.map(({ label, path, external, subItems }) => (
             <li key={path} className="text-center">
               {external ? (
                 <a

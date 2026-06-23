@@ -150,26 +150,38 @@ export default function Home() {
       </section>
       <section className="flex flex-col gap-y-25 py-50 bg-linear-to-b from-snackly-blue to-snackly-purple">
         <div
-          className={`group hover:w-full ${actingClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5`}
+          className={`group hover:w-full ${actingClicked ? "high:w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center hover:items-center items-end gap-y-5 px-17.5`}
           onClick={() => setActingClicked(!actingClicked)}
         >
-          <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold ">
+          <span
+            className={`group-hover:hidden ${actingClicked ? "high:hidden" : ""} mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-purple font-bold`}
+          >
             ACTING
           </span>
-          <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+          <span
+            className={`high:hidden group-hover:hidden ${actingClicked ? "high:hidden" : ""} sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold`}
+          >
             {t("home.acting.hover")}
           </span>
-          <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+          <span
+            className={`hidden high:flex group-hover:hidden ${actingClicked ? "high:hidden" : ""} sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold`}
+          >
             {t("home.acting.click")}
           </span>
-          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
+          <p
+            className={`hidden group-hover:flex ${actingClicked ? "high:flex" : ""} text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold`}
+          >
             {t("home.acting.title")}
           </p>
-          <p className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3">
+          <p
+            className={`hidden group-hover:flex ${actingClicked ? "high:flex" : ""} text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3`}
+          >
             {t("home.acting.text")}
           </p>
           <Link to="/acting">
-            <span className="hidden group-hover:flex text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
+            <span
+              className={`hidden group-hover:flex ${actingClicked ? "high:flex" : ""} text-snackly-purple max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold`}
+            >
               {t("home.acting.cta")}{" "}
               <img
                 src="/icons/arrow-right.svg"
@@ -181,26 +193,38 @@ export default function Home() {
           </Link>
         </div>
         <div
-          className={`group hover:w-full ${actingClicked ? "w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end`}
+          className={`group hover:w-full ${motionClicked ? "high:w-full" : ""} transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center hover:items-center items-start gap-y-5 px-17.5 self-end`}
           onClick={() => setMotionClicked(!motionClicked)}
         >
-          <span className="group-hover:hidden mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold">
+          <span
+            className={`group-hover:hidden ${motionClicked ? "high:hidden" : ""} mdpp:text-h1 sm:max-mdpp:text-h3 max-sm:text-h5 text-snackly-blue font-bold`}
+          >
             MOTION
           </span>
-          <span className="high:hidden group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold">
+          <span
+            className={`high:hidden group-hover:hidden ${motionClicked ? "high:hidden" : ""} sm:text-t4 max-sm:text-t5 text-snackly-blue/50 font-bold`}
+          >
             {t("home.motion.hover")}
           </span>
-          <span className="hidden high:flex group-hover:hidden sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold">
+          <span
+            className={`hidden high:flex group-hover:hidden ${motionClicked ? "high:hidden" : ""} sm:text-t4 max-sm:text-t5 text-snackly-purple/50 font-bold`}
+          >
             {t("home.motion.click")}
           </span>
-          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
+          <p
+            className={`hidden group-hover:flex ${motionClicked ? "high:flex" : ""} text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold`}
+          >
             {t("home.motion.title")}
           </p>
-          <p className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3">
+          <p
+            className={`hidden group-hover:flex ${motionClicked ? "high:flex" : ""} text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3`}
+          >
             {t("home.motion.text")}
           </p>
           <Link to="/motion">
-            <span className="hidden group-hover:flex text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold">
+            <span
+              className={`hidden group-hover:flex ${motionClicked ? "high:flex" : ""} text-snackly-blue max-w-157.5 max-sm:text-t5 sm:text-t3 font-bold`}
+            >
               {t("home.motion.cta")}{" "}
               <img
                 src="/icons/arrow-right.svg"

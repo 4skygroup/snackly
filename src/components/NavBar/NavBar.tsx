@@ -377,7 +377,7 @@ export default function Navbar() {
               {languages.map((lang) => (
                 <li
                   key={lang.language}
-                  className={`block px-4 py-2 font-glacial text-t4 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5`}
+                  className={`block px-4 py-2 font-glacial text-t4 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5 cursor-pointer`}
                   onClick={() => {
                     i18n.changeLanguage(lang.label);
                     setLanguages(
@@ -388,6 +388,7 @@ export default function Navbar() {
                         return { ...language, active: false };
                       }),
                     );
+                    setMenuOpen(false);
                   }}
                 >
                   {lang.language}

@@ -7,6 +7,7 @@ import Motion from "./pages/Motion";
 import "./i18n";
 import Policy from "./pages/Policy";
 import LegalNotices from "./pages/LegalNotices";
+import Locations from "./pages/Locations";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/legal-notices",
     element: <LegalNotices />,
+  },
+  {
+    path: "/locations",
+    element: <Locations />,
   },
 ]);
 

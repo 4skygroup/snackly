@@ -43,13 +43,6 @@ export default function Policy() {
       <div className="mx-auto max-w-5xl px-6 py-16">
         {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
-          <div className="bg-snackly-purple mb-5">
-            <Logo />
-          </div>
-
-          <span className="inline-flex rounded-full bg-snackly-purple/10 px-4 py-1 text-sm font-medium text-snackly-purple">
-            Informations légales
-          </span>
 
           <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
             Politique de confidentialité

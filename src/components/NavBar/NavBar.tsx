@@ -33,8 +33,7 @@ const navItemsMobile: NavItem[] = [
   { label: "header.group", path: "https://www.playtosky.com/", external: true },
   {
     label: "header.locations",
-    path: "https://www.playtosky.com/offers-by-region",
-    external: true,
+    path: "/locations",
   },
   {
     label: "header.offers",
@@ -136,12 +135,7 @@ export default function Navbar() {
             </ul>
           )}
         </div> */}
-        <a
-          href="https://www.playtosky.com/offices-by-region"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-glacial text-t5 text-white hover:text-gray-white transition-colors duration-200"
-        >
+        <NavLink to="/locations">
           <svg
             className=""
             width="20"
@@ -155,7 +149,7 @@ export default function Navbar() {
               fill="white"
             />
           </svg>
-        </a>
+        </NavLink>
 
         <ToggleLanguage />
       </ul>

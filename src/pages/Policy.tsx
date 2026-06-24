@@ -1,5 +1,3 @@
-import Logo from "../components/Logo/Logo";
-
 export default function Policy() {
   const collectedData = [
     "Remplissez un formulaire de contact",
@@ -43,7 +41,6 @@ export default function Policy() {
       <div className="mx-auto max-w-5xl px-6 py-16">
         {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
-
           <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
             Politique de confidentialité
           </h1>

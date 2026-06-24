@@ -46,7 +46,7 @@ const navItemsMobile: NavItem[] = [
   { label: "header.contact", path: "/contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ color }: { color?: string }) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
   // const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
@@ -86,7 +86,9 @@ export default function Navbar() {
   // };
 
   return (
-    <nav className="relative w-full bg-snackly-purple flex items-center justify-between px-8 pt-8 pb-8 max-sm:justify-end">
+    <nav
+      className={`relative w-full ${color ? color : "bg-snackly-purple"} flex items-center justify-between px-8 pt-8 pb-8 max-sm:justify-end`}
+    >
       {/* Logo */}
 
       <ul className="hidden md:flex items-center gap-10">

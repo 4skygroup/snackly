@@ -1,5 +1,3 @@
-import Logo from "../components/Logo/Logo";
-
 export default function LegalNotices() {
   const activities = [
     "Vidéos publicitaires",
@@ -19,7 +17,6 @@ export default function LegalNotices() {
       <div className="mx-auto max-w-5xl px-6 py-16">
         {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
-
           <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
             Mentions légales
           </h1>

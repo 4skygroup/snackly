@@ -5,6 +5,8 @@ import Contact from "./pages/Contact";
 import Acting from "./pages/Acting";
 import Motion from "./pages/Motion";
 import "./i18n";
+import Policy from "./pages/Policy";
+import LegalNotices from "./pages/LegalNotices";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +22,16 @@ const router = createBrowserRouter([
     element: <Acting />,
   },
   {
-    path: "/Motion",
+    path: "/motion",
     element: <Motion />,
+  },
+  {
+    path: "/policy",
+    element: <Policy />,
+  },
+  {
+    path: "/legal-notices",
+    element: <LegalNotices />,
   },
 ]);
 

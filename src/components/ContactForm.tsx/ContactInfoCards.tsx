@@ -35,7 +35,7 @@ export default function ContactInfoCards() {
             <p className="text-t6 font-medium uppercase tracking-widest text-white/40">
               {t(`${card.label}`)}
             </p>
-            <p className="mt-0.5 text-t5 font-medium text-white">
+            <p className="mt-0.5 text-t5 font-medium text-white break-all">
               {t(`${card.value}`)}
             </p>
           </div>

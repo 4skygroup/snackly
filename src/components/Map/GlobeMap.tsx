@@ -47,10 +47,25 @@ interface Dimensions {
 export default function GlobeMap(): React.JSX.Element {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // react-globe.gl ne fournit pas toujours des types complets
-  const globeRef = useRef<any>(null);
+  interface GlobeControls {
+    autoRotate: boolean;
+    autoRotateSpeed: number;
+    enableDamping: boolean;
+    dampingFactor: number;
+  }
 
-  const [Globe, setGlobe] = useState<React.ComponentType<any> | null>(null);
+  interface GlobeInstance {
+    controls: () => GlobeControls;
+    pointOfView: (
+      pov: { lat: number; lng: number; altitude: number },
+      transitionMs?: number,
+    ) => void;
+  }
+
+  const globeRef = useRef<GlobeInstance | null>(null);
+
+  const [Globe, setGlobe] =
+    useState<React.ComponentType<Record<string, unknown>> | null>(null);
 
   const [dimensions, setDimensions] = useState<Dimensions>({
     width: 0,

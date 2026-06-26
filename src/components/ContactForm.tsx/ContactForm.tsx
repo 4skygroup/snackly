@@ -21,7 +21,7 @@ export default function ContactForm() {
   const { t } = useTranslation();
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-snackly-purple p-1">
+    <div className="bg-snackly-purple p-1">
       {/* Tab switcher */}
       <div className="mb-1 grid grid-cols-2 rounded-xl bg-white/5 p-1">
         <button

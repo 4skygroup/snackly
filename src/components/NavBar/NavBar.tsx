@@ -87,7 +87,7 @@ export default function Navbar({ color }: { color?: string }) {
 
   return (
     <nav
-      className={`relative w-full ${color ? color : "bg-snackly-purple"} flex items-center justify-between px-8 pt-8 pb-8 max-sm:justify-end`}
+      className={`relative w-full ${color ? color : "bg-snackly-purple"} flex items-center justify-between px-8 pt-5 pb-5 max-sm:justify-end`}
     >
       {/* Logo */}
 

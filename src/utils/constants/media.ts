@@ -3,7 +3,7 @@ import type { LinkContent } from "../../types/LinkContent";
 export const mediaList: LinkContent[] = [
     {
         name: "/icons/LinkedIn.svg",
-        link: "/",
+        link: "https://www.linkedin.com/company/snacklyagency",
     },
     {
         name: "/icons/Instagram.svg",
@@ -11,6 +11,6 @@ export const mediaList: LinkContent[] = [
     },
     {
         name: "/icons/Tiktok.svg",
-        link: "/",
+        link: "https://www.tiktok.com/@snacklyagency",
     },
 ];

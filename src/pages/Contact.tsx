@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 export default function Contact() {
   const { t } = useTranslation();
   return (
-    <div className="bg-snackly-purple text-white flex flex-col items-center ">
+    <div className="bg-snackly-purple text-white flex flex-col items-center">
       <Helmet>
         <title>Contact — Démarrez votre projet Snack Content | Snackly</title>
         <meta
@@ -75,7 +75,7 @@ export default function Contact() {
         </script>
       </Helmet>
       <Navbar />
-      <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
+      <div className="w-full min-h-[calc(90vh-100px)] py-10 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
         {/* Cadre principal arrondi de la maquette */}
         <div className="max-w-6xl w-full mx-auto bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm relative">
           {/* CÔTÉ DROIT : Le Formulaire complet */}

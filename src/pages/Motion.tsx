@@ -183,8 +183,13 @@ export default function Motion() {
                     width="30px"
                     loading="lazy"
                   />
-                  <p className="sm:text-t3 max-sm:text-t5 max-w-87.5">
-                    {t("motion.sections.presentation.services.format")}
+                  <p className="flex flex-col sm:text-t3 max-sm:text-t5 max-w-87.5">
+                    <span>
+                      {t("acting.sections.presentation.services.format1")}
+                    </span>
+                    <span>
+                      {t("acting.sections.presentation.services.format2")}
+                    </span>
                   </p>
                 </div>
                 {/* <div className="flex gap-x-10">

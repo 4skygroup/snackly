@@ -78,7 +78,8 @@
         "services": {
           "messages": "Accroches et messages percutants",
           "subtitle": "Sous-titrage et audio-description",
-          "format": "Formats adaptés (Ratios divers: 16:9 - 9:16 - 4:5)",
+          "format1": "Formats adaptés",
+          "format2": "Ratios divers: 16:9 - 9:16 - 4:5",
           "editing": "Réalisation et montages impactants",
           "artistic": "Direction artistique fidèle"
         }
@@ -110,7 +111,8 @@
         "services": {
           "animation": "Animations fluides en 2D (ou 3D)",
           "conception": "Conceptions et Storyboarding fidèles",
-          "format": "Formats adaptés (Ratios divers: 16:9 - 9:16 - 4:5)"
+          "format1": "Formats adaptés",
+          "format2": "Ratios divers: 16:9 - 9:16 - 4:5"
         }
       },
       "offers": {

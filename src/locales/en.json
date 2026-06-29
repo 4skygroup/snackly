@@ -78,7 +78,8 @@
         "services": {
           "messages": "Catchy hooks and impactful messaging",
           "subtitle": "Subtitles and audio descriptions",
-          "format": "Adapted formats (various aspect ratios: 16:9 - 9:16 - 4:5)",
+          "format1": "Adapted formats",
+          "format2": "Various aspect ratios: 16:9 - 9:16 - 4:5",
           "editing": "High-impact production and editing",
           "artistic": "Consistent artistic direction"
         }
@@ -110,7 +111,8 @@
         "services": {
           "animation": "Smooth 2D (or 3D) animations",
           "conception": "Faithful concept development and storyboarding",
-          "format": "Adapted formats (various aspect ratios: 16:9 - 9:16 - 4:5)"
+          "format1": "Adapted formats",
+          "format2": "Various aspect ratios: 16:9 - 9:16 - 4:5"
         }
       },
       "offers": {

@@ -2,7 +2,7 @@ import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { options as opts } from "../../utils/constants/options";
-const FORMSPREE = "";
+const FORMSPREE = "https://formspree.io/f/xqevqplr";
 
 type Tab = "callback" | "message";
 

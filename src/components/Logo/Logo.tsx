@@ -21,7 +21,7 @@ export default function Logo({
       height={format !== "small" ? height : ""}
       className={
         format === "small"
-          ? "object-center object-cover w-52.5 h-18.75"
+          ? "object-center object-cover w-52.5 h-18.75 max-md:w-37.5 max-md:h-13.5"
           : className
       }
       loading="lazy"

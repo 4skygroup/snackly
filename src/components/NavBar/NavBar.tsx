@@ -77,66 +77,13 @@ export default function Navbar({ color }: { color?: string }) {
     timeoutRef.current = setTimeout(() => setServicesOpen(false), 150);
   };
 
-  // const handleMouseEnterLanguage = () => {
-  //   if (timeout2Ref.current) clearTimeout(timeout2Ref.current);
-  //   setLanguagesOpen(true);
-  // };
-  // const handleMouseLeaveLanguage = () => {
-  //   timeout2Ref.current = setTimeout(() => setLanguagesOpen(false), 150);
-  // };
-
   return (
     <nav
-      className={`relative w-full ${color ? color : "bg-snackly-purple"} flex items-center justify-between px-8 pt-5 pb-5 max-sm:justify-end`}
+      className={`relative w-full ${color ? color : "bg-snackly-purple"} flex items-center justify-between max-md:pl-2 pl-8 pr-8 pt-5 pb-5 max-sm:items:center`}
     >
       {/* Logo */}
 
       <ul className="hidden md:flex items-center gap-10">
-        {/* <div
-          className="relative text-white"
-          onMouseEnter={handleMouseEnterLanguage}
-          onMouseLeave={handleMouseLeaveLanguage}
-        >
-          <span className="uppercase flex items-center justify-center gap-1">
-            {languages.filter((lang) => lang.active)[0].label}
-            <svg
-              className={`w-3 h-3 transition-transform duration-200 ${languagesOpen ? "rotate-180" : ""}`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </span>
-          {languagesOpen && (
-            <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg z-10">
-              {languages.map((lang) => (
-                <li
-                  key={lang.language}
-                  className={`block px-4 py-2 font-glacial text-t6 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5`}
-                  onClick={() => {
-                    i18n.changeLanguage(lang.label);
-                    setLanguages(
-                      languages.map((language) => {
-                        if (language.label === lang.label) {
-                          return { ...language, active: true };
-                        }
-                        return { ...language, active: false };
-                      }),
-                    );
-                  }}
-                >
-                  {lang.language}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div> */}
         <NavLink to="/locations">
           <svg
             className=""
@@ -159,7 +106,7 @@ export default function Navbar({ color }: { color?: string }) {
       <NavLink
         to="/"
         // className="shrink-0"
-        className="shrink-0 absolute -translate-x-1/2 left-1/2"
+        className="shrink-0 md:absolute md:-translate-x-1/2 md:left-1/2"
       >
         <Logo />
       </NavLink>

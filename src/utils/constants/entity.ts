@@ -26,6 +26,10 @@ export const entityList: LinkContent[] = [
         link: "https://www.drox360.com/",
     },
     {
+        name: "Cybersky",
+        link: "https://www.cyberskyagency.com/",
+    },
+    {
         name: "Sky To Be Media",
         link: "https://www.skytobemedia.com/",
     },

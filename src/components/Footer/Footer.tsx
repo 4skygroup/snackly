@@ -5,6 +5,7 @@ import Logo from "../Logo/Logo";
 import IconsList from "./IconsList";
 import { useTranslation } from "react-i18next";
 import ItemsList from "./ItemsList";
+import CreatedBy from "./CreatedBy";
 export default function Footer({
   policy,
   services,
@@ -43,32 +44,13 @@ export default function Footer({
             <h2 className="text-t4 font-bold flex flex-col items-center">
               {t("footer.titles.media")}
             </h2>
-            <ul className="flex gap-7.5">
+            <ul className="flex gap-7.5 justify-center">
               <IconsList icons={media} />
             </ul>
           </div>
         </div>
         {/* COPYRIGHT */}
-        <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
-          <span>{t("footer.creators")}</span>
-          <a href=" https://www.visuanceagency.com/" target="_blank">
-            <img
-              src="/images/visuance.webp"
-              alt="Visuance logo"
-              className="h-4"
-              loading="lazy"
-            />
-          </a>
-          <span>&</span>
-          <a href=" https://www.playtosky.com/" target="_blank">
-            <img
-              src="/images/play-to-sky.webp"
-              alt="Play To Sky logo"
-              className="h-6"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <CreatedBy />
       </div>
     </footer>
   );

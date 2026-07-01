@@ -190,6 +190,190 @@
       }
     }
   },
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Snackly, une vision unique pour votre croissance.",
+    "description": "Une approche créative dédiée au snack content pour transformer chaque seconde d'attention en opportunité.",
+    "agent": "Agent local",
+    "stats": {
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Bâtir vos succès digitaux avec nous.",
+      "button": "Démarrer un projet"
+    }
+  },
+  "legal": {
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com",
+      "website": "https://www.snacklyagency.com",
+      "host": "OVH Cloud",
+      "hostWebsite": "https://www.ovhcloud.com"
+    },
+    "title": "Mentions légales",
+    "description": "Informations relatives à l’éditeur du site, à son hébergement, aux droits de propriété intellectuelle et aux conditions d’utilisation du site Snackly.",
+
+    "publisher": {
+      "title": "Éditeur du site",
+      "descriptionPrefix": "Le site présent :",
+      "descriptionSuffix": "est édité par :",
+      "company": {
+        "label": "Société"
+      },
+      "contact": {
+        "label": "Contact"
+      }
+    },
+
+    "hosting": {
+      "title": "Hébergement",
+      "provider": {
+        "label": "Hébergeur"
+      },
+      "website": {
+        "label": "Site web",
+        "value": "www.ovhcloud.com"
+      }
+    },
+
+    "activity": {
+      "title": "Activité",
+      "description": "Snackly est une agence spécialisée dans la création de contenus digitaux courts (snack content), incluant notamment :",
+      "item1": "Vidéos publicitaires",
+      "item2": "Motion design",
+      "item3": "Contenus pour réseaux sociaux",
+      "item4": "Production audiovisuelle"
+    },
+
+    "intellectualProperty": {
+      "title": "Propriété intellectuelle",
+      "cardTitle": "Protection des contenus",
+      "cardDescription": "Tous les contenus présents sur le site (vidéos, textes, branding, éléments graphiques, etc.) sont protégés par le droit de la propriété intellectuelle.",
+      "description1": "Toute reproduction, modification ou exploitation sans autorisation préalable est interdite.",
+      "description2": "Les créations réalisées pour les clients restent soumises aux conditions définies dans les contrats ou devis."
+    },
+
+    "responsibility": {
+      "title": "Responsabilité",
+      "description": "Snackly met tout en œuvre pour assurer l’exactitude des informations présentes sur le site. Toutefois, l’agence ne saurait être tenue responsable :",
+      "item1": "Des erreurs ou omissions",
+      "item2": "D’une indisponibilité temporaire du site",
+      "item3": "De l’utilisation des informations par l’utilisateur"
+    },
+
+    "externalLinks": {
+      "title": "Liens externes",
+      "description": "Le site peut contenir des liens vers des sites tiers. Snackly n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu."
+    },
+
+    "privacy": {
+      "title": "Données personnelles",
+      "description": "Les données collectées sont traitées conformément à notre politique de confidentialité.",
+      "link": "Consulter la politique de confidentialité →",
+      "href": "/privacy-policy"
+    },
+
+    "applicableLaw": {
+      "title": "Droit applicable",
+      "description": "Le site est soumis au droit français. Tout litige relève des tribunaux compétents du ressort du siège social de Snackly."
+    }
+  },
+  "policy": {
+    "company": {
+      "email": "contact@snacklyagency.com"
+    },
+    "title": "Politique de confidentialité",
+    "description": "Découvrez quelles données nous collectons, pourquoi nous les utilisons et quels sont vos droits concernant leur traitement.",
+    "lastUpdateLabel": "Dernière mise à jour",
+    "lastUpdateValue": "24 juin 2026",
+
+    "collect": {
+      "title": "Quelles données collectons-nous ?",
+      "intro": "Snackly collecte des données lorsque vous :",
+
+      "dataWhen": {
+        "item1": "Remplissez un formulaire de contact",
+        "item2": "Demandez un devis",
+        "item3": "Naviguez sur le site"
+      },
+
+      "fieldsTitle": "Données susceptibles d'être collectées",
+      "fields": {
+        "item1": "Nom",
+        "item2": "Adresse e-mail",
+        "item3": "Numéro de téléphone",
+        "item4": "Entreprise",
+        "item5": "Besoin marketing",
+        "item6": "Adresse IP"
+      }
+    },
+
+    "purposes": {
+      "title": "Pourquoi utilisons-nous vos données ?",
+      "item1": "Répondre à vos demandes",
+      "item2": "Élaborer des propositions commerciales",
+      "item3": "Gérer la relation client",
+      "item4": "Améliorer les performances du site",
+      "item5": "Analyser les comportements utilisateurs"
+    },
+
+    "legalBases": {
+      "title": "Sur quelle base légale reposent les traitements ?",
+      "item1": "Votre consentement",
+      "item2": "L’exécution d’une relation précontractuelle ou contractuelle",
+      "item3": "L’intérêt légitime lié à l’amélioration des services"
+    },
+
+    "retention": {
+      "title": "Combien de temps conservons-nous vos données ?",
+
+      "prospects": {
+        "title": "Prospects",
+        "description": "3 ans après le dernier contact."
+      },
+
+      "clients": {
+        "title": "Clients",
+        "description": "Entre 5 et 10 ans selon les obligations légales, notamment celles liées à la facturation."
+      }
+    },
+
+    "sharing": {
+      "title": "Avec qui partageons-nous vos données ?",
+      "item1": "Outils marketing (analytics, CRM, emailing)",
+      "item2": "Prestataires techniques (hébergement, maintenance)",
+      "item3": "Les données ne sont jamais revendues à des tiers."
+    },
+
+    "rights": {
+      "title": "Quels sont vos droits ?",
+      "item1": "Droit d’accès",
+      "item2": "Droit de rectification",
+      "item3": "Droit de suppression",
+      "item4": "Droit d’opposition",
+      "item5": "Droit à la portabilité",
+
+      "exerciseTitle": "Exercer vos droits"
+    },
+
+    "security": {
+      "title": "Comment protégeons-nous vos données ?",
+      "description": "Snackly met en place des mesures techniques et organisationnelles destinées à protéger vos données contre tout accès, modification, divulgation ou destruction non autorisés."
+    },
+
+    "update": {
+      "title": "Mise à jour de cette politique",
+      "description": "Cette politique de confidentialité peut être modifiée à tout moment afin de rester conforme aux évolutions réglementaires et aux changements apportés à nos services."
+    },
+
+    "footer": {
+      "contact": "Contact"
+    }
+  },
   "footer": {
     "titles": {
       "policy": "Politique",

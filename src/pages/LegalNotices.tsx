@@ -1,16 +1,7 @@
-export default function LegalNotices() {
-  const activities = [
-    "Vidéos publicitaires",
-    "Motion design",
-    "Contenus pour réseaux sociaux",
-    "Production audiovisuelle",
-  ];
+import { useTranslation } from "react-i18next";
 
-  const responsibilityLimits = [
-    "Des erreurs ou omissions",
-    "D’une indisponibilité temporaire du site",
-    "De l’utilisation des informations par l’utilisateur",
-  ];
+export default function LegalNotices() {
+  const { t } = useTranslation();
 
   return (
     <main className="min-h-screen bg-linear-to-b from-white to-purple-50/30">
@@ -18,13 +9,11 @@ export default function LegalNotices() {
         {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
           <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
-            Mentions légales
+            {t("legal.title")}
           </h1>
 
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            Informations relatives à l’éditeur du site, à son hébergement, aux
-            droits de propriété intellectuelle et aux conditions d’utilisation
-            du site Snackly.
+            {t("legal.description")}
           </p>
         </div>
 
@@ -33,32 +22,39 @@ export default function LegalNotices() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Éditeur du site
+                {t("legal.publisher.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <p className="mb-6 text-slate-700">
-                Le site présent :{" "}
-                <a href="https://www.snacklyagency.com">
-                  https://www.snacklyagency.com
-                </a>
-                ⁠ est édité par :
+                {t("legal.publisher.descriptionPrefix")}{" "}
+                <a
+                  href={t("legal.company.website")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("legal.company.website")}
+                </a>{" "}
+                {t("legal.publisher.descriptionSuffix")}
               </p>
+
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl bg-slate-50 p-5">
-                  <p className="text-sm text-slate-500">Société</p>
-
+                  <p className="text-sm text-slate-500">
+                    {t("legal.publisher.company.label")}
+                  </p>
                   <p className="mt-1 font-semibold text-snackly-dark-purple">
-                    Visuance Agency
+                    {t("legal.company.name")}
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-slate-50 p-5">
-                  <p className="text-sm text-slate-500">Contact</p>
-
+                  <p className="text-sm text-slate-500">
+                    {t("legal.publisher.contact.label")}
+                  </p>
                   <p className="mt-1 font-semibold text-snackly-dark-purple">
-                    contact@visuanceagency.com
+                    {t("legal.company.email")}
                   </p>
                 </div>
               </div>
@@ -69,59 +65,66 @@ export default function LegalNotices() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Hébergement
+                {t("legal.hosting.title")}
               </h2>
             </div>
 
-            <div className="p-8">
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="rounded-2xl border border-slate-200 p-5">
-                  <p className="text-sm text-slate-500">Hébergeur</p>
+            <div className="p-8 grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-slate-200 p-5">
+                <p className="text-sm text-slate-500">
+                  {t("legal.hosting.provider.label")}
+                </p>
+                <p className="mt-1 font-semibold text-snackly-dark-purple">
+                  {t("legal.company.host")}
+                </p>
+              </div>
 
-                  <p className="mt-1 font-semibold text-snackly-dark-purple">
-                    OVH Cloud
-                  </p>
-                </div>
+              <div className="rounded-2xl border border-slate-200 p-5">
+                <p className="text-sm text-slate-500">
+                  {t("legal.hosting.website.label")}
+                </p>
 
-                <div className="rounded-2xl border border-slate-200 p-5">
-                  <p className="text-sm text-slate-500">Site web</p>
-
-                  <a
-                    href="https://www.ovhcloud.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 inline-block font-medium text-snackly-purple hover:text-snackly-blue"
-                  >
-                    www.ovhcloud.com
-                  </a>
-                </div>
+                <a
+                  href={t("legal.company.hostWebsite")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-block font-medium text-snackly-purple hover:text-snackly-blue"
+                >
+                  {t("legal.hosting.website.value")}
+                </a>
               </div>
             </div>
           </section>
 
-          {/* Activité */}
+          {/* Activité (SANS TABLEAU) */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Activité
+                {t("legal.activity.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <p className="mb-6 text-slate-700">
-                Snackly est une agence spécialisée dans la création de contenus
-                digitaux courts (snack content), incluant notamment :
+                {t("legal.activity.description")}
               </p>
 
               <div className="grid gap-4 md:grid-cols-2">
-                {activities.map((activity) => (
-                  <div
-                    key={activity}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-700"
-                  >
-                    {activity}
-                  </div>
-                ))}
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-700">
+                  {t("legal.activity.item1")}
+                </div>
+
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-700">
+                  {t("legal.activity.item2")}
+                </div>
+
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-700">
+                  {t("legal.activity.item3")}
+                </div>
+
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-slate-700">
+                  {t("legal.activity.item4")}
+                </div>
               </div>
             </div>
           </section>
@@ -130,59 +133,55 @@ export default function LegalNotices() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Propriété intellectuelle
+                {t("legal.intellectualProperty.title")}
               </h2>
             </div>
 
             <div className="space-y-6 p-8">
               <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
                 <p className="font-semibold text-amber-900">
-                  Protection des contenus
+                  {t("legal.intellectualProperty.cardTitle")}
                 </p>
-
                 <p className="mt-3 leading-8 text-amber-800">
-                  Tous les contenus présents sur le site (vidéos, textes,
-                  branding, éléments graphiques, etc.) sont protégés par le
-                  droit de la propriété intellectuelle.
+                  {t("legal.intellectualProperty.cardDescription")}
                 </p>
               </div>
 
               <p className="leading-8 text-slate-700">
-                Toute reproduction, modification ou exploitation sans
-                autorisation préalable est interdite.
+                {t("legal.intellectualProperty.description1")}
               </p>
 
               <p className="leading-8 text-slate-700">
-                Les créations réalisées pour les clients restent soumises aux
-                conditions définies dans les contrats ou devis.
+                {t("legal.intellectualProperty.description2")}
               </p>
             </div>
           </section>
 
-          {/* Responsabilité */}
+          {/* Responsabilité (SANS TABLEAU) */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Responsabilité
+                {t("legal.responsibility.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <p className="mb-6 text-slate-700">
-                Snackly met tout en œuvre pour assurer l’exactitude des
-                informations présentes sur le site. Toutefois, l’agence ne
-                saurait être tenue responsable :
+                {t("legal.responsibility.description")}
               </p>
 
               <div className="space-y-4">
-                {responsibilityLimits.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4 text-slate-700"
-                  >
-                    {item}
-                  </div>
-                ))}
+                <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4 text-slate-700">
+                  {t("legal.responsibility.item1")}
+                </div>
+
+                <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4 text-slate-700">
+                  {t("legal.responsibility.item2")}
+                </div>
+
+                <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4 text-slate-700">
+                  {t("legal.responsibility.item3")}
+                </div>
               </div>
             </div>
           </section>
@@ -191,16 +190,14 @@ export default function LegalNotices() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Liens externes
+                {t("legal.externalLinks.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <div className="rounded-2xl border border-snackly-blue/20 bg-snackly-blue/5 p-6">
                 <p className="leading-8 text-slate-700">
-                  Le site peut contenir des liens vers des sites tiers. Snackly
-                  n’exerce aucun contrôle sur ces sites et décline toute
-                  responsabilité quant à leur contenu.
+                  {t("legal.externalLinks.description")}
                 </p>
               </div>
             </div>
@@ -210,22 +207,21 @@ export default function LegalNotices() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Données personnelles
+                {t("legal.privacy.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <div className="rounded-2xl bg-slate-50 p-6">
                 <p className="text-slate-700">
-                  Les données collectées sont traitées conformément à notre
-                  politique de confidentialité.
+                  {t("legal.privacy.description")}
                 </p>
 
                 <a
-                  href="/privacy-policy"
+                  href={t("legal.privacy.href")}
                   className="mt-4 inline-flex font-medium text-snackly-purple transition hover:text-snackly-blue"
                 >
-                  Consulter la politique de confidentialité →
+                  {t("legal.privacy.link")}
                 </a>
               </div>
             </div>
@@ -233,11 +229,12 @@ export default function LegalNotices() {
 
           {/* Droit applicable */}
           <section className="rounded-3xl bg-snackly-dark-purple p-8 text-white">
-            <h2 className="text-xl font-semibold">Droit applicable</h2>
+            <h2 className="text-xl font-semibold">
+              {t("legal.applicableLaw.title")}
+            </h2>
 
             <p className="mt-4 leading-8 text-white/80">
-              Le site est soumis au droit français. Tout litige relève des
-              tribunaux compétents du ressort du siège social de Snackly.
+              {t("legal.applicableLaw.description")}
             </p>
           </section>
         </div>

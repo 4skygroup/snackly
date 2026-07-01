@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./app.css";
 import locations from "../../utils/constants/locations";
+import { useTranslation } from "react-i18next";
 
 interface Location {
   id: string | number;
@@ -64,8 +65,9 @@ export default function GlobeMap(): React.JSX.Element {
 
   const globeRef = useRef<GlobeInstance | null>(null);
 
-  const [Globe, setGlobe] =
-    useState<React.ComponentType<Record<string, unknown>> | null>(null);
+  const [Globe, setGlobe] = useState<React.ComponentType<
+    Record<string, unknown>
+  > | null>(null);
 
   const [dimensions, setDimensions] = useState<Dimensions>({
     width: 0,
@@ -202,6 +204,8 @@ export default function GlobeMap(): React.JSX.Element {
     return marker;
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="globe-container" ref={containerRef}>
       {Globe && dimensions.width > 0 ? (
@@ -255,7 +259,7 @@ export default function GlobeMap(): React.JSX.Element {
           <div className="badge">{selected.label}</div>
 
           <div className="agent">
-            <span>AGENT LOCAL</span>
+            <span>{t("locations.agent")}</span>
             <strong>{selected.agent}</strong>
             <p>{selected.phone}</p>
           </div>

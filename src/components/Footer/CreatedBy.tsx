@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 export default function CreatedBy() {
+  const { t } = useTranslation();
   return (
     <div className="flex items-center justify-center gap-12 text-gray-white max-sm:flex-col">
       <span className="text-sm font-extralight tracking-[0.2em] uppercase text-gray-white">
-        Créé par
+        {t("footer.creators")}
       </span>
       <a
         href="https://visuanceagency.com"

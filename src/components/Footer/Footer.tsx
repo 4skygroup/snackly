@@ -37,7 +37,7 @@ export default function Footer({
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">
             <h2 className="text-t4 font-bold">{t("footer.titles.entities")}</h2>
             <ul className="flex flex-col gap-5">
-              <ItemsList items={entities} />
+              <ItemsList items={entities} withBlanckTarget={true} />
             </ul>
           </div>
           <div className="flex flex-col gap-8.75 max-mdp:gap-y-5">

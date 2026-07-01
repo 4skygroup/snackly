@@ -5,7 +5,7 @@ export default function IconsList({ icons }: { icons: LinkContent[] }) {
     <>
       {icons.map((icon, index) => (
         <li key={index} className="text-snackly-gray text-p">
-          <a href={icon.link}>
+          <a href={icon.link} target="_blank">
             <img
               src={icon.name}
               alt={

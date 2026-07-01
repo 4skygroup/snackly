@@ -124,6 +124,191 @@
       }
     }
   },
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Snackly, a unique vision for your growth.",
+    "description": "A creative approach dedicated to snack content to turn every second of attention into an opportunity.",
+    "agent": "Local Agent",
+    "stats": {
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Building your digital success together.",
+      "button": "Start a project"
+    }
+  },
+  "legal": {
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com",
+      "website": "https://www.snacklyagency.com",
+      "host": "OVHcloud",
+      "hostWebsite": "https://www.ovhcloud.com"
+    },
+
+    "title": "Legal Notice",
+    "description": "Information relating to the website publisher, hosting, intellectual property rights, and terms of use of the Snackly website.",
+
+    "publisher": {
+      "title": "Website Publisher",
+      "descriptionPrefix": "The website:",
+      "descriptionSuffix": "is published by:",
+      "company": {
+        "label": "Company"
+      },
+      "contact": {
+        "label": "Contact"
+      }
+    },
+
+    "hosting": {
+      "title": "Hosting",
+      "provider": {
+        "label": "Hosting Provider"
+      },
+      "website": {
+        "label": "Website",
+        "value": "www.ovhcloud.com"
+      }
+    },
+
+    "activity": {
+      "title": "Activity",
+      "description": "Snackly is an agency specialized in creating short digital content (snack content), including:",
+      "item1": "Advertising videos",
+      "item2": "Motion design",
+      "item3": "Social media content",
+      "item4": "Audiovisual production"
+    },
+
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "cardTitle": "Content Protection",
+      "cardDescription": "All content on the website (videos, texts, branding, graphic elements, etc.) is protected by intellectual property law.",
+      "description1": "Any reproduction, modification, or use without prior authorization is prohibited.",
+      "description2": "Content created for clients remains subject to the terms defined in contracts or quotations."
+    },
+
+    "responsibility": {
+      "title": "Liability",
+      "description": "Snackly makes every effort to ensure the accuracy of the information on the website. However, the agency cannot be held responsible for:",
+      "item1": "Errors or omissions",
+      "item2": "Temporary website unavailability",
+      "item3": "User interpretation or use of the information"
+    },
+
+    "externalLinks": {
+      "title": "External Links",
+      "description": "The website may contain links to third-party websites. Snackly has no control over these websites and declines any responsibility for their content."
+    },
+
+    "privacy": {
+      "title": "Personal Data",
+      "description": "Data collected is processed in accordance with our Privacy Policy.",
+      "link": "View Privacy Policy →",
+      "href": "/privacy-policy"
+    },
+
+    "applicableLaw": {
+      "title": "Applicable Law",
+      "description": "This website is governed by French law. Any dispute shall fall under the jurisdiction of the courts where Snackly’s registered office is located."
+    }
+  },
+  "policy": {
+    "company": {
+      "email": "contact@snacklyagency.com"
+    },
+
+    "title": "Privacy Policy",
+    "description": "Learn what data we collect, why we use it, and what rights you have regarding its processing.",
+    "lastUpdateLabel": "Last updated",
+    "lastUpdateValue": "June 24, 2026",
+
+    "collect": {
+      "title": "What data do we collect?",
+      "intro": "Snackly collects data when you:",
+
+      "dataWhen": {
+        "item1": "Fill out a contact form",
+        "item2": "Request a quote",
+        "item3": "Browse the website"
+      },
+
+      "fieldsTitle": "Data that may be collected",
+      "fields": {
+        "item1": "Name",
+        "item2": "Email address",
+        "item3": "Phone number",
+        "item4": "Company",
+        "item5": "Marketing needs",
+        "item6": "IP address"
+      }
+    },
+
+    "purposes": {
+      "title": "Why do we use your data?",
+      "item1": "Respond to your requests",
+      "item2": "Prepare commercial proposals",
+      "item3": "Manage customer relationships",
+      "item4": "Improve website performance",
+      "item5": "Analyze user behavior"
+    },
+
+    "legalBases": {
+      "title": "What legal basis do we rely on?",
+      "item1": "Your consent",
+      "item2": "Pre-contractual or contractual relationship",
+      "item3": "Legitimate interest in improving services"
+    },
+
+    "retention": {
+      "title": "How long do we retain your data?",
+
+      "prospects": {
+        "title": "Prospects",
+        "description": "3 years after the last contact."
+      },
+
+      "clients": {
+        "title": "Clients",
+        "description": "Between 5 and 10 years depending on legal obligations, especially accounting requirements."
+      }
+    },
+
+    "sharing": {
+      "title": "Who do we share your data with?",
+      "item1": "Marketing tools (analytics, CRM, email tools)",
+      "item2": "Technical service providers (hosting, maintenance)",
+      "item3": "Data is never sold to third parties."
+    },
+
+    "rights": {
+      "title": "What are your rights?",
+      "item1": "Right of access",
+      "item2": "Right to rectification",
+      "item3": "Right to erasure",
+      "item4": "Right to object",
+      "item5": "Right to data portability",
+      "exerciseTitle": "Exercise your rights"
+    },
+
+    "security": {
+      "title": "How do we protect your data?",
+      "description": "Snackly implements technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction."
+    },
+
+    "update": {
+      "title": "Policy Updates",
+      "description": "This privacy policy may be updated at any time to remain compliant with regulatory changes and updates to our services."
+    },
+
+    "footer": {
+      "contact": "Contact"
+    }
+  },
   "contact": {
     "catchPhrase": "Let’s build your growth together",
     "detailedPhrase": "Our experts help you define a digital strategy aligned with your goals. Contact us using the communication method that suits you best.",

@@ -1,40 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Policy() {
-  const collectedData = [
-    "Remplissez un formulaire de contact",
-    "Demandez un devis",
-    "Naviguez sur le site",
-  ];
-
-  const collectedFields = [
-    "Nom",
-    "Adresse e-mail",
-    "Numéro de téléphone",
-    "Entreprise",
-    "Besoin marketing",
-    "Adresse IP",
-  ];
-
-  const purposes = [
-    "Répondre à vos demandes",
-    "Élaborer des propositions commerciales",
-    "Gérer la relation client",
-    "Améliorer les performances du site",
-    "Analyser les comportements utilisateurs",
-  ];
-
-  const legalBases = [
-    "Votre consentement",
-    "L’exécution d’une relation précontractuelle ou contractuelle",
-    "L’intérêt légitime lié à l’amélioration des services",
-  ];
-
-  const rights = [
-    "Droit d’accès",
-    "Droit de rectification",
-    "Droit de suppression",
-    "Droit d’opposition",
-    "Droit à la portabilité",
-  ];
+  const { t } = useTranslation();
 
   return (
     <main className="min-h-screen bg-linear-to-b from-white to-purple-50/30">
@@ -42,16 +9,15 @@ export default function Policy() {
         {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
           <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
-            Politique de confidentialité
+            {t("policy.title")}
           </h1>
 
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            Découvrez quelles données nous collectons, pourquoi nous les
-            utilisons et quels sont vos droits concernant leur traitement.
+            {t("policy.description")}
           </p>
 
           <p className="mt-6 text-sm text-slate-500">
-            Dernière mise à jour : 24 juin 2026
+            {t("policy.lastUpdateLabel")} : {t("policy.lastUpdateValue")}
           </p>
         </div>
 
@@ -60,38 +26,59 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Quelles données collectons-nous ?
+                {t("policy.collect.title")}
               </h2>
             </div>
 
             <div className="space-y-6 px-8 py-6">
-              <p className="text-slate-700">
-                Snackly collecte des données lorsque vous :
-              </p>
+              <p className="text-slate-700">{t("policy.collect.intro")}</p>
 
               <ul className="space-y-3">
-                {collectedData.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-snackly-purple" />
-                    <span className="text-slate-700">{item}</span>
-                  </li>
-                ))}
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-snackly-purple" />
+                  <span>{t("policy.collect.dataWhen.item1")}</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-snackly-purple" />
+                  <span>{t("policy.collect.dataWhen.item2")}</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-snackly-purple" />
+                  <span>{t("policy.collect.dataWhen.item3")}</span>
+                </li>
               </ul>
 
               <div className="rounded-2xl bg-slate-50 p-5">
                 <p className="font-semibold text-snackly-dark-purple">
-                  Données susceptibles d'être collectées
+                  {t("policy.collect.fieldsTitle")}
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {collectedFields.map((field) => (
-                    <span
-                      key={field}
-                      className="rounded-full bg-white px-3 py-1 text-sm text-slate-700 ring-1 ring-slate-200"
-                    >
-                      {field}
-                    </span>
-                  ))}
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item1")}
+                  </span>
+
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item2")}
+                  </span>
+
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item3")}
+                  </span>
+
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item4")}
+                  </span>
+
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item5")}
+                  </span>
+
+                  <span className="rounded-full bg-white px-3 py-1 text-sm ring-1 ring-slate-200">
+                    {t("policy.collect.fields.item6")}
+                  </span>
                 </div>
               </div>
             </div>
@@ -101,19 +88,30 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Pourquoi utilisons-nous vos données ?
+                {t("policy.purposes.title")}
               </h2>
             </div>
 
             <div className="grid gap-4 p-8 md:grid-cols-2">
-              {purposes.map((purpose) => (
-                <div
-                  key={purpose}
-                  className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-slate-700"
-                >
-                  {purpose}
-                </div>
-              ))}
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                {t("policy.purposes.item1")}
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                {t("policy.purposes.item2")}
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                {t("policy.purposes.item3")}
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                {t("policy.purposes.item4")}
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                {t("policy.purposes.item5")}
+              </div>
             </div>
           </section>
 
@@ -121,19 +119,22 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Sur quelle base légale reposent les traitements ?
+                {t("policy.legalBases.title")}
               </h2>
             </div>
 
             <div className="space-y-4 p-8">
-              {legalBases.map((base) => (
-                <div
-                  key={base}
-                  className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4 text-slate-700"
-                >
-                  {base}
-                </div>
-              ))}
+              <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4">
+                {t("policy.legalBases.item1")}
+              </div>
+
+              <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4">
+                {t("policy.legalBases.item2")}
+              </div>
+
+              <div className="rounded-xl border-l-4 border-snackly-purple bg-purple-50 p-4">
+                {t("policy.legalBases.item3")}
+              </div>
             </div>
           </section>
 
@@ -141,38 +142,23 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Combien de temps conservons-nous vos données ?
+                {t("policy.retention.title")}
               </h2>
             </div>
 
             <div className="space-y-6 p-8">
-              <div className="flex gap-4">
-                <div className="mt-2 h-3 w-3 rounded-full bg-snackly-purple" />
-
-                <div>
-                  <p className="font-semibold text-snackly-dark-purple">
-                    Prospects
-                  </p>
-
-                  <p className="text-slate-700">
-                    3 ans après le dernier contact.
-                  </p>
-                </div>
+              <div>
+                <p className="font-semibold">
+                  {t("policy.retention.prospects.title")}
+                </p>
+                <p>{t("policy.retention.prospects.description")}</p>
               </div>
 
-              <div className="flex gap-4">
-                <div className="mt-2 h-3 w-3 rounded-full bg-snackly-blue" />
-
-                <div>
-                  <p className="font-semibold text-snackly-dark-purple">
-                    Clients
-                  </p>
-
-                  <p className="text-slate-700">
-                    Entre 5 et 10 ans selon les obligations légales, notamment
-                    celles liées à la facturation.
-                  </p>
-                </div>
+              <div>
+                <p className="font-semibold">
+                  {t("policy.retention.clients.title")}
+                </p>
+                <p>{t("policy.retention.clients.description")}</p>
               </div>
             </div>
           </section>
@@ -181,123 +167,99 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Avec qui partageons-nous vos données ?
+                {t("policy.sharing.title")}
               </h2>
             </div>
 
             <div className="space-y-4 p-8">
               <div className="rounded-2xl border border-slate-200 p-4">
-                Outils marketing (analytics, CRM, emailing)
+                {t("policy.sharing.item1")}
               </div>
 
               <div className="rounded-2xl border border-slate-200 p-4">
-                Prestataires techniques (hébergement, maintenance)
+                {t("policy.sharing.item2")}
               </div>
 
-              <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
-                <p className="font-semibold text-green-800">
-                  Les données ne sont jamais revendues à des tiers.
-                </p>
+              <div className="rounded-2xl border border-green-200 bg-green-50 p-5 font-semibold text-green-800">
+                {t("policy.sharing.item3")}
               </div>
             </div>
           </section>
-
-          {/* Cookies */}
-          {/* <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Comment utilisons-nous les cookies ?
-              </h2>
-            </div>
-
-            <div className="p-8">
-              <div className="rounded-2xl border border-snackly-purple/20 bg-snackly-purple/5 p-6">
-                <ul className="space-y-3 text-slate-700">
-                  <li>• Mesurer l’audience</li>
-                  <li>• Optimiser l’expérience utilisateur</li>
-                  <li>• Suivre les performances marketing</li>
-                </ul>
-              </div>
-
-              <p className="mt-5 text-slate-600">
-                Un bandeau de consentement vous permet de gérer vos préférences
-                à tout moment.
-              </p>
-            </div>
-          </section> */}
 
           {/* Droits */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Quels sont vos droits ?
+                {t("policy.rights.title")}
               </h2>
             </div>
 
-            <div className="p-8">
-              <div className="rounded-3xl border border-snackly-purple/20 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 p-6">
-                <div className="grid gap-3 md:grid-cols-2">
-                  {rights.map((right) => (
-                    <div
-                      key={right}
-                      className="rounded-xl bg-white/80 p-3 text-slate-700"
-                    >
-                      {right}
-                    </div>
-                  ))}
-                </div>
+            <div className="p-8 space-y-3">
+              <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+                {t("policy.rights.item1")}
               </div>
 
-              <div className="mt-6 rounded-2xl bg-snackly-dark-purple p-6">
-                <p className="font-semibold text-white">Exercer vos droits</p>
+              <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+                {t("policy.rights.item2")}
+              </div>
 
-                <p className="mt-2 text-white/80">contact@snacklyagency.com</p>
+              <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+                {t("policy.rights.item3")}
+              </div>
+
+              <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+                {t("policy.rights.item4")}
+              </div>
+
+              <div className="rounded-xl bg-white p-3 ring-1 ring-slate-200">
+                {t("policy.rights.item5")}
+              </div>
+
+              <div className="mt-6 rounded-2xl bg-snackly-dark-purple p-6 text-white">
+                <p className="font-semibold">
+                  {t("policy.rights.exerciseTitle")}
+                </p>
+                <p className="mt-2">{t("policy.company.email")}</p>
               </div>
             </div>
           </section>
 
           {/* Sécurité */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
+            <div className="border-b border-snackly-purple/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Comment protégeons-nous vos données ?
+                {t("policy.security.title")}
               </h2>
             </div>
 
             <div className="p-8">
-              <p className="leading-8 text-slate-700">
-                Snackly met en place des mesures techniques et
-                organisationnelles destinées à protéger vos données contre tout
-                accès, modification, divulgation ou destruction non autorisés.
-              </p>
+              <p>{t("policy.security.description")}</p>
             </div>
           </section>
 
           {/* Mise à jour */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-snackly-purple/10 bg-linear-to-r from-snackly-purple/5 to-snackly-blue/5 px-8 py-5">
+            <div className="border-b border-snackly-purple/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Mise à jour de cette politique
+                {t("policy.update.title")}
               </h2>
             </div>
 
             <div className="p-8">
-              <p className="leading-8 text-slate-700">
-                Cette politique de confidentialité peut être modifiée à tout
-                moment afin de rester conforme aux évolutions réglementaires et
-                aux changements apportés à nos services.
-              </p>
+              <p>{t("policy.update.description")}</p>
             </div>
           </section>
 
           {/* Footer */}
           <section className="rounded-3xl bg-snackly-dark-purple p-8 text-white">
-            <h2 className="text-xl font-semibold">Contact</h2>
+            <h2 className="text-xl font-semibold">
+              {t("policy.footer.contact")}
+            </h2>
 
-            <p className="mt-3 text-white/80">contact@snacklyagency.com</p>
+            <p className="mt-3">{t("policy.company.email")}</p>
 
             <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/60">
-              Dernière mise à jour : 24 juin 2026
+              {t("policy.lastUpdateLabel")} : {t("policy.lastUpdateValue")}
             </div>
           </section>
         </div>

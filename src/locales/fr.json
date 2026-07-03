@@ -3,8 +3,13 @@
     "home": "Accueil",
     "group": "Le Groupe",
     "locations": "Nos localisations",
-    "offers": "Offres",
-    "contact": "Contact"
+    "offers": {
+      "label": "Offres",
+      "acting": "Acting",
+      "motion": "Motion"
+    },
+    "contact": "Contact",
+    "bottomPhrase": "Une Entité du groupe Play To Sky"
   },
   "cta": "Contactez-nous",
   "home": {

@@ -3,8 +3,13 @@
     "home": "Home",
     "group": "The Group",
     "locations": "Our locations",
-    "offers": "Offers",
-    "contact": "Contact"
+    "offers": {
+      "label": "Offers",
+      "acting": "Acting",
+      "motion": "Motion"
+    },
+    "contact": "Contact",
+    "bottomPhrase": "A Play To Sky Group Entity"
   },
   "cta": "Contact us",
   "home": {

@@ -19,11 +19,11 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: "header.group", path: "https://www.playtosky.com/", external: true },
   {
-    label: "header.offers",
+    label: "header.offers.label",
     path: "",
     subItems: [
-      { label: "Acting", path: "/acting" },
-      { label: "Motion", path: "/motion" },
+      { label: "header.offers.acting", path: "/acting" },
+      { label: "header.offers.motion", path: "/motion" },
     ],
   },
   { label: "header.contact", path: "/contact" },
@@ -36,11 +36,11 @@ const navItemsMobile: NavItem[] = [
     path: "/locations",
   },
   {
-    label: "header.offers",
+    label: "header.offers.label",
     path: "",
     subItems: [
-      { label: "Acting", path: "/acting" },
-      { label: "Motion", path: "/motion" },
+      { label: "header.offers.acting", path: "/acting" },
+      { label: "header.offers.motion", path: "/motion" },
     ],
   },
   { label: "header.contact", path: "/contact" },
@@ -175,7 +175,7 @@ export default function Navbar({ color }: { color?: string }) {
                         }`
                       }
                     >
-                      {sub.label}
+                      {t(sub.label)}
                     </NavLink>
                   </li>
                 ))}
@@ -276,7 +276,7 @@ export default function Navbar({ color }: { color?: string }) {
                           }}
                           className="font-glacial text-t3 text-white/80 hover:text-white transition-colors duration-200"
                         >
-                          {sub.label}
+                          {t(sub.label)}
                         </NavLink>
                       </li>
                     ))}
@@ -343,7 +343,7 @@ export default function Navbar({ color }: { color?: string }) {
 
         {/* Mention en bas */}
         <p className="text-center text-white/50 text-t5 pb-8 font-glacial">
-          A Play To Sky Group Entity
+          {t("header.bottomPhrase")}
         </p>
       </div>
     </nav>

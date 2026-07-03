@@ -153,7 +153,9 @@ export default function Home() {
           className={`${actingClicked ? "w-full mdpp:w-full sm:max-mdpp:full max-sm:full  items-center" : "items-end"} cursor-pointer transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tr-full rounded-br-full flex flex-col justify-center gap-y-5 px-17.5`}
           onClick={() => {
             setActingClicked(!actingClicked);
-            motionClicked && setMotionClicked(false);
+            if (motionClicked) {
+              setMotionClicked(false);
+            }
           }}
         >
           <span
@@ -194,7 +196,9 @@ export default function Home() {
           className={`${motionClicked ? "w-full mdpp:w-full sm:max-mdpp:full max-sm:full items-center" : "items-start"} cursor-pointer transition-all duration-500 bg-white mdpp:w-162.5 mdpp:h-125 sm:max-mdpp:w-120 sm:max-mdpp:h-100 max-sm:w-70 max-sm:h-80 rounded-tl-full rounded-bl-full flex flex-col justify-center gap-y-5 px-17.5 self-end`}
           onClick={() => {
             setMotionClicked(!motionClicked);
-            actingClicked && setActingClicked(false);
+            if (actingClicked) {
+              setActingClicked(false);
+            }
           }}
         >
           <span

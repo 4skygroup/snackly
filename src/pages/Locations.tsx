@@ -70,7 +70,7 @@ export default function Locations() {
               >
                 <path
                   d="M1.4 15L0 13.6L11.6 2H5V0H15V10H13V3.4L1.4 15Z"
-                  fill="black"
+                  fill="white"
                 />
               </svg>
             </button>

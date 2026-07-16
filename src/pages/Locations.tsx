@@ -21,7 +21,7 @@ export default function Locations() {
               {t("locations.description")}
             </p>
           </div>
-
+          {/*  */}
           <hr className="w-full max-w-4xl border-white/10" />
 
           <div className="grid grid-cols-3 md:flex md:flex-row gap-8 md:gap-25 w-fit max-w-4xl justify-items-center">

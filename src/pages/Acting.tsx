@@ -29,7 +29,8 @@ export default function Acting() {
     }
   };
   return (
-    <div>
+    // overflow-x-clip : l'animation qui tourne ne cree plus de defilement horizontal
+    <div className="overflow-x-clip">
       <Helmet>
         <title>Acting — Production Vidéo Snack Content | Snackly</title>
         <meta
@@ -106,9 +107,9 @@ export default function Acting() {
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
         <section className="flex justify-center max-xsp:items-center lgp:gap-10 max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">
           <div className="flex flex-col max-xsp:w-fit max-xsp:justify-center max-xsp:items-center">
-            <p className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
+            <h1 className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
               {t("acting.catchPhrase")}
-            </p>
+            </h1>
             <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center w-fit">
               Acting
             </span>
@@ -137,7 +138,7 @@ export default function Acting() {
           </div>
           {/* </div> */}
         </section>
-        <section className="max-sm:w-100 max-sm:p-0 max-w-300 bg-white/18 mx-auto lgpp:p-20 sm:max-lgpp:p-10">
+        <section className="max-sm:w-full max-sm:p-0 max-w-300 bg-white/18 mx-auto lgpp:p-20 sm:max-lgpp:p-10">
           <div className="flex lgp:gap-25 max-lgp:gap-10 items-center max-lgm:flex-col">
             {/* Left */}
             <div className="flex flex-col gap-y-7.5 max-lgp:pt-10">

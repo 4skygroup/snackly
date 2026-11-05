@@ -29,7 +29,8 @@ export default function Motion() {
     }
   };
   return (
-    <div>
+    // overflow-x-clip : l'animation qui tourne ne cree plus de defilement horizontal
+    <div className="overflow-x-clip">
       <Helmet>
         <title>
           Motion Design — Animations Digitales Percutantes | Snackly
@@ -38,8 +39,8 @@ export default function Motion() {
           name="description"
           content="Créations motion design sur-mesure chez Snackly : animations percutantes adaptées à tous les formats digitaux pour booster votre stratégie de contenu vidéo."
         />
-        <link rel="canonical" href="https://snacklyagency.com/Motion" />
-        <meta property="og:url" content="https://snacklyagency.com/Motion" />
+        <link rel="canonical" href="https://snacklyagency.com/motion" />
+        <meta property="og:url" content="https://snacklyagency.com/motion" />
         <meta
           property="og:title"
           content="Motion Design — Animations Digitales Percutantes | Snackly"
@@ -68,8 +69,8 @@ export default function Motion() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://snacklyagency.com/Motion#webpage",
-            url: "https://snacklyagency.com/Motion",
+            "@id": "https://snacklyagency.com/motion#webpage",
+            url: "https://snacklyagency.com/motion",
             name: "Motion Design — Animations Digitales Percutantes | Snackly",
             description:
               "Créations motion design sur-mesure : animations percutantes adaptées à tous les formats digitaux.",
@@ -88,7 +89,7 @@ export default function Motion() {
                   "@type": "ListItem",
                   position: 2,
                   name: "Motion Design",
-                  item: "https://snacklyagency.com/Motion",
+                  item: "https://snacklyagency.com/motion",
                 },
               ],
             },
@@ -96,7 +97,7 @@ export default function Motion() {
               "@type": "Service",
               "@id": "https://snacklyagency.com/#motion",
               name: "Motion Design",
-              url: "https://snacklyagency.com/Motion",
+              url: "https://snacklyagency.com/motion",
               description:
                 "Des créations motion design percutantes pour votre stratégie digitale.",
               provider: { "@id": "https://snacklyagency.com/#organization" },
@@ -108,9 +109,9 @@ export default function Motion() {
       <section className="bg-linear-to-b from-snackly-purple to-snackly-blue text-white flex flex-col gap-y-25 py-15 px-2.5 items-center">
         <section className="flex justify-center lgp:gap-10  max-xsp:items-center max-mdpp:flex-col xsp:max-mdpp:gap-y-25 max-xsp:gap-y-5">
           <div className="flex flex-col max-xsp:w-fit max-xsp:justify-center max-xsp:items-center">
-            <p className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
+            <h1 className="lgp:text-h5 uppercase xsp:max-lgp:text-h6 max-xsp:text-h7 max-xsp:text-center w-fit">
               {t("motion.catchPhrase")}
-            </p>
+            </h1>
             <span className="lgp:text-h2 font-bold uppercase xsp:max-lgp:text-h3 max-xsp:text-h4 max-xsp:text-center w-fit">
               Motion
             </span>
@@ -139,7 +140,7 @@ export default function Motion() {
           </div>
           {/* </div> */}
         </section>
-        <section className="max-sm:w-100 max-sm:p-0 max-w-300 bg-white/18 mx-auto lgpp:p-20 sm:max-lgpp:p-10">
+        <section className="max-sm:w-full max-sm:p-0 max-w-300 bg-white/18 mx-auto lgpp:p-20 sm:max-lgpp:p-10">
           <div className="flex lgp:gap-25 max-lgp:gap-10 items-center max-lgm:flex-col">
             {/* Left */}
             <div className="flex flex-col gap-y-7.5 max-lgp:pt-10">

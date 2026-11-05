@@ -13,9 +13,9 @@ export default function Locations() {
       <div className="bg-black text-white">
         <section className="flex flex-col items-center justify-center gap-y-8 md:gap-y-12 py-12 md:py-25 px-4 md:px-5 bg-snackly-purple">
           <div className="flex flex-col items-center justify-center gap-6 md:gap-8">
-            <p className="bg-linear-to-r from-white to-[#A0A0A0] bg-clip-text text-transparent text-center font-bold max-w-4xl text-3xl md:text-h4">
+            <h1 className="bg-linear-to-r from-white to-[#A0A0A0] bg-clip-text text-transparent text-center font-bold max-w-4xl text-3xl md:text-h4">
               {t("locations.title")}
-            </p>
+            </h1>
 
             <p className="text-[#CFC4C5] text-center text-base md:text-lg max-w-3xl">
               {t("locations.description")}

@@ -99,7 +99,7 @@ export default function Contact() {
             {/* ── Right column ── */}
             <div>
               {/* Titre de la page */}
-              <p className="text-t4 md:text-h7 font-bold md:text-3xl md:text-right mb-2 tracking-wide text-white drop-shadow-sm"></p>
+              <h1 className="sr-only">Contactez Snackly, agence de Snack Content</h1>
               <ContactForm />
             </div>
           </div>
